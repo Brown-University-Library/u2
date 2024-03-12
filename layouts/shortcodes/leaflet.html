@@ -1,0 +1,139 @@
+<div id="map"></div>
+<script>
+let map = L.map('map').setView([29, 31], 7);
+const basemaps = {
+    Topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+        maxZoom: 17,
+        attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+    }),
+    Outdoors: L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}', {
+        minZoom: 0,
+        maxZoom: 20,
+        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        ext: 'png'
+    }),
+    Terrain: L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.{ext}', {
+        minZoom: 0,
+        maxZoom: 18,
+        attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+        ext: 'png'
+    }),
+    Satellite: L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+    })
+};
+basemaps.Terrain.addTo(map);
+// Fake coverage areas
+var rect = L.polygon([
+    [29.503, 31.22],
+    [29.509, 31.11],
+    [28.51, 31.27],
+    [28.81, 31.57]
+]).bindPopup("a <a href='https://nytimes.com/'>shape!</a> amazing");
+
+var rect2 = L.polygon([
+    [26.59, 32.11],
+    [27.503, 31.22],
+    [28.41, 31.27],
+    [28.71, 32.57]
+]).bindPopup("more shape");
+
+var circle = L.circle([29.41, 30.27], {
+    radius: 8000, // in meters
+    fillColor: '#ff7800'
+}).bindPopup("a circle!");
+
+var latlngs = [
+    [ // first polygon
+        [
+            [25, 32.05],
+            [27, 31.03],
+            [29, 31.05],
+            [30, 31.99]
+        ],
+    ],
+    [ // second polygon
+        [
+            [30, 31.03],
+            [29.288, 30.04],
+            [30.448, 31.05],
+            [30.274, 32.05]
+        ]
+    ]
+];
+
+var goofy = L.polygon(latlngs).bindPopup("overlaps");
+
+var shapes = L.layerGroup([rect, rect2, circle, goofy]);
+// Fake mission paths
+var mission_two = [
+    [29.9912, 31.196],
+    [29.7111, 31.218],
+    [28.129, 31.610],
+    [26.378, 32.106],
+    [24.8728, 33.1108]
+]
+var secondMission = L.polyline(mission_two, { color: 'orange' });
+
+// Flight B8649
+var B8649_geojson = new L.GeoJSON.AJAX("/B8649_FLIGHT_PATH.geojson", {
+    onEachFeature: function(feature, layer) {
+        // Get bounds of polygon
+        //var bounds = layer.getBounds();
+        // Get center of bounds
+        //var center = bounds.getCenter();
+        // Use center to put marker on map
+        //var marker = L.marker(center).addTo(map);
+        layer.bindPopup("Flight path of mission B8649");
+    }
+});
+var B8649 = L.polyline(B8649_geojson, { color: "green" });
+
+// Pyramids from geojson in /static folder
+// fetch the geojson
+var pyramids = new L.GeoJSON.AJAX("/pyramids.geojson", {
+    //style: lookPyramids,
+    // build each point
+    onEachFeature: function(feature, layer) {
+        // overlay a thumbnail on the map if it's available
+        if (feature.properties.pid ) {
+            var imageUrl = `https://dlibbdrwwwcit.services.brown.edu/studio/thumbnail/` + feature.properties.pid;
+            var imageBounds = layer.getBounds();
+            L.imageOverlay(imageUrl, imageBounds).addTo(map);
+        }
+        // Check if feature is a polygon
+        if (feature.geometry.type === 'Polygon') {
+            // Don't stroke and do opaque fill
+            layer.setStyle({
+                'color': 'red',
+                'weight': 3,
+                'fillOpacity': 0
+            });
+            // Get bounds of polygon
+            //var bounds = layer.getBounds();
+            // Get center of bounds
+            //var center = bounds.getCenter();
+            // Use center to put marker on map
+            //var marker = L.marker(center).addTo(map);
+            if (feature.properties.pid ) {
+                var popupText = '<a href="https://dlibbdrwwwcit.services.brown.edu/studio/items/' + feature.properties.pid + '">' + feature.properties.name + '</a>';
+            } else {
+                var popupText = feature.properties.name;
+            }
+            layer.bindPopup(popupText);
+        }
+    }
+});
+
+// establish the overlays
+var overlayMaps = {
+    "Flight B8649": B8649,
+    "Flight path": secondMission,
+    "shape": shapes,
+    "Pyramids": pyramids,
+};
+
+// Allow user to choose what overlays to display
+const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
+
+</script>

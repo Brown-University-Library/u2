@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+
+{{ $data := "" }}
+<!-- {{ $url := "https://repository.library.brown.edu/api/collections/" }} -->
+{{ $url := "https://dlibbdrwwwcit.services.brown.edu/api/collections/test:v9n46tq9/" }}
+{{ with resources.GetRemote $url }}
+  {{ with .Err }}
+    {{ errorf "%s" . }}
+  {{ else }}
+    {{ $data = . | transform.Unmarshal }}
+<ul>
+{{ range $artifacts := $data.items.docs }}
+  <li>
+    <a href='{{ $artifacts.uri }}'>
+      {{ $artifacts.primary_title }}
+    </a>
+    <p>{{ $artifacts.pid }}</p>
+    <p>{{ $artifacts.abstract }} </p>
+    <a href="https://dlibbdrwwwcit.services.brown.edu/viewers/mirador/{{ $artifacts.pid }}">
+    <img src="https://dlibbdrwwwcit.services.brown.edu/studio/thumbnail/{{ $artifacts.pid }}" />
+  </a>
+    <!--<p><a href="https://repository.library.brown.edu/viewers/mirador/{{ $artifacts.pid }}">View at the BDR</a></p>-->
+  </li>
+{{ end }}
+</ul>
+
+  {{ end }}
+
+{{ else }}
+  {{ errorf "Unable to get remote resource %q " $url }}
+{{ end }}
+
+{{ partial "footer.html" . }}
