@@ -29,6 +29,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 		<script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
 	{{ end }}
+	{{ if eq .Layout "compare" }}
+		<script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
+	{{ end }}
 
 
 </head>

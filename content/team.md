@@ -12,7 +12,7 @@ Khanh Vo, Project Lead
 
 Mairelys Lemus-Rojas, Metadata Specialist
 
-Patrick Rashleigh,
+Patrick Rashleigh
 
 Elizabeth Yalkut, Front-end Developer
 
