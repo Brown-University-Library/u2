@@ -1,20 +1,18 @@
 <div id="map"></div>
 <script>
-let map = L.map('map').setView([29, 31], 7);
+let map = L.map('map', {
+    minZoom: 5,
+    //maxZoom: 0
+}).setView([29, 31], 7);
 const basemaps = {
     Topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
-        maxZoom: 17,
         attribution: 'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
     }),
     Outdoors: L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}', {
-        minZoom: 0,
-        maxZoom: 20,
         attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         ext: 'png'
     }),
     Terrain: L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.{ext}', {
-        minZoom: 0,
-        maxZoom: 18,
         attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         ext: 'png'
     }),
@@ -23,6 +21,18 @@ const basemaps = {
     })
 };
 basemaps.Satellite.addTo(map);
+
+// 1960 geojson
+var borderStyle = {
+    "color": "#ffffff",
+    "weight": 2,
+    "fillOpacity": 0,
+    "dashArray": "4 1 2",
+};
+var base1960 = new L.geoJson.ajax("https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1960.geojson", { attribution: 'Historical border data from <a href="https://github.com/aourednik/historical-basemaps">Historical Basemaps</a>', style: borderStyle}).bindTooltip(function (layer) {
+        return layer.feature.properties.NAME;
+    });
+
 // Fake coverage areas
 /*var rect = L.polygon([
     [29.503, 31.22],
@@ -212,7 +222,6 @@ var longFlight = [
 [28.6403077,37.56917849],
 [33.18707551,42.99233793],
 [33.10457684,42.90271783],
-[33.54794468,42.96771706],
 [33.46531721,42.68667046],
 [33.34600575,42.36715196],
 [33.19501634,41.7064961],
@@ -353,17 +362,6 @@ var longFlight = [
 [35.7962743,36.80877482],
 [35.85326918,36.75895326],
 [35.89944848,36.72580727],
-]
-
-var longFlight = L.polyline(longFlight, { color: 'orange' });
-// .bindPopup("Flight path of mission B8649");
-
-var shortFlight = [
-[36.86021359,34.8021868],
-[36.84824845,34.74761441],
-[36.83744024,34.71276796],
-[36.8253487,34.67377104],
-[36.82023185,34.64968681],
 [36.81417359,34.58040442],
 [36.80353727,34.53590519],
 [36.78984727,34.48976305],
@@ -376,17 +374,25 @@ var shortFlight = [
 [36.67821654,34.15304451],
 [36.65777891,34.09687881],
 [36.6271078,34.04328937],
+[36.22723311,32.31097844],
+[36.20521382,32.24517591],
+[36.24062514,32.37497524],
 [36.58950912,33.87748062],
 [36.57657297,33.8147895],
 [36.56905368,33.76296668],
 [36.52921701,33.56416592],
 [36.46209563,33.24795054],
 [36.43272389,32.9301358],
-[36.24062514,32.37497524],
-[36.22723311,32.31097844],
-[36.20521382,32.24517591],
-    ]
-var shortFlight = L.polyline(shortFlight, { color: 'blue'});
+[36.82023185,34.64968681],
+[36.8253487,34.67377104],
+[36.83744024,34.71276796],
+[36.84824845,34.74761441],
+[36.86021359,34.8021868],
+[33.54794468,42.96771706],
+]
+
+var longFlight = L.polyline(longFlight, { color: 'orange' });
+// .bindPopup("Flight path of mission B8649");
 
 // Flight B8649
 /*var B8649_geojson = new L.GeoJSON.AJAX("/B8649_FLIGHT_PATH.geojson", {
@@ -401,7 +407,7 @@ var shortFlight = L.polyline(shortFlight, { color: 'blue'});
     }
 });*/
 //var B8649 = L.polyline(B8649_geojson, { color: "green" });
-var flights = L.layerGroup([longFlight, shortFlight]);
+var flights = L.layerGroup([longFlight]);
 
 // Pyramids from geojson in /static folder
 // fetch the geojson
@@ -445,6 +451,7 @@ var overlayMaps = {
     "Flight paths": flights,
     //"shape": shapes,
     "Pyramids": pyramids,
+    "Borders as of 1960": base1960
 };
 
 // Allow user to choose what overlays to display

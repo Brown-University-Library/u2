@@ -2,7 +2,6 @@
 title = 'Team'
 date = 2024-02-09T21:39:06-05:00
 draft = false
-menu = 'main'
 +++
 Dr. Laurel Bestock, Co-Principal Investigator and Photographer
 

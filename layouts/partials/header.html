@@ -28,6 +28,13 @@
 	{{ if eq .Layout "artifact" }}
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 		<script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+		<style>
+			.mirador {
+				position: relative;
+				height: 60vh;
+				width: auto;
+			}
+		</style>
 	{{ end }}
 	{{ if eq .Layout "compare" }}
 		<script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
@@ -40,4 +47,4 @@
 
 {{ partial "nav.html" . }}
 
-<main class="content">
+<main class="content{{ if .Draft }} draft{{ end }}">
