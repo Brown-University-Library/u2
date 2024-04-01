@@ -1,5 +1,5 @@
 # Workflow for building and deploying a Hugo site to Reclaim
-name: Deploy Hugo site to Reclaim development environment
+name: Deploy Hugo site to Reclaim production environment
 
 on:
   # Runs on pushes targeting the main production branch
