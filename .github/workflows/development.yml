@@ -47,7 +47,7 @@ jobs:
           HUGO_ENV: development
         run: |
           hugo \
-            --minify \
+            --minify -D \
       - name: Deploy public files
         uses: Dylan700/sftp-upload-action@latest
         with:
