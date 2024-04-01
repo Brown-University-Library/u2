@@ -4,10 +4,11 @@ Given the relatively early date of the imagery, there is excellent potential for
 
 Our aim is to make these images publicly available via a website that shows their location and how to download them from a digital repository. This project seeks to make these high resolution images free for any interested researchers and the general public.
 
+# Specs
+
+This site is built in Hugo. It's hosted on Reclaim. The development environment is at u2egypt-dev.digitalscholarship.brown.edu; to deploy updates on dev, push to the `dev` branch. The production environment is u2egypt.digitalscholarship.brown.edu; to deploy updates on prod, push to the `main` branch. Github Actions will build the site and FTP the public files to the server.
+
 # To-dos
 
-- change dev server URLs to prod
+- change dev BDR server URLs to prod
 - get the flight path geojson working (need an origin point? or some way to relate the coordinates to their context)
-- set up deploy process with Reclaim , once we have chosen a URL
-    - dev: u2egypt-dev.digitalscholarship.brown.edu
-    - prod: u2egypt.digitalscholarship.brown.edu
