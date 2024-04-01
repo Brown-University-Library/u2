@@ -48,7 +48,7 @@ jobs:
         run: |
           hugo \
             --minify \
-      - Deploy public files
+      - name: Deploy public files
         uses: Dylan700/sftp-upload-action@latest
         with:
           server: ${{ secrets.FTP_SERVER }}
