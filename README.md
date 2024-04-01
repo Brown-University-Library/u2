@@ -8,5 +8,6 @@ Our aim is to make these images publicly available via a website that shows thei
 
 - change dev server URLs to prod
 - get the flight path geojson working (need an origin point? or some way to relate the coordinates to their context)
-- set up deploy process with Reclaim (@ccarvel), once we have chosen a URL
-    - is it possible to have a dev/prod setup?
+- set up deploy process with Reclaim , once we have chosen a URL
+    - dev: u2egypt-dev.digitalscholarship.brown.edu
+    - prod: u2egypt.digitalscholarship.brown.edu
