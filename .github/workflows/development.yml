@@ -21,22 +21,14 @@ jobs:
     env:
       HUGO_VERSION: 0.124.1
     steps:
-      - name: Install Hugo CLI
-        run: |
-          wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
-          && sudo dpkg -i ${{ runner.temp }}/hugo.deb
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2.6.0
+        uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-      - name: Install Node.js dependencies
-        run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: Hugo Build
+     - name: Hugo Build
         env:
           # For maximum backward compatibility with Hugo modules
           HUGO_ENVIRONMENT: development
@@ -50,7 +42,7 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          port: 22
+          port: 21
           uploads: |
             ./public => /home/digitals/u2egypt-dev.digitalscholarship.brown.edu
           delete: 'true'
