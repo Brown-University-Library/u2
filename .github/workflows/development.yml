@@ -29,10 +29,6 @@ jobs:
         run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          # Fetch all history for .GitInfo and .Lastmod
-          fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2.6.0
         with:
