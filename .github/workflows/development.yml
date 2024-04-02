@@ -34,8 +34,8 @@ jobs:
         uses: Dylan700/sftp-upload-action@latest
         with:
           server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
+          username: ${{ secrets.RECLAIM_USERNAME }}
+          password: ${{ secrets.RECLAIM_PASSWORD }}
           port: 21
           uploads: |
             ./public => /home/digitals/u2egypt-dev.digitalscholarship.brown.edu
