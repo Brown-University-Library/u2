@@ -4,7 +4,7 @@ name: Deploy Hugo site to Reclaim development environment
 on:
   # Runs on pushes targeting the development branch
   push:
-    branches: [dev]
+    branches: dev
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -13,7 +13,6 @@ jobs:
   # Build job
   build:
     runs-on: ubuntu-latest
-    name: Build
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -22,21 +21,14 @@ jobs:
         with:
           hugo-version: 'latest'
           extended: true
-     - name: Hugo Build
-        env:
-          # For maximum backward compatibility with Hugo modules
-          HUGO_ENVIRONMENT: development
-          HUGO_ENV: development
-        run: |
-          hugo \
-            --minify -D \
+      - name: Hugo Build
+        run: hugo --minify -D 
       - name: Deploy public files
         uses: Dylan700/sftp-upload-action@latest
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.RECLAIM_USERNAME }}
           password: ${{ secrets.RECLAIM_PASSWORD }}
-          port: 21
           uploads: |
             ./public => /home/digitals/u2egypt-dev.digitalscholarship.brown.edu
           delete: 'true'
