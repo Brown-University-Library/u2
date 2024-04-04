@@ -4,8 +4,8 @@ date = 2024-02-09T21:06:11-05:00
 draft = true
 menu = 'main'
 layout = 'compare'
-image1 = "color.jpg"
-image2 = "orig.jpg"
+left = "804-now.jpg"
+right = "804-then.jpg"
 +++
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

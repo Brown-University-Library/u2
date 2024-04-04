@@ -4,13 +4,15 @@
 
 {{ .Content }}
 
-{{ $orig := .Resources.Get "orig.jpg" }}
+{{ $left := .Param "left" }}
+{{ $now := .Resources.Get $left }}
 
-{{ $color := .Resources.Get "color.jpg" }}
+{{ $right := .Param "right" }}
+{{ $then := .Resources.Get $right }}
 
 <image-compare label-text="Screen Reader Label Text">
-  <img slot="image-1" alt="Alt Text" src="{{ $color.RelPermalink }}"/>
-  <img slot="image-2" alt="Alt text" src="{{ $orig.RelPermalink }}"/>
+  <img slot="image-1" alt="Alt Text" src="{{ $now.RelPermalink }}"/>
+  <img slot="image-2" alt="Alt text" src="{{ $then.RelPermalink }}"/>
 </image-compare>
 
 {{ partial "footer.html" . }}
