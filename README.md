@@ -4,9 +4,29 @@ Given the relatively early date of the imagery, there is excellent potential for
 
 Our aim is to make these images publicly available via a website that shows their location and how to download them from a digital repository. This project seeks to make these high resolution images free for any interested researchers and the general public.
 
+# Specs
+
+This site is built in Hugo. The development environment is at .brown.edu; to deploy updates on dev, push to the `dev` branch. The production environment is u2egypt.brown.edu; to deploy updates on prod, push to the `main` branch.
+
+## Dependencies
+
+The image comparison functionality is by https://github.com/cloudfour/image-compare. The map is built with Leaflet.
+
+## Custom shortcodes
+
+To embed a BDR item using Mirador, use the following shortcode:
+```
+{{< mirador "1234" >}}
+```
+where 1234 is the _numeric_ value for a BDR PID, e.g., the item at https://repository.library.brown.edu/studio/item/bdr:89322/ would be rendered with `{{< mirador "89322">}}`. Multiple Mirador embeds can be included in a given page.
+
+To compate two images _of equal dimensions_:
+```
+{{< compare left="804now.jpg" right="804then.jpg" left-alt="Giza now" right-alt="Giza then" label="blah">}}
+```
+The shortcode assumes the images are page resources. Multiple image comparisons can be included in a given page.
+
 # To-dos
 
-- change dev server URLs to prod
+- change dev BDR server URLs to prod
 - get the flight path geojson working (need an origin point? or some way to relate the coordinates to their context)
-- set up deploy process with Reclaim (@ccarvel), once we have chosen a URL
-    - is it possible to have a dev/prod setup?

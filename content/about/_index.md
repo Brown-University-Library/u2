@@ -9,3 +9,10 @@ The U2 aerial photography is both earlier in date and of significantly higher re
 The declassified U2 negatives are kept in cold-storage in Lanexa, Kansas, and we will need to order them to be shipped to the National Archives and Records Administration II building in College Park, Maryland. Proof of concept for this has already been demonstrated by Jason Ur and Emily Hammer, but they were unable to photograph or digitize the imagery from the two U2 flights surveying Egypt. At the NARA II building, we will use SLR cameras equipped with a macro-lens to document each negative at 100% scale and the images will be stitched together. Given the size of the negatives, we anticipate mounting the camera on a tripod standing on a wheeled dolly in order to quickly take the necessary photographs. Once we have the images, we will use the “photomerge” tools in Adobe Photoshop (or comparable applications) in order to stitch our individual photographs together in order to obtain a complete image of the original photographic negative. These images will in turn be georeferenced in QGIS or ArcGIS.
 
 [^1]: Hammer, E. and J. Ur, “Near Eastern Landscapes and Declassified U2 Aerial Imagery,” Advances in Archaeological Practice 7(2) 2019, 107-126.
+## Credits
+Map powered by [Leaflet](https://leafletjs.com/).
+Basemaps:
+- Topographical: &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, [SRTM](http://viewfinderpanoramas.org) | Map style: &copy; [OpenTopoMap](https://opentopomap.org) [(CC-BY-SA)](https://creativecommons.org/licenses/by-sa/3.0/])
+- Outdoors: &copy; [Stadia Maps](https://www.stadiamaps.com/) &copy; [OpenMapTiles](https://openmaptiles.org) &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors
+- Terrain: &copy; [Stadia Maps](https://www.stadiamaps.com/) &copy; [Stamen Design](https://www.stamen.com/) &copy; [OpenMapTiles](https://openmaptiles.org) &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright)  contributors
+- Satellite: &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community
