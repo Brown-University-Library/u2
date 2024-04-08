@@ -29,7 +29,7 @@
     }
     </style>
     {{ end }}
-    {{ if eq .Layout "compare" }}
+    {{ with .HasShortcode "compare" }}
     <script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
     {{ end }}
 </head>
