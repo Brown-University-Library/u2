@@ -4,9 +4,10 @@ date = 2024-03-27T13:26:16-04:00
 draft = true
 menu = 'main'
 +++
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Credits
+Map powered by [Leaflet](https://leafletjs.com/).
+Basemaps:
+- Topographical: &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors, [SRTM](http://viewfinderpanoramas.org) | Map style: &copy; [OpenTopoMap](https://opentopomap.org) [(CC-BY-SA)](https://creativecommons.org/licenses/by-sa/3.0/])
+- Outdoors: &copy; [Stadia Maps](https://www.stadiamaps.com/) &copy; [OpenMapTiles](https://openmaptiles.org) &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors
+- Terrain: &copy; [Stadia Maps](https://www.stadiamaps.com/) &copy; [Stamen Design](https://www.stamen.com/) &copy; [OpenMapTiles](https://openmaptiles.org) &copy; [OpenStreetMap](https://www.openstreetmap.org/copyright)  contributors
+- Satellite: &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community

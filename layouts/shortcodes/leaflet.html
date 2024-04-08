@@ -2,7 +2,8 @@
 <script>
 let map = L.map('map', {
     minZoom: 5,
-    //maxZoom: 0
+    attributionControl: false,
+    zoomControl: true,
 }).setView([29, 31], 7);
 const basemaps = {
     Topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
@@ -23,7 +24,7 @@ const basemaps = {
 basemaps.Satellite.addTo(map);
 
 // 1960 geojson
-var borderStyle = {
+/*var borderStyle = {
     "color": "#ffffff",
     "weight": 2,
     "fillOpacity": 0,
@@ -32,16 +33,24 @@ var borderStyle = {
 var base1960 = new L.geoJson.ajax("https://raw.githubusercontent.com/aourednik/historical-basemaps/master/geojson/world_1960.geojson", { attribution: 'Historical border data from <a href="https://github.com/aourednik/historical-basemaps">Historical Basemaps</a>', style: borderStyle}).bindTooltip(function (layer) {
         return layer.feature.properties.NAME;
     });
-
+*/
 // Fake coverage areas
-/*var rect = L.polygon([
-    [29.503, 31.22],
-    [29.509, 31.11],
-    [28.51, 31.27],
-    [28.81, 31.57]
-]).bindPopup("a <a href='https://nytimes.com/'>shape!</a> amazing");
+var fakeBounds = [
+[29.993634,31.110074],
+[29.950140,31.220556],
+[29.847314,31.163250],
+[29.909425,30.956741]
+    ]
+var bdroverlay = L.imageOverlay("/804-now.jpg",[fakeBounds], {opacity:1, interactive: true});
+bdroverlay.on('click', function(d) {
+    event.preventDefault(); //to avoid changes the current page url
+        window.open('https://repository.library.brown.edu/viewers/mirador/bdr:321832',);//the behavior is defined by the browser and user options
+        return false;//It prevents the default action associated with the event
 
-var rect2 = L.polygon([
+});
+var rect = L.polygon(fakeBounds, {fillOpacity: 0.1,color: "red"});
+var laurel = L.layerGroup([rect,bdroverlay]);
+/*var rect2 = L.polygon([
     [26.59, 32.11],
     [27.503, 31.22],
     [28.41, 31.27],
@@ -52,8 +61,8 @@ var circle = L.circle([29.41, 30.27], {
     radius: 8000, // in meters
     fillColor: '#ff7800'
 }).bindPopup("a circle!");
-
-var latlngs = [
+*/
+/*var latlngs = [
     [ // first polygon
         [
             [25, 32.05],
@@ -66,17 +75,19 @@ var latlngs = [
         [
             [30, 31.03],
             [29.288, 30.04],
+            [29.44,30.88],
+            [29.97,30.98],
             [30.448, 31.05],
             [30.274, 32.05]
         ]
     ]
 ];
 
-var goofy = L.polygon(latlngs).bindPopup("overlaps");
+var goofy = L.polygon(latlngs).addTo(map);
 
 var shapes = L.layerGroup([rect, rect2, circle, goofy]);
 */
-// Fake mission paths
+// mission paths
 var longFlight = [
 [31.01919235,29.76390976],
 [31.00988611,29.82660125],
@@ -390,53 +401,29 @@ var longFlight = [
 [36.86021359,34.8021868],
 [33.54794468,42.96771706],
 ]
-
-var longFlight = L.polyline(longFlight, { color: 'orange' });
-// .bindPopup("Flight path of mission B8649");
-
-// Flight B8649
-/*var B8649_geojson = new L.GeoJSON.AJAX("/B8649_FLIGHT_PATH.geojson", {
-    onEachFeature: function(feature, layer) {
-        // Get bounds of polygon
-        //var bounds = layer.getBounds();
-        // Get center of bounds
-        //var center = bounds.getCenter();
-        // Use center to put marker on map
-        //var marker = L.marker(center).addTo(map);
-        layer.bindPopup("Flight path of mission B8649");
-    }
-});*/
-//var B8649 = L.polyline(B8649_geojson, { color: "green" });
+var longFlight = L.polyline(longFlight, { color: 'red' });
 var flights = L.layerGroup([longFlight]);
 
+var bdrImages = L.layerGroup();
 // Pyramids from geojson in /static folder
 // fetch the geojson
 var pyramids = new L.GeoJSON.AJAX("/pyramids.geojson", {
-    //style: lookPyramids,
     // build each point
     onEachFeature: function(feature, layer) {
-        // overlay a thumbnail on the map if it's available
-        if (feature.properties.pid ) {
-            var imageUrl = `https://dlibbdrwwwcit.services.brown.edu/studio/thumbnail/` + feature.properties.pid;
-            var imageBounds = layer.getBounds();
-            L.imageOverlay(imageUrl, imageBounds).addTo(map);
-        }
         // Check if feature is a polygon
         if (feature.geometry.type === 'Polygon') {
             // Don't stroke and do opaque fill
             layer.setStyle({
                 'color': 'red',
-                'weight': 3,
+                'weight': 2,
                 'fillOpacity': 0
             });
-            // Get bounds of polygon
-            //var bounds = layer.getBounds();
-            // Get center of bounds
-            //var center = bounds.getCenter();
-            // Use center to put marker on map
-            //var marker = L.marker(center).addTo(map);
             if (feature.properties.pid ) {
-                var popupText = '<a href="https://dlibbdrwwwcit.services.brown.edu/studio/items/' + feature.properties.pid + '">' + feature.properties.name + '</a>';
+                var imageUrl = `https://dlibbdrwwwcit.services.brown.edu/studio/thumbnail/` + feature.properties.pid;
+                // Get bounds of polygon
+                var bounds = layer.getBounds();
+                var popupText = '<a href="https://dlibbdrwwwcit.services.brown.edu/studio/items/' + feature.properties.pid + '">' + feature.properties.name + '</a>' ;
+                L.imageOverlay(imageUrl, bounds).addTo(bdrImages);
             } else {
                 var popupText = feature.properties.name;
             }
@@ -445,16 +432,24 @@ var pyramids = new L.GeoJSON.AJAX("/pyramids.geojson", {
     }
 });
 
+var realthings = L.layerGroup([pyramids,bdrImages]);
+
 // establish the overlays
 var overlayMaps = {
-    //"Flight B8649": B8649,
+    "Pyramids with BDR images": realthings,
     "Flight paths": flights,
-    //"shape": shapes,
-    "Pyramids": pyramids,
-    "Borders as of 1960": base1960
+    "!": laurel
 };
 
 // Allow user to choose what overlays to display
 const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
 
+// Provide coordinates of mouse
+var c = new L.Control.Coordinates({position:'topright'});
+
+c.addTo(map);
+
+map.on('click', function(e) {
+    c.setCoordinates(e);
+});
 </script>

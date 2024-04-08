@@ -1,50 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-	<title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
-
-	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
-	{{ with .OutputFormats.Get "rss" -}}
-		{{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-	{{ end -}}
-	{{ with .HasShortcode "leaflet"  }}
-	  	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-	     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-	     crossorigin=""/>
-	    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-	     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-	     crossorigin=""></script>
-	    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
-	    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/calvinmetcalf/leaflet-ajax@2/dist/leaflet.ajax.js"></script>
-	    <!--
-	    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" rel="stylesheet"><link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" rel="stylesheet">
-	    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script> -->
-	    <style>#map { height: 600px; }</style>
-	{{ end }}
-	{{ if eq .Layout "artifact" }}
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
-		<script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
-		<style>
-			.mirador {
-				position: relative;
-				height: 60vh;
-				width: auto;
-			}
-		</style>
-	{{ end }}
-	{{ if eq .Layout "compare" }}
-		<script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
-	{{ end }}
-
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ if not .IsHome }}{{ .Title }} | {{ end }}{{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/style.css" type="text/css" media="all" />
+    {{ with .OutputFormats.Get "rss" -}}
+    {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    {{ with .HasShortcode "leaflet"  }}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-providers@latest/leaflet-providers.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/calvinmetcalf/leaflet-ajax@2/dist/leaflet.ajax.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/zimmicz/Leaflet-Coordinates-Control/Control.Coordinates.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/zimmicz/Leaflet-Coordinates-Control/Control.Coordinates.min.css">
+    <style>#map { height: 600px; }</style>
+    {{ end }}
+    {{ with .HasShortcode "mirador" }}
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+    <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
+    <style>
+    .mirador {
+        position: relative;
+        height: 60vh;
+        width: auto;
+    }
+    </style>
+    {{ end }}
+    {{ if eq .Layout "compare" }}
+    <script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
+    {{ end }}
 </head>
 
 <body>
-
-{{ partial "nav.html" . }}
-
-<main class="content{{ if .Draft }} draft{{ end }}">
+    {{ partial "nav.html" . }}
+    <main class="content{{ if .Draft }} draft{{ end }}">
