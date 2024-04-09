@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essays on U2 Aerial Photography of Egypt</title>
+    <link>/essays/</link>
+    <description>Recent content in Essays on U2 Aerial Photography of Egypt</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Feb 2024 20:49:03 -0500</lastBuildDate>
+    <atom:link href="/essays/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interpretation</title>
+      <link>/essays/interpretation/</link>
+      <pubDate>Fri, 09 Feb 2024 20:49:03 -0500</pubDate>
+      <guid>/essays/interpretation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>/essays/technology/</link>
+      <pubDate>Fri, 09 Feb 2024 20:48:48 -0500</pubDate>
+      <guid>/essays/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flights</title>
+      <link>/essays/flights/</link>
+      <pubDate>Fri, 09 Feb 2024 20:48:42 -0500</pubDate>
+      <guid>/essays/flights/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Background</title>
+      <link>/essays/background/</link>
+      <pubDate>Fri, 09 Feb 2024 20:41:47 -0500</pubDate>
+      <guid>/essays/background/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

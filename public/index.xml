@@ -6,8 +6,15 @@
     <description>Recent content in Home on U2 Aerial Photography of Egypt</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2024 13:06:52 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2024 12:37:53 -0400</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Highlight</title>
+      <link>/highlight/</link>
+      <pubDate>Tue, 12 Mar 2024 12:37:53 -0400</pubDate>
+      <guid>/highlight/</guid>
+      <description>Cake tart dragée shortbread chocolate sweet marzipan danish. Toffee sugar plum muffin wafer marshmallow. Sweet roll tootsie roll sweet marzipan croissant sugar plum. Cake halvah tootsie roll cheesecake oat cake liquorice. Pudding muffin donut biscuit sesame snaps lemon drops. Ice cream jelly jelly powder lemon drops wafer jelly beans.&#xA;Marzipan cotton candy croissant candy canes brownie. Cookie candy canes gingerbread cookie pie. Caramels icing soufflé jujubes tiramisu. Jujubes muffin gingerbread cupcake ice cream candy canes.</description>
+    </item>
     <item>
       <title>Contact</title>
       <link>/about/contact/</link>
@@ -21,6 +28,41 @@
       <pubDate>Fri, 09 Feb 2024 21:39:06 -0500</pubDate>
       <guid>/about/team/</guid>
       <description>Dr. Laurel Bestock, Co-Principal Investigator and Photographer&#xA;Dr. Oren Siegel, Co-Principal Investigator and GIS Specialist&#xA;Khanh Vo, Project Lead&#xA;Mairelys Lemus-Rojas, Metadata Specialist&#xA;Patrick Rashleigh&#xA;Elizabeth Yalkut, Front-end Developer&#xA;Justin Uhr, BDR Specialist</description>
+    </item>
+    <item>
+      <title>Images</title>
+      <link>/images/</link>
+      <pubDate>Fri, 09 Feb 2024 21:06:11 -0500</pubDate>
+      <guid>/images/</guid>
+      <description>Oat cake cake lemon drops liquorice macaroon danish chocolate liquorice. Carrot cake caramels danish donut marzipan gummi bears. Caramels tart sesame snaps soufflé pastry. Jelly lollipop pastry apple pie pie. Fruitcake oat cake biscuit chocolate cake cookie jelly beans liquorice tart carrot cake. Toffee toffee cupcake pie fruitcake chocolate chocolate bar. Sweet apple pie cheesecake cookie halvah macaroon apple pie biscuit. Marshmallow tootsie roll chupa chups danish wafer chupa chups tootsie roll biscuit.</description>
+    </item>
+    <item>
+      <title>Interpretation</title>
+      <link>/essays/interpretation/</link>
+      <pubDate>Fri, 09 Feb 2024 20:49:03 -0500</pubDate>
+      <guid>/essays/interpretation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Technology</title>
+      <link>/essays/technology/</link>
+      <pubDate>Fri, 09 Feb 2024 20:48:48 -0500</pubDate>
+      <guid>/essays/technology/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Flights</title>
+      <link>/essays/flights/</link>
+      <pubDate>Fri, 09 Feb 2024 20:48:42 -0500</pubDate>
+      <guid>/essays/flights/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Background</title>
+      <link>/essays/background/</link>
+      <pubDate>Fri, 09 Feb 2024 20:41:47 -0500</pubDate>
+      <guid>/essays/background/</guid>
+      <description></description>
     </item>
   </channel>
 </rss>
