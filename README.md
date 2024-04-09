@@ -6,7 +6,7 @@ Our aim is to make these images publicly available via a website that shows thei
 
 # Specs
 
-This site is built in Hugo. The development environment is at .brown.edu; to deploy updates on dev, push to the `dev` branch. The production environment is u2egypt.brown.edu; to deploy updates on prod, push to the `main` branch.
+This site is built in Hugo. The development environment requires VPN to access; to deploy updates on dev, push to the `dev` branch. The production environment is u2egypt.brown.edu on the pcdsit2 server; to deploy updates on prod, push to the `main` branch. Both servers do a [`sparse-checkout`](https://mustafas.work/efficiently-accessing-specific-files-in-github-repositories-a-guide-to-sparse-checkouts) of the `public` folder.
 
 ## Dependencies
 
@@ -29,4 +29,4 @@ The shortcode assumes the images are page resources. Multiple image comparisons 
 # To-dos
 
 - change dev BDR server URLs to prod
-- get the flight path geojson working (need an origin point? or some way to relate the coordinates to their context)
+- write geojson for the BDR items including BDR pids, apply to mar
