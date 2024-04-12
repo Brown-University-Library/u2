@@ -10,7 +10,7 @@ This site is built in Hugo. The development environment requires VPN to access; 
 
 ## Dependencies
 
-The image comparison functionality is by https://github.com/cloudfour/image-compare. The map is built with Leaflet.
+The image comparison functionality is by https://github.com/cloudfour/image-compare. The map is built with [Leaflet](https://leafletjs.com) and a bunch of plugins.
 
 ## Custom shortcodes
 
