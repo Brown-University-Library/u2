@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://cds.library.brown.edu/projects/u2egypt/about/</loc><lastmod>2024-03-27T13:26:16-04:00</lastmod></url><url><loc>https://cds.library.brown.edu/projects/u2egypt/about/contact/</loc><lastmod>2024-03-08T13:06:52-05:00</lastmod></url><url><loc>https://cds.library.brown.edu/projects/u2egypt/about/team/</loc><lastmod>2024-02-09T21:39:06-05:00</lastmod></url><url><loc>https://cds.library.brown.edu/projects/u2egypt/</loc><lastmod>2024-02-09T20:47:19-05:00</lastmod></url><url><loc>https://cds.library.brown.edu/projects/u2egypt/categories/</loc></url><url><loc>https://cds.library.brown.edu/projects/u2egypt/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/about/</loc>
+    <lastmod>2024-03-27T13:26:16-04:00</lastmod>
+  </url><url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/about/contact/</loc>
+    <lastmod>2024-03-08T13:06:52-05:00</lastmod>
+  </url><url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/about/team/</loc>
+    <lastmod>2024-02-09T21:39:06-05:00</lastmod>
+  </url><url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/</loc>
+    <lastmod>2024-02-09T20:47:19-05:00</lastmod>
+  </url><url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/categories/</loc>
+  </url><url>
+    <loc>https://cds.library.brown.edu/projects/u2egypt/public/tags/</loc>
+  </url>
+</urlset>
