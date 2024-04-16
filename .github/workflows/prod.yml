@@ -43,5 +43,8 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           known_hosts: 'placeholder'
 
+      - name: Adding Known Hosts
+        run: ssh-keyscan -H ${{ secrets.SSH_HOST }} >> ~/.ssh/known_hosts
+
       - name: Deploy with rysnc
         run: rsync -avz --delete public/ eyalkut@pcdscit2.services.brown.edu:~/var/www/html/projects/u2egypt
