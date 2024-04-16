@@ -2,7 +2,7 @@
 <script>
 let map = L.map('map', {
     minZoom: 5,
-    attributionControl: false,
+    //attributionControl: false,
     zoomControl: true,
 }).setView([29, 31], 7);
 const basemaps = {
@@ -49,7 +49,7 @@ bdroverlay.on('click', function(d) {
 
 });
 var rect = L.polygon(fakeBounds, {fillOpacity: 0.1,color: "red"});
-var laurel = L.layerGroup([rect,bdroverlay]);
+var laurel = L.layerGroup([bdroverlay]);
 /*var rect2 = L.polygon([
     [26.59, 32.11],
     [27.503, 31.22],
