@@ -1,4 +1,4 @@
-baseURL = 'https://cds.library.brown.edu/projects/u2egypt/public/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'U2 Aerial Photography of Egypt'
 theme = 'starter'
