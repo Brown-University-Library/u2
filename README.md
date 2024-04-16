@@ -6,7 +6,7 @@ Our aim is to make these images publicly available via a website that shows thei
 
 # Specs
 
-This site is built in Hugo. The development environment requires VPN to access; to deploy updates on dev, push to the `dev` branch. The production environment is u2egypt.brown.edu on the pcdsit2 server; to deploy updates on prod, push to the `main` branch. Both servers do a [`sparse-checkout`](https://mustafas.work/efficiently-accessing-specific-files-in-github-repositories-a-guide-to-sparse-checkouts) of the `public` folder.
+This site is built in Hugo. The development environment requires VPN to access. The production environment is u2egypt.brown.edu on the pcdsit2 server; to deploy updates on prod, push to the `main` branch.
 
 ## Dependencies
 
@@ -18,7 +18,7 @@ To embed a BDR item using Mirador, use the following shortcode:
 ```
 {{< mirador "1234" >}}
 ```
-where 1234 is the _numeric_ value for a BDR PID, e.g., the item at https://repository.library.brown.edu/studio/item/bdr:89322/ would be rendered with `{{< mirador "89322">}}`. Multiple Mirador embeds can be included in a given page.
+where 1234 is the _numeric_ value for a BDR PID, e.g., the item at https://repository.library.brown.edu/studio/item/bdr:89322/ would be rendered with `{{< mirador "89322" >}}`. Multiple Mirador embeds can be included in a given page.
 
 To compate two images _of equal dimensions_:
 ```
@@ -28,5 +28,5 @@ The shortcode assumes the images are page resources. Multiple image comparisons 
 
 # To-dos
 
-- change dev BDR server URLs to prod
-- write geojson for the BDR items including BDR pids, apply to mar
+- write geojson for the BDR items including BDR pids
+- add the https://github.com/IvanSanchez/Leaflet.ImageOverlay.Rotated plugin
