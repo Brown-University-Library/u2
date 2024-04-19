@@ -1,16 +1,14 @@
-This project aims to digitize a series of recently declassified aerial photographs that document the Nile Delta and Nile Valley. Shot by U2 spy planes, this imagery provides much higher resolution images than any currently available imagery (for instance the CORONA satellite imagery that has revolutionized archaeology in this area in the past two decades), and shows the landscape prior to the construction of the Aswan High Dam.
+The U2 Egypt project aims to digitize a series of recently declassified aerial photographs that document the Nile Delta and Nile Valley. Shot by U2 spy planes, this imagery provides much higher resolution images than any currently available imagery (for instance the CORONA satellite imagery that has revolutionized archaeology in this area in the past two decades), and shows the landscape prior to the construction of the Aswan High Dam.
 
-Given the relatively early date of the imagery, there is excellent potential for site discovery and heritage mapping—these images provide an invaluable view of a landscape prior to the extensive expansion of agriculture and urban development in Egypt that, over the past six decades, has significantly altered the ability to see earlier material remains. For those archaeologists interested in landscape studies or tracing settlement patterns, these aerial photos have significant potential to offer valuable insights. For researchers seeking to identify damaged or threatened cultural heritage sites the U2 imagery will be a valuable tool to support a variety of research efforts across and beyond the Egyptological community.
-
-Our aim is to make these images publicly available via a website that shows their location and how to download them from a digital repository. This project seeks to make these high resolution images free for any interested researchers and the general public.
+This repo contains the website which contextualizes the images, provides gepgraphical information about them, and describes the project.
 
 # Specs
 
-This site is built in Hugo. The development environment requires VPN to access. The production environment is u2egypt.brown.edu on the pcdsit2 server; to deploy updates on prod, push to the `main` branch.
+This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production -D --minify --cleanDestinationDir```.
 
 ## Dependencies
 
-The image comparison functionality is by https://github.com/cloudfour/image-compare. The map is built with [Leaflet](https://leafletjs.com) and a bunch of plugins.
+The image comparison functionality is by [@cloudfour](https://github.com/cloudfour/image-compare). The map is built with [Leaflet](https://leafletjs.com) and a number of plugins.
 
 ## Custom shortcodes
 

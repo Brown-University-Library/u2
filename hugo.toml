@@ -2,3 +2,5 @@ baseURL = '/'
 languageCode = 'en-us'
 title = 'U2 Aerial Photography of Egypt'
 theme = 'starter'
+
+disableKinds = ['taxonomy', 'term']
