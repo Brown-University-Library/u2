@@ -24,36 +24,73 @@ const basemaps = {
 basemaps.Satellite.addTo(map);
 
 let gizaBounds = [
-[29.9070611, 31.1729777],
-[29.953398, 31.2082994],
-[30.0149837, 31.1033762],
-[29.9559353, 31.0795888]
+    [29.9070611, 31.1729777],
+    [29.953398, 31.2082994],
+    [30.0149837, 31.1033762],
+    [29.9559353, 31.0795888]
 ];
+// api
+//let bdroverlay = L.imageOverlay("https://repository.library.brown.edu/studio/thumbnail/bdr:6cnew3p2", gizaBounds, { opacity: 0.75, interactive: true });
+// local manipulated img
 let bdroverlay = L.imageOverlay("/804/warped.png",[gizaBounds], {opacity:0.75, interactive: true});
+let rect = L.polygon(gizaBounds, { fillOpacity: 0, color: "red" });
+rect.on('click', function(b) {
+    event.preventDefault(); //to avoid changes the current page url
+    window.open('https://repository.library.brown.edu/viewers/mirador/bdr:6cnew3p2/'); //the behavior is defined by the browser and user options
+    return false; // prevents the default action associated with the event
 
-let rect = L.polygon(gizaBounds, {fillOpacity: 0, color: "red"});
-let laurel = L.layerGroup([rect, bdroverlay]);
+});
+let laurel = L.featureGroup([rect, bdroverlay]);
+
+let box = {
+    "color": "purple",
+    "weight": 2,
+    "fillOpacity": 0,
+};
+let combo = L.featureGroup();
+let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
+    // build each polygon
+    onEachFeature: function(feature, layer) {
+        let pid = feature.properties.pid;
+        let geoArray = feature.geometry.coordinates;
+
+        if (pid.startsWith('bdr')) {
+            let bdrViewer = "https://repository.library.brown.edu/studio/item/" + pid;
+            let bdrThumb = "https://repository.library.brown.edu/studio/thumbnail/" + pid;
+
+            // draw the outline
+            layer.setStyle(box);
+            // add the image overlay
+            let overlay = L.imageOverlay(bdrThumb, layer.getBounds(), { interactive: true });
+            // group the outline and overlay
+            overlay.addTo(combo);
+            layer.addTo(combo);
+
+
+            // send user to BDR on click
+            combo.on('click', function(c) {
+                event.preventDefault(); //to avoid changes the current page url
+                window.open(bdrViewer); //the behavior is defined by the browser and user options
+                return false; // prevents the default action associated with the event)
+            });
+        }
+    }
+});
 
 // establish the overlays
 let overlayMaps = {
-    "Giza pyramids": laurel
+    "Giza pyramids": laurel,
+    "stack": combo
 };
 
 // Allow user to choose what overlays to display
 const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
 
 // Provide coordinates of mouse
-let c = new L.Control.Coordinates({position:'topright'});
-
+let c = new L.Control.Coordinates({ position: 'topright' });
 c.addTo(map);
-
 map.on('click', function(a) {
-    c.setCoordinates(e);
+    c.setCoordinates(a);
 });
-rect.on('click', function(b) {
-    event.preventDefault(); //to avoid changes the current page url
-        window.open('https://repository.library.brown.edu/viewers/mirador/bdr:6cnew3p2/');//the behavior is defined by the browser and user options
-        return false;// prevents the default action associated with the event
 
-});
 </script>
