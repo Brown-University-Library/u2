@@ -3,3 +3,6 @@
 {{ .Content }}
 
 {{ partial "footer.html" . }}
+
+{{ $leaflet := resources.Get "js/leaflet.js" -}}
+<script defer src="{{ $leaflet.RelPermalink }}"></script>

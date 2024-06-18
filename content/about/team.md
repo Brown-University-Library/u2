@@ -11,8 +11,6 @@ Khanh Vo, Project Lead
 
 Mairelys Lemus-Rojas, Metadata Specialist
 
-Patrick Rashleigh
-
 Elizabeth Yalkut, Front-end Developer
 
 Justin Uhr, BDR Specialist

@@ -1,5 +1,3 @@
-<div id="map"></div>
-<script>
 let map = L.map('map', {
     minZoom: 5,
     //attributionControl: false,
@@ -32,27 +30,47 @@ let gizaBounds = [
 // api
 //let bdroverlay = L.imageOverlay("https://repository.library.brown.edu/studio/thumbnail/bdr:6cnew3p2", gizaBounds, { opacity: 0.75, interactive: true });
 // local manipulated img
-let bdroverlay = L.imageOverlay("/804/warped.png",[gizaBounds], {opacity:0.75, interactive: true});
-let rect = L.polygon(gizaBounds, { fillOpacity: 0, color: "red" });
-rect.on('click', function(b) {
+//let bdroverlay = L.imageOverlay("/804/warped.png",[gizaBounds], {opacity:0.75, interactive: true});
+//let rect = L.polygon(gizaBounds, { fillOpacity: 0, color: "red" });
+/*rect.on('click', function(b) {
     event.preventDefault(); //to avoid changes the current page url
     window.open('https://repository.library.brown.edu/viewers/mirador/bdr:6cnew3p2/'); //the behavior is defined by the browser and user options
     return false; // prevents the default action associated with the event
 
 });
 let laurel = L.featureGroup([rect, bdroverlay]);
-
+*/
 let box = {
-    "color": "purple",
+    "color": "red",
     "weight": 2,
     "fillOpacity": 0,
 };
+
+let flightLayer = L.featureGroup();
+let flightPaths = new L.GeoJSON.AJAX("/flights.geojson", {
+    onEachFeature: function(feature,layer) {
+        let mission = feature.properties.mission;
+        //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+        layer.bindPopup("Mission # " + mission);
+        //.setStyle({"color": randomColor})
+        layer.setStyle({"color": "red"});
+        layer.addTo(flightLayer);
+    }
+})
+
 let combo = L.featureGroup();
 let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
     // build each polygon
     onEachFeature: function(feature, layer) {
         let pid = feature.properties.pid;
         let geoArray = feature.geometry.coordinates;
+        // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay. why? no one knows.
+        let first = geoArray[0][0].reverse();
+        let second = geoArray[0][1].reverse();
+        let third = geoArray[0][2].reverse();
+        let bottomleft = L.latLng(first),
+            topleft = L.latLng(second),
+            topright = L.latLng(third);
 
         if (pid.startsWith('bdr')) {
             let bdrViewer = "https://repository.library.brown.edu/studio/item/" + pid;
@@ -60,12 +78,15 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
 
             // draw the outline
             layer.setStyle(box);
-            // add the image overlay
-            let overlay = L.imageOverlay(bdrThumb, layer.getBounds(), { interactive: true });
-            // group the outline and overlay
-            overlay.addTo(combo);
-            layer.addTo(combo);
+            // add the image overlay; if the bounding box is not a rectangle, it will not fit
+            //let overlay = L.imageOverlay(bdrThumb, layer.getBounds(), {opacity: 1, interactive: true, className: pid });
+            // rotate the overlay
+            let rotation  = L.imageOverlay.rotated(bdrThumb, topleft, topright, bottomleft, {opacity: 1, interactive: true });
 
+            // group the outline and overlay
+            //overlay.addTo(combo);
+            rotation.addTo(combo);
+            layer.addTo(combo);
 
             // send user to BDR on click
             combo.on('click', function(c) {
@@ -79,7 +100,8 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
 
 // establish the overlays
 let overlayMaps = {
-    "Giza pyramids": laurel,
+    //"Giza pyramids": laurel,
+    "flights": flightLayer,
     "stack": combo
 };
 
@@ -92,5 +114,3 @@ c.addTo(map);
 map.on('click', function(a) {
     c.setCoordinates(a);
 });
-
-</script>

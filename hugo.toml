@@ -4,3 +4,10 @@ title = 'U2 Aerial Photography of Egypt'
 theme = 'starter'
 
 disableKinds = ['taxonomy', 'term']
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+		footnote = true
+    [markup.goldmark.renderer]
+      unsafe = true
