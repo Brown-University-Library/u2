@@ -1,6 +1,6 @@
 +++
 title = 'Essays'
-date = 2024-02-09T20:41:55-05:00
-draft = true
+date = 2024-03-27T13:26:16-04:00
+draft = false
 menu = 'main'
 +++
