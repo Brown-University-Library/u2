@@ -21,7 +21,7 @@ const basemaps = {
 };
 basemaps.Satellite.addTo(map);
 
-let gizaBounds = [
+/*let gizaBounds = [
     [29.9070611, 31.1729777],
     [29.953398, 31.2082994],
     [30.0149837, 31.1033762],
@@ -102,7 +102,7 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
 let overlayMaps = {
     //"Giza pyramids": laurel,
     "flights": flightLayer,
-    "stack": combo
+    "images": combo
 };
 
 // Allow user to choose what overlays to display

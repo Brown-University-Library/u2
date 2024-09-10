@@ -34,3 +34,5 @@ menu = "main"
   <dd><img src="https://picsum.photos/180/100?grayscale&blur=5&random=14" alt=""></dd>
   <dd><img src="https://repository.library.brown.edu/iiif/image/bdr:njujxveu/full/!180,100/0/default.jpg" alt=""></dd>
 </dl>
+Here's an example query that gets images from within a 1 hour period and returns their pid and timestamp (of course you could just leave the 'fl' flag off and return everything):
+https://repository.library.brown.edu/api/search/?q=rel_is_member_of_collection_ssim:%22bdr:88np2gke%22%20AND%20timestamp:%5B2024-07-12T19:36:09.252Z%20TO%202024-07-12T20:36:09.252Z%5D&fl=pid,timestamp
