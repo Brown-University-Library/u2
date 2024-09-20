@@ -47,11 +47,11 @@ let box = {
 };
 
 let flightLayer = L.featureGroup();
-let flightPaths = new L.GeoJSON.AJAX("/flights.geojson", {
+let flightPaths = new L.GeoJSON.AJAX("/B8649_flightpath.geojson", {
     onEachFeature: function(feature,layer) {
-        let mission = feature.properties.mission;
+        let mission = feature.properties.MISSION;
         //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
-        layer.bindPopup("Mission # " + mission);
+        layer.bindPopup("Mission #" + mission);
         //.setStyle({"color": randomColor})
         layer.setStyle({"color": "red"});
         layer.addTo(flightLayer);
@@ -101,8 +101,8 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
 // establish the overlays
 let overlayMaps = {
     //"Giza pyramids": laurel,
-    "flights": flightLayer,
-    "stack": combo
+    "Flights": flightLayer,
+    "Giza": combo
 };
 
 // Allow user to choose what overlays to display
