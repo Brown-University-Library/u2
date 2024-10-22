@@ -6,7 +6,9 @@
         "type": "Feature",
         "properties":
         {
-            "pid": "bdr:6cnew3p2"
+            "pid": "bdr:6cnew3p2",
+            "mods_dateCreated_start_ssim": "1959-10-30T06:30:49"
+
         },
         "geometry":
         {
@@ -17,6 +19,48 @@
                     [31.2082994, 29.953398],
                     [31.1033762, 30.0149837],
                     [31.0795888, 29.9559353]
+                ]
+            ]
+        }
+    },
+    {
+
+        "type": "Feature",
+        "properties":
+        {
+            "pid": "bdr:xmd7svdj",
+            "mods_dateCreated_start_ssim": "1959-10-30T05:57:49"
+        },
+        "geometry":
+        {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [31.215932, 29.871833],
+                    [31.215814, 29.870684],
+                    [31.217305, 29.870549],
+                    [31.217418, 29.871707]
+                ]
+            ]
+        }
+    },
+{
+
+        "type": "Feature",
+        "properties":
+        {
+            "pid": "bdr:mggnubq4",
+            "mods_dateCreated_start_ssim": "1959-10-30T07:13:50"
+        },
+        "geometry":
+        {
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [31.208056,29.806389],
+                    [31.222778, 29.805556],
+                    [31.220833, 29.761667],
+                    [31.2046, 29.7608]
                 ]
             ]
         }

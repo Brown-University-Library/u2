@@ -63,6 +63,9 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
     // build each polygon
     onEachFeature: function(feature, layer) {
         let pid = feature.properties.pid;
+        let isoDate = feature.properties.mods_dateCreated_start_ssim;
+            isoDate = new Date(isoDate);
+        let timestamp = isoDate.getHours()+':' + isoDate.getMinutes() + ':'+isoDate.getSeconds();
         let geoArray = feature.geometry.coordinates;
         // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay. why? no one knows.
         let first = geoArray[0][0].reverse();
@@ -84,12 +87,14 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
             let rotation  = L.imageOverlay.rotated(bdrThumb, topleft, topright, bottomleft, {opacity: 1, interactive: true });
 
             // group the outline and overlay
-            //overlay.addTo(combo);
             rotation.addTo(combo);
             layer.addTo(combo);
 
+            // timestamp on hover
+            layer.bindTooltip(pid + "<br>" + timestamp);
+
             // send user to BDR on click
-            combo.on('click', function(c) {
+            layer.on('click', function(c) {
                 event.preventDefault(); //to avoid changes the current page url
                 window.open(bdrViewer); //the behavior is defined by the browser and user options
                 return false; // prevents the default action associated with the event)
@@ -101,13 +106,8 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
 // establish the overlays
 let overlayMaps = {
     //"Giza pyramids": laurel,
-<<<<<<< HEAD
     "Flights": flightLayer,
     "Giza": combo
-=======
-    "flights": flightLayer,
-    "images": combo
->>>>>>> timeline
 };
 
 // Allow user to choose what overlays to display
