@@ -21,12 +21,6 @@ const basemaps = {
 };
 basemaps.Satellite.addTo(map);
 
-let gizaBounds = [
-    [29.9070611, 31.1729777],
-    [29.953398, 31.2082994],
-    [30.0149837, 31.1033762],
-    [29.9559353, 31.0795888]
-];
 // api
 //let bdroverlay = L.imageOverlay("https://repository.library.brown.edu/studio/thumbnail/bdr:6cnew3p2", gizaBounds, { opacity: 0.75, interactive: true });
 // local manipulated img
@@ -58,13 +52,14 @@ let flightPaths = new L.GeoJSON.AJAX("/B8649_flightpath.geojson", {
     }
 })
 
-let combo = L.featureGroup();
+/*let combo = L.featureGroup();
 let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
     // build each polygon
     onEachFeature: function(feature, layer) {
         let pid = feature.properties.pid;
         let geoArray = feature.geometry.coordinates;
-        // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay. why? no one knows.
+        // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay.
+        // why? no one knows.
         let first = geoArray[0][0].reverse();
         let second = geoArray[0][1].reverse();
         let third = geoArray[0][2].reverse();
@@ -97,12 +92,27 @@ let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
         }
     }
 });
+*/
+
+let bounding_boxes = L.featureGroup();
+let bboxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
+    // build each polygon
+    onEachFeature:function(feature,layer) {
+        // draw the outline
+        layer.setStyle(box);
+        layer.bindPopup("Frame: " + feature.properties.Frame);
+
+        layer.addTo(bounding_boxes);
+
+    }
+
+});
 
 // establish the overlays
 let overlayMaps = {
-    //"Giza pyramids": laurel,
     "Flights": flightLayer,
-    "Giza": combo
+    //"Demo": combo,
+    "Bounding boxes": bounding_boxes
 };
 
 // Allow user to choose what overlays to display
