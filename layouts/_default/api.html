@@ -6,21 +6,24 @@
 
 {{ $data := "" }}
 <!--{{ $url := "https://repository.library.brown.edu/api/collections/bdr:88np2gke" }}-->
-{{ $url := "https://repository.library.brown.edu/api/search/?q=rel_is_member_of_collection_ssim:%22bdr:88np2gke%22&fl=pid,dateCreated&sort=dateCreated+asc" }}
-{{ with resources.GetRemote $url }}
+{{ $url := "https://repository.library.brown.edu/api/search/?q=rel_is_member_of_collection_ssim:%22bdr:88np2gke%22&fl=pid,dateCreated,mods_dateCreated_start_ssim" }}
+{{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
     {{ errorf "%s" . }}
-  {{ else }}
+  {{ else with .Value }}
     {{ $data = . | transform.Unmarshal }}
 <dl>
 {{ range $artifacts := $data.response.docs }}
-  {{ $t := time.AsTime $artifacts.dateCreated}}
-  <dt>{{ $t.Format "Jan 02, 2006 3:04 PM" }}</dt>
+  {{ $stamp := time.AsTime $artifacts.dateCreated }}
+  <dt>{{ $stamp.Format "Jan 02, 2006" }}</dt>
   <dd><a href='https://repository.library.brown.edu/studio/item/{{ $artifacts.pid }}'><img src="https://repository.library.brown.edu/iiif/image/{{$artifacts.pid}}/full/!360,360/0/default.jpg" /></a></dd>
 {{ end }}
 </dl>
 
   {{ end }}
+
+  <pre>{{ debug.Dump $data.response.docs }}</pre>
+
 
 {{ else }}
   {{ errorf "Unable to get remote resource %q " $url }}
