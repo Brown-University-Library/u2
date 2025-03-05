@@ -43,47 +43,6 @@ let flightPaths = new L.GeoJSON.AJAX("/B8649_flightpath.geojson", {
     }
 })
 
-/*let combo = L.featureGroup();
-let bdrjson = new L.GeoJSON.AJAX("/bdr.geojson", {
-    // build each polygon
-    onEachFeature: function(feature, layer) {
-        let pid = feature.properties.pid;
-        let geoArray = feature.geometry.coordinates;
-        // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay.
-        // why? no one knows.
-        let first = geoArray[0][0].reverse();
-        let second = geoArray[0][1].reverse();
-        let third = geoArray[0][2].reverse();
-        let bottomleft = L.latLng(first),
-            topleft = L.latLng(second),
-            topright = L.latLng(third);
-
-        if (pid.startsWith('bdr')) {
-            let bdrViewer = "https://repository.library.brown.edu/studio/item/" + pid;
-            let bdrThumb = "https://repository.library.brown.edu/studio/thumbnail/" + pid;
-            layer.bindPopup(pid);
-            // draw the outline
-            layer.setStyle(box);
-            // add the image overlay; if the bounding box is not a rectangle, it will not fit
-            //let overlay = L.imageOverlay(bdrThumb, layer.getBounds(), {opacity: 1, interactive: true, className: pid });
-            // rotate the overlay
-            let rotation  = L.imageOverlay.rotated(bdrThumb, topleft, topright, bottomleft, {opacity: 1, interactive: true });
-
-            // group the outline and overlay
-            //overlay.addTo(combo);
-            rotation.addTo(combo);
-            layer.addTo(combo);
-
-            // send user to BDR on click
-            combo.on('click', function(c) {
-                event.preventDefault(); //to avoid changes the current page url
-                window.open(bdrViewer); //the behavior is defined by the browser and user options
-                return false; // prevents the default action associated with the event)
-            });
-        }
-    }
-});*/
-
 
 let bdr = L.featureGroup();
 let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
@@ -102,10 +61,17 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
         let second = geoArray[0][0][1].reverse();
         let third = geoArray[0][0][3].reverse();
         
+        // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
         let image = L.imageOverlay.rotated(bdrThumb, first, second, third, {opacity:0.5, interactive: true});
         image.addTo(bdr);
-        
         layer.addTo(bdr).setStyle(box);
+
+        // send user to BDR item on click
+        layer.on('click', function(c) {
+            event.preventDefault(); //to avoid changes the current page url
+            window.open(bdrViewer); //the behavior is defined by the browser and user options
+            return false; // prevents the default action associated with the event)
+        });
     }
 });
 
@@ -113,7 +79,6 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
 // establish the overlays
 let overlayMaps = {
     "Flights": flightLayer,
-    //"Demo": combo,
     "MVP": bdr
 };
 // Allow user to choose what overlays to display
