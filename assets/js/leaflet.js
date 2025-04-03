@@ -1,8 +1,7 @@
 let map = L.map('map', {
     minZoom: 5,
     maxZoom: 20,
-    //attributionControl: false,
-    zoomControl: true,
+    zoomControl: true
 }).setView([30.407, 30.368], 8);
 const basemaps = {
     Topo: L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
@@ -25,11 +24,8 @@ basemaps.Satellite.addTo(map);
 let box = {
     "color": "red",
     "weight": 2,
-    "fillOpacity": 0,
+    "fillOpacity": 0
 };
-let highlight = {
-    "color": "yellow",
-}
 
 let flightLayer = L.featureGroup();
 let flightPaths = new L.GeoJSON.AJAX("/B8649_flightpath.geojson", {
@@ -67,7 +63,7 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
         layer.addTo(bdr).setStyle(box);
 
         // send user to BDR item on click
-        layer.on('click', function(c) {
+        layer.on('click', function() {
             event.preventDefault(); //to avoid changes the current page url
             window.open(bdrViewer); //the behavior is defined by the browser and user options
             return false; // prevents the default action associated with the event)
@@ -79,7 +75,7 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
 // establish the overlays
 let overlayMaps = {
     "Flights": flightLayer,
-    "MVP": bdr
+    "Images": bdr
 };
 // Allow user to choose what overlays to display
 const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
