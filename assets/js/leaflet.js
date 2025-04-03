@@ -33,26 +33,42 @@ let highlight = {
 
 let flightLayer = L.featureGroup();
 let flightPaths = new L.GeoJSON.AJAX("/B8649_flightpath.geojson", {
-    onEachFeature: function(feature,layer) {
+    onEachFeature: function (feature, layer) {
         let mission = feature.properties.MISSION;
         //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
         layer.bindPopup("Mission #" + mission);
         //.setStyle({"color": randomColor})
-        layer.setStyle({"color": "red"});
+        layer.setStyle({ "color": "red" });
         layer.addTo(flightLayer);
     }
 })
 
+function seeLayers(e) {
+    map.fitBounds(e.target.getBounds());
+    var point = turf.point([e.latlng.lng, e.latlng.lat]);
+    var content = '';
+    polygons.eachLayer(function (layer) {
+        var feature = layer.feature;
+        if (turf.booleanPointInPolygon(point, feature)) {
+            content += "<p>" + point + "</p>";
+        }
+    });
+    L.showPopover()
+        .setLatLng(e.latlng)
+        .setContent(content)
+        .openOn(map);
+
+}
 
 let bdr = L.featureGroup();
 let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
-    onEachFeature:function(feature,layer) {
+    onEachFeature: function (feature, layer) {
         // get BDR pid for each set of coordinates so we can grab the image from there; we don't need hi-res images here 
         let pid = feature.properties.pid;
         let bdrThumb = "https://repository.library.brown.edu/studio/thumbnail/" + pid;
         // link to BDR item
         let bdrViewer = "https://repository.library.brown.edu/studio/item/" + pid;
-        
+
         let geoArray = feature.geometry.coordinates;
         // we have to take the arrays of coordinates from the geojson and flip them to be lon/lat for the rotated image overlay.
         // why? no one knows. why is it 1-3-2? again: no one knows. the imageOverlayRotated plugin calls the required coordinates
@@ -60,18 +76,24 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
         let first = geoArray[0][0][0].reverse();
         let second = geoArray[0][0][1].reverse();
         let third = geoArray[0][0][3].reverse();
-        
+
         // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
-        let image = L.imageOverlay.rotated(bdrThumb, first, second, third, {opacity:0.5, interactive: true});
+        let image = L.imageOverlay.rotated(bdrThumb, first, second, third, { opacity: 0.5, interactive: true });
         image.addTo(bdr);
         layer.addTo(bdr).setStyle(box);
 
+        // show popup on mouseover
+        layer.on('click', function (e) {
+            seeLayers;
+            //console.log(pid);
+        });
+
         // send user to BDR item on click
-        layer.on('click', function(c) {
+        /*layer.on('click', function (c) {
             event.preventDefault(); //to avoid changes the current page url
             window.open(bdrViewer); //the behavior is defined by the browser and user options
             return false; // prevents the default action associated with the event)
-        });
+        });*/
     }
 });
 
@@ -79,7 +101,7 @@ let boxes = new L.GeoJSON.AJAX("/bbox_sample.geojson", {
 // establish the overlays
 let overlayMaps = {
     "Flights": flightLayer,
-    "MVP": bdr
+    "Images": bdr
 };
 // Allow user to choose what overlays to display
 const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false, position: 'topright' }).addTo(map);
@@ -87,6 +109,6 @@ const layerControl = L.control.layers(basemaps, overlayMaps, { collapsed: false,
 // Provide coordinates of mouse
 let c = new L.Control.Coordinates({ position: 'topright' });
 c.addTo(map);
-map.on('click', function(a) {
+map.on('click', function (a) {
     c.setCoordinates(a);
 });
