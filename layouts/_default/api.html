@@ -6,10 +6,10 @@
 
 {{ $data := "" }}
 {{ $url := "https://repository.library.brown.edu/api/collections/bdr:88np2gke" }}
-{{ with resources.GetRemote $url }}
+{{ with try (resources.GetRemote $url) }}
   {{ with .Err }}
     {{ errorf "%s" . }}
-  {{ else }}
+  {{ else with .Value }}
     {{ $data = . | transform.Unmarshal }}
 <ul>
 {{ range $artifacts := $data.items.docs }}
