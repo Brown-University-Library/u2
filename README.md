@@ -4,7 +4,7 @@ This repo contains the website which contextualizes the images, provides gepgrap
 
 # Specs
 
-This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production -D --minify --cleanDestinationDir```.
+This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production --minify --cleanDestinationDir```.
 
 ## Dependencies
 
@@ -26,5 +26,4 @@ The shortcode assumes the images are page resources. Multiple image comparisons 
 
 # To-dos
 
-- write geojson for the BDR items including BDR pids
-- add the https://github.com/IvanSanchez/Leaflet.ImageOverlay.Rotated plugin
+- map click should find the containing polygons and open tabs for each BDR item
