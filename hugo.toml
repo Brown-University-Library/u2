@@ -11,3 +11,9 @@ disableKinds = ['taxonomy', 'term']
 		footnote = true
     [markup.goldmark.renderer]
       unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = 'Brown Digital Repository'
+    url = 'https://repository.library.brown.edu/studio/collections/bdr:88np2gke/'
+    weight = 100
