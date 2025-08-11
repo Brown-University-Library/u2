@@ -113,3 +113,8 @@ footer {
         border: solid 1rem var(--main-color);
     }
 }
+
+/* MAP */
+.leaflet-popup-content ul {
+    padding-left: 1em;
+}
