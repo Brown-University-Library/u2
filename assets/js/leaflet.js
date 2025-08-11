@@ -77,13 +77,13 @@ async function getBdrData() {
 
 // create map popup from BDR-PID list
 
-function createPopup(bdrPIDs, clickCoords, map, L) {
+function createPopup(photoMeta, clickCoords, map, L) {
   const popupContent =
     "<p>Linked BDR pages:</p><ul>" +
-    bdrPIDs.map(
-      (pid) =>
-        `<li><a href="${BDR_URL_STEM}/${pid}">Check out ${pid}</a></li>`
-    ) +
+    photoMeta.map(
+      (photo) =>
+        `<li>Frame ${photo.frame}: <a href="${BDR_URL_STEM}/${photo.pid}">Check out ${photo.pid}</a></li>`
+    ).join("") +
     "</ul>";
 
   L.popup(clickCoords, { content: popupContent }).openOn(map);
@@ -101,16 +101,20 @@ function mapClickHandler(a, coordControl, json, map, L) {
 
   // Filter BDR items for those that fall under the click;
   // extract PIDs
-
-  const bdrPIDs = json.features
+  const photoMeta = json.features
     .filter((feature) => {
       const featureBox = feature.geometry.coordinates,
         featurePolygon = turf.multiPolygon(featureBox);
       return turf.booleanPointInPolygon(turfClickCoords, featurePolygon);
     })
-    .map((feature) => feature.properties.pid);
-  if (bdrPIDs.length) {
-    createPopup(bdrPIDs, [lat, lng], map, L);
+    .map((feature) => {
+      return {
+      pid: feature.properties.pid,
+      frame: feature.properties.Frame}
+    });
+  // only show the popup if the click is in a box
+  if (photoMeta.length) {
+    createPopup(photoMeta, [lat, lng], map, L);
   }
 }
 
@@ -144,7 +148,7 @@ async function initializeMap() {
 
   let bdr = L.featureGroup();
   let boxes = new L.GeoJSON.AJAX(
-    "https://assets.codepen.io/65525/bbox_sample.geojson",
+    "/bbox_sample.geojson",
     {
       onEachFeature: function (feature, layer) {
         // get BDR pid for each set of coordinates so we can grab
