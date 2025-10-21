@@ -25,5 +25,3 @@ To compate two images _of equal dimensions_:
 The shortcode assumes the images are page resources. Multiple image comparisons can be included in a given page.
 
 # To-dos
-
-- map click should find the containing polygons and open tabs for each BDR item
