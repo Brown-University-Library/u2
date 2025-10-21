@@ -1,8 +1,8 @@
 // Constants
 
-const BDR_URL_STEM = "https://repository.library.brown.edu/studio",
-  BDR_URL_ITEM_STEM = `${BDR_URL_STEM}/item`,
-  BDR_URL_THUMB_STEM = `${BDR_URL_STEM}/thumbnail`,
+const BDR_URL_STEM = "https://repository.library.brown.edu",
+  BDR_URL_ITEM_STEM = `${BDR_URL_STEM}/studio/item`,
+  BDR_URL_THUMB_STEM = `${BDR_URL_STEM}/viewers/image/thumbnail`,
   FLIGHTPATH_DATA_URL =
     "/B8649_flightpath.geojson";
 
