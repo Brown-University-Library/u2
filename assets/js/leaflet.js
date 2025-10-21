@@ -82,7 +82,7 @@ function createPopup(photoMeta, clickCoords, map, L) {
     "<p>Linked BDR pages:</p><ul>" +
     photoMeta.map(
       (photo) =>
-        `<li>Frame ${photo.frame}: <a href="${BDR_URL_STEM}/${photo.pid}">Check out ${photo.pid}</a></li>`
+        `<li>Frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}">Check out ${photo.pid}</a></li>`
     ).join("") +
     "</ul>";
 
