@@ -138,14 +138,21 @@ async function initializeMap() {
 
   const flightLayer = initializeFlightPaths(L);
 
-  // Add photo boxes
-
+  // Style photo boxes
   let boxStyle = {
     weight: 2,
     fillOpacity: 0,
   };
 
-
+  // a key for the canister colors
+  let canisterKey = "<ul><li><input type=\"color\" value=\"#a3bc7e\" disabled /> Canister 5813</li><li><input type=\"color\" value=\"#d99c91\" disabled /> Canister 5812</li><li><input type=\"color\" value=\"#c75037\" disabled /> Canister 5796</li></ul>";
+  let canisterLegend = new L.control({ position: "bottomright" });
+  canisterLegend.onAdd = function (map) {
+    let div = L.DomUtil.create('div', 'info legend');
+    div.innerHTML += canisterKey;
+    return div;
+  }
+  canisterLegend.addTo(map);
 
   let bdr = L.featureGroup();
   let boxes = new L.GeoJSON.AJAX(
@@ -160,13 +167,13 @@ async function initializeMap() {
 
         // grab the canister number so we can color-code
         switch (feature.properties.Canister) {
-          case "5813":
+          case 5813:
             layer.setStyle({ color: '#a3bc7e' });
             break;
-          case "5812":
+          case 5812:
             layer.setStyle({ color: '#d99c91' });
             break;
-          case "5796":
+          case 5796:
             layer.setStyle({ color: '#c75037' });
             break;
           default:
@@ -198,7 +205,8 @@ async function initializeMap() {
         image.addTo(bdr);
         layer.addTo(bdr).setStyle(boxStyle);
       },
-    }
+
+    },
   );
 
   // establish the overlays
@@ -207,7 +215,7 @@ async function initializeMap() {
     Images: bdr,
   };
   bdr.addTo(map);
-
+  
   // Allow user to choose what overlays to display
   const layerControl = L.control
     .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })

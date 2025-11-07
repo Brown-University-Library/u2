@@ -122,3 +122,13 @@ footer {
 .leaflet-popup-content ul {
     padding-left: 1em;
 }
+
+/* canister color legend */
+.legend.leaflet-control {
+    background-color: rgba(255,255,255,0.5);
+    padding: 0 0.5rem;
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+}
