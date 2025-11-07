@@ -52,7 +52,7 @@ function initializeFlightPaths(L) {
       //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
       layer.bindPopup("Mission #" + mission);
       //layer.setStyle({"color": randomColor})
-      //layer.setStyle({ "color": "red" });
+      layer.setStyle({ "color": "white" });
       layer.addTo(flightLayer);
     },
   });
@@ -62,7 +62,7 @@ function initializeFlightPaths(L) {
 // fetch BDR geojson
 
 async function getBdrData() {
-  const url = "/bbox_sample.geojson";
+  const url = "/geolocated.geojson";
   try {
     const response = await fetch(url);
     if (!response.ok) {
@@ -109,8 +109,9 @@ function mapClickHandler(a, coordControl, json, map, L) {
     })
     .map((feature) => {
       return {
-      pid: feature.properties.pid,
-      frame: feature.properties.Frame}
+        pid: feature.properties.pid,
+        frame: feature.properties.Frame
+      }
     });
   // only show the popup if the click is in a box
   if (photoMeta.length) {
@@ -130,7 +131,6 @@ async function initializeMap() {
   }).setView([30.407, 30.368], 8);
 
   // Set up basemaps
-
   const basemaps = initializeBasemaps(L);
   basemaps.Satellite.addTo(map);
 
@@ -140,15 +140,16 @@ async function initializeMap() {
 
   // Add photo boxes
 
-  const boxStyle = {
-    color: "red",
+  let boxStyle = {
     weight: 2,
     fillOpacity: 0,
   };
 
+
+
   let bdr = L.featureGroup();
   let boxes = new L.GeoJSON.AJAX(
-    "/bbox_sample.geojson",
+    "/geolocated.geojson",
     {
       onEachFeature: function (feature, layer) {
         // get BDR pid for each set of coordinates so we can grab
@@ -156,6 +157,22 @@ async function initializeMap() {
 
         let pid = feature.properties.pid;
         let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
+
+        // grab the canister number so we can color-code
+        switch (feature.properties.Canister) {
+          case "5813":
+            layer.setStyle({ color: '#a3bc7e' });
+            break;
+          case "5812":
+            layer.setStyle({ color: '#d99c91' });
+            break;
+          case "5796":
+            layer.setStyle({ color: '#c75037' });
+            break;
+          default:
+            layer.setStyle({ color: 'white' })
+        }
+
 
         // link to BDR item
 
