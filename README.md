@@ -4,7 +4,7 @@ This repo contains the website which contextualizes the images, provides gepgrap
 
 # Specs
 
-This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production --minify --cleanDestinationDir```.
+This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production --minify --cleanDestinationDir```. To deploy, you must be on VPN, and rsync files: ```rsync -avz public username@.server:/var/www/html/projects/u2egypt` replacing `username` and `server` with the correct values.
 
 ## Dependencies
 
