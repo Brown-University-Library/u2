@@ -1,10 +1,10 @@
 The U2 Egypt project aims to digitize a series of recently declassified aerial photographs that document the Nile Delta and Nile Valley. Shot by U2 spy planes, this imagery provides much higher resolution images than any currently available imagery (for instance the CORONA satellite imagery that has revolutionized archaeology in this area in the past two decades), and shows the landscape prior to the construction of the Aswan High Dam.
 
-This repo contains the website which contextualizes the images, provides gepgraphical information about them, and describes the project.
+This repo contains the website which contextualizes the images, provides geographical information about them, and describes the project.
 
 # Specs
 
-This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production --minify --cleanDestinationDir```. To deploy, you must be on VPN, and rsync files: ```rsync -avz public username@.server:/var/www/html/projects/u2egypt` replacing `username` and `server` with the correct values.
+This site is built in Hugo. The command to build the site for the development server, including drafts, is ```hugo -e development -D --minify --cleanDestinationDir -b /projects/u2egypt```. The command to build the site for production is ```hugo -e production --minify --cleanDestinationDir```. To deploy, you must be on VPN, and rsync files: ```rsync -avz public username@.server:/var/www/html/projects/u2egypt``` replacing `username` and `server` with the correct values.
 
 ## Dependencies
 
