@@ -2,6 +2,7 @@
 title = 'The B Camera'
 date = 2024-08-01T20:48:48-05:00
 draft = false
+weight = 6
 +++
 
 The two missions that overflew parts of Egypt in1959 both carried the so-called B camera, a technological marvel developed explicitly for high-altitude flights on the U2. It had cutting-edge optics and a sophisticated rocking system that allowed the camera to shoot at defined angles, moving through a set of positions in fairly rapid succession. Since nearly everything on the U2 was designed to minimize weight so that high altitudes could be achieved, a single camera that could achieve a panoramic sweep was much preferable to a setup with different cameras pointing in fixed different directions. The B camera was thus a major improvement on the previous A-2 camera, which had had three smaller cameras set into fixed positions. The B setup achieved the same coverage on the ground in terms of what was in the images, but the smaller A cameras had significantly lower resolution and were thus much less useful for reconnaissance (at the time) or archaeology (today).

@@ -80,7 +80,7 @@ body {
 /* FOOTER */
 footer {
     background-color: var(--main-color);
-    padding: 0.25rem 0;
+    padding: 0.25rem 10rem;
     text-align: center;
 }
 
