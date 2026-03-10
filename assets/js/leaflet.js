@@ -82,7 +82,7 @@ function createPopup(photoMeta, clickCoords, map, L) {
     "<p>Linked BDR pages:</p><ul>" +
     photoMeta.map(
       (photo) =>
-        `<li>Frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}">Check out ${photo.pid}</a></li>`
+        `<li>Canister ${photo.canister}, frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}" target="_blank">Check out ${photo.pid}</a></li>`
     ).join("") +
     "</ul>";
 
@@ -110,7 +110,8 @@ function mapClickHandler(a, coordControl, json, map, L) {
     .map((feature) => {
       return {
         pid: feature.properties.pid,
-        frame: feature.properties.Frame
+        frame: feature.properties.Frame,
+        canister: feature.properties.Canister
       }
     });
   // only show the popup if the click is in a box
