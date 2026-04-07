@@ -1,0 +1,38 @@
+{{ $data := dict }}
+{{ $path := "data/kiosk/docs.json" }}
+{{ with resources.Get $path }}
+  {{ with . | transform.Unmarshal }}
+    {{ $data = .u2ers_sites }}
+  {{ end }}
+{{ else }}
+  {{ errorf "Unable to get global resource %q" $path }}
+{{ end }}
+
+
+{{ range $data }}
+
+  {{ $one := .at_asnde_no }}
+
+  {{ $content := dict 
+    "mediaType" "text/html"
+    "value" $one
+  }}
+
+  {{ $params := dict 
+    "date" "2023-11-10T15:10:42-08:00"
+    "kind" "page"
+    "draft" "false"
+  }}
+
+  {{ $page := dict
+    "params" $params
+    "content" $content
+    "path" "foo"
+    "title" "boo"
+  }}
+
+
+  {{ $.AddPage $page }}
+
+
+{{ end }}

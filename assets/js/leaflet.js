@@ -4,7 +4,8 @@ const BDR_URL_STEM = "https://repository.library.brown.edu",
   BDR_URL_ITEM_STEM = `${BDR_URL_STEM}/studio/item`,
   BDR_URL_THUMB_STEM = `${BDR_URL_STEM}/viewers/image/thumbnail`,
   FLIGHTPATH_DATA_URL =
-    "/B8649_flightpath.geojson";
+    "/B8649_flightpath.geojson",
+    KIOSK_DATA = "/kiosk.geojson";
 
 // Set up basemaps
 
@@ -57,6 +58,20 @@ function initializeFlightPaths(L) {
     },
   });
   return flightLayer;
+}
+
+// init kiosk layer
+function initKiosk(L) {
+  let kioskLayer = L.featureGroup();
+  let kioskPoints = new L.GeoJSON.AJAX(KIOSK_DATA, {
+    onEachFeature: function(feature,layer) {
+      const name = feature.properties.site_name;
+      const site_id = feature.properties.site_id;
+      layer.bindPopup("<p>" + name + "</p>");
+      layer.addTo(kioskLayer);
+    }
+  });
+  return kioskLayer;
 }
 
 // fetch BDR geojson
@@ -140,6 +155,9 @@ async function initializeMap() {
   // Add flightpaths
 
   const flightLayer = initializeFlightPaths(L);
+  
+  // Add Kiosk points
+  const kioskLayer = initKiosk(L);
 
   // Style photo boxes
   let boxStyle = {
@@ -216,6 +234,7 @@ async function initializeMap() {
   let overlayMaps = {
     Flights: flightLayer,
     Images: bdr,
+    Kiosk: kioskLayer,
   };
   bdr.addTo(map);
   

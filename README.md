@@ -25,3 +25,6 @@ To compate two images _of equal dimensions_:
 The shortcode assumes the images are page resources. Multiple image comparisons can be included in a given page.
 
 # To-dos
+
+- json export -> geojson on the fly?
+- hugo content adapter to turn json into pages for the image slider https://gohugo.io/content-management/content-adapters/
