@@ -4,7 +4,7 @@
 
 {{ range $data }}
 
-{{ if .limit_view_to }}
+{{ if eq .limit_view_to nil}}
 
   {{ $content := dict 
     "mediaType" "text/html"
@@ -34,6 +34,30 @@
 
   {{ $.AddPage $page }}
 
+  {{/* adding page resources */}}
+  {{ range $k, $v := $params.images }}
+  {{ range $key, $value := $v }}
+  {{ range $clef, $val := $value }}
+  {{ range $kk, $vv := $val }}
+
+  {{ with resources.Get "{{ $vv }}.webp" }}
+    {{ $content := dict
+      "mediaType" .MediaType.Type
+      "value" .
+    }}
+    {{ $resource := dict
+      "content" $content
+      "path" "$vv.webp"
+    }}
+    {{ $.AddResource $resource }}
   {{ end }}
 
-{{ end }}
+
+  {{ end }} {{/* close range $kk */}}
+  {{ end }} {{/* close range $clef */}}
+  {{ end }} {{/* close range $key */}}
+  {{ end }} {{/* close range $k */}}
+
+  {{ end }} {{/* close if .limit_view_to */}}
+
+{{ end }} {{/* close range data */}}
