@@ -1,0 +1,32 @@
+{{ partial "header.html" . }}
+{{ define "main" }}
+{{ end }}
+<h1>{{ .Title }}</h1>
+
+{{ .Content }}
+<dl>
+{{ range $k, $v := .Params }}
+  <dt>{{ $k }}</dt>
+  <dd>{{ $v }}</dd>
+{{ end }}
+</dl>
+
+{{ range $k, $v := .Params.images }}
+{{ range $key, $value := $v }}
+{{ range $clef, $val := $value }}
+{{ range $kk, $vv := $val }}
+
+{{ with resources.Get "{{ vv }}.webp" }}
+  <img src="{{ .RelPermalink }}" width="100" alt="">
+{{ end }}
+
+<dl>
+  <dt>key: {{ $kk }}</dt>
+  <dd>value: {{ $vv }}</dd>
+</dl>
+{{ end }}
+{{ end }}
+{{ end }}
+{{ end }}
+
+{{ partial "footer.html" . }}

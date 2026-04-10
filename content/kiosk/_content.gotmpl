@@ -1,38 +1,39 @@
 {{ $data := dict }}
-{{ $path := "data/kiosk/docs.json" }}
-{{ with resources.Get $path }}
-  {{ with . | transform.Unmarshal }}
-    {{ $data = .u2ers_sites }}
-  {{ end }}
-{{ else }}
-  {{ errorf "Unable to get global resource %q" $path }}
-{{ end }}
-
+{{ $path := "kiosk/docs.json" }}
+{{ $data := resources.Get $path | transform.Unmarshal }}
 
 {{ range $data }}
 
-  {{ $one := .at_asnde_no }}
+{{ if .limit_view_to }}
 
   {{ $content := dict 
     "mediaType" "text/html"
-    "value" $one
   }}
 
   {{ $params := dict 
-    "date" "2023-11-10T15:10:42-08:00"
+    "date" "2023-10-15T13:18:50-07:00"
     "kind" "page"
     "draft" "false"
+
+    "periods" .at_periods
+    "ansde no" .at_asnde_no
+    "notes on dates" .at_dated_as
+    "condition in EES Survey" .at_condition
+    "EES reference" .at_reference
+    "Recent damage cause" .g_earth_damage_cause
+    "Recent general condition" .g_earth_general_condition
+    "images" .u2ers_site_files
   }}
 
   {{ $page := dict
-    "params" $params
+    "params" $params 
     "content" $content
-    "path" "foo"
-    "title" "boo"
+    "path" .site_id
+    "title" .site_name
   }}
-
 
   {{ $.AddPage $page }}
 
+  {{ end }}
 
 {{ end }}
