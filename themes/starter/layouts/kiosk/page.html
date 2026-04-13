@@ -11,6 +11,12 @@
 {{ end }}
 </dl>
 
-<!-- page resources go here: uid.webp + tag value -->
+{{ range $k, $v := .Params.resources }}
+{{ range $key, $value := $v }}
+<p>key: {{ $key }}</p>
+<p>value: {{ $value }}</p>
+<img src="/kiosk/{{ $value }}.webp" alt="" width="100">
+{{ end }}
+{{ end }}
 
 {{ partial "footer.html" . }}

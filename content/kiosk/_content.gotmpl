@@ -4,7 +4,22 @@
 
 {{ range $data }}
 
-{{ if eq .limit_view_to nil}}
+  {{ $images := slice}} // Create an empty array
+  {{ $files := dict 
+  "images" .u2ers_site_files
+  }}
+  {{/* getting the images */}}
+  {{ range $k, $v := $files }}
+  {{ range $key, $value := $v }}
+  {{ range $clef, $val := $value }}
+  {{ range $kk, $vv := $val }}
+  {{ range $id, $info := $val }}
+  		{{ $images = $images | append $info }}
+  {{ end }}
+  {{ end }} {{/* close range kk */}}
+  {{ end }} {{/* close range clef */}}
+  {{ end }} {{/* close range key */}}
+  {{ end }} {{/* close range k */}}
 
   {{ $content := dict 
     "mediaType" "text/html"
@@ -16,13 +31,14 @@
     "draft" "false"
 
     "periods" .at_periods
-    "ansde no" .at_asnde_no
+    "ansde #" .at_asnde_no
     "notes on dates" .at_dated_as
     "condition in EES Survey" .at_condition
     "EES reference" .at_reference
     "Recent damage cause" .g_earth_damage_cause
     "Recent general condition" .g_earth_general_condition
-    "images" .u2ers_site_files
+
+    "resources" $images
   }}
 
   {{ $page := dict
@@ -33,31 +49,5 @@
   }}
 
   {{ $.AddPage $page }}
-
-  {{/* adding page resources */}}
-  {{ range $k, $v := $params.images }}
-  {{ range $key, $value := $v }}
-  {{ range $clef, $val := $value }}
-  {{ range $kk, $vv := $val }}
-
-  {{ with resources.Get "{{ $vv }}.webp" }}
-    {{ $content := dict
-      "mediaType" .MediaType.Type
-      "value" .
-    }}
-    {{ $resource := dict
-      "content" $content
-      "path" "$vv.webp"
-    }}
-    {{ $.AddResource $resource }}
-  {{ end }}
-
-
-  {{ end }} {{/* close range $kk */}}
-  {{ end }} {{/* close range $clef */}}
-  {{ end }} {{/* close range $key */}}
-  {{ end }} {{/* close range $k */}}
-
-  {{ end }} {{/* close if .limit_view_to */}}
 
 {{ end }} {{/* close range data */}}

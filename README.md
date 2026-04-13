@@ -24,7 +24,10 @@ To compate two images _of equal dimensions_:
 ```
 The shortcode assumes the images are page resources. Multiple image comparisons can be included in a given page.
 
+# Kiosk data
+
+Someday maybe we'll script this. But fornow, when getting updated images and json from Kiosk, put everything in the `/assets/kiosk` directory. Take the `docs.json` file and convert it to CSV with https://www.convertcsv.com, and then convert to geoJSON with the same site. (This is the tool that handles the coordinates being in a single array and not separate lat/lon fields best.) Then put the geojson file in `/static`.
+
 # To-dos
 
-- json export -> geojson on the fly?
 - hugo content adapter to turn json into pages for the image slider https://gohugo.io/content-management/content-adapters/

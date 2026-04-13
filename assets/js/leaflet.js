@@ -66,8 +66,8 @@ function initKiosk(L) {
   let kioskPoints = new L.GeoJSON.AJAX(KIOSK_DATA, {
     onEachFeature: function(feature,layer) {
       const name = feature.properties.site_name;
-      const site_id = feature.properties.site_id;
-      layer.bindPopup("<p>" + name + "</p>");
+      const page = "/kiosk/" + feature.properties.site_id;
+      layer.bindPopup("<p><a href='" + page + "'>" + name + "</a></p>");
       layer.addTo(kioskLayer);
     }
   });
