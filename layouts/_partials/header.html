@@ -28,6 +28,9 @@
     {{ with .HasShortcode "compare" }}
     <script src="https://unpkg.com/@cloudfour/image-compare/dist/index.min.js"></script>
     {{ end }}
+    {{ if eq .Section "kiosk" }}  
+      <script src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/openseadragon.min.js"></script>
+    {{ end }}
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y0RT4R6KGW"></script>
     <script>
@@ -39,7 +42,7 @@
     </script>
 </head>
 
-<body>
+<body {{ if eq .Section "kiosk" }}class="kiosk"{{ end }}>
     {{ if .IsHome }}
         <div id="map"></div>
     {{- end -}}

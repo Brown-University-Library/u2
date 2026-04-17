@@ -132,3 +132,17 @@ footer {
         padding-left: 0;
     }
 }
+
+/* Kiosk pages */
+.kiosk {
+dl {
+    columns: 2;
+}
+dt {
+    font-variant: small-caps;
+}
+figure {
+    margin-left: 0;
+    display: inline-block;
+}
+}

@@ -1,22 +1,40 @@
-{{ partial "header.html" . }}
-{{ define "main" }}
-{{ end }}
+{{ partial "header.html" . }} {{ define "main" }} {{ end }}
 <h1>{{ .Title }}</h1>
 
 {{ .Content }}
 <dl>
-{{ range $k, $v := .Params }}
-  <dt>{{ $k }}</dt>
-  <dd>{{ $v }}</dd>
-{{ end }}
+  {{ range $k, $v := .Params.kiosk }}
+    {{ if $v }}
+    <dt>{{ $k }}</dt>
+    <dd>{{ $v }}</dd>
+    {{ end }}
+  {{ end }}
 </dl>
+<hr>
+{{ range $k, $v := .Params.seadragon }}
+<figure>
+  <img src="/kiosk/{{$v.uid}}.webp" alt="" class="" width="80vw" />
+  <figcaption>{{$v.tags}}</figcaption>
+</figure>
+{{ end }}
+{{ range $k, $v := .Params.seadragon }}
+<script type="text/javascript">
+  var test = {
+    image: {
+      xmlns: "http://schemas.microsoft.com/deepzoom/2008",
+      url: "/kiosk/{{$v.uid}}.webp",
+      format: "webp",
+    },
+  };
+  var viewer = OpenSeadragon({
+    id: "openseadragon",
+    prefixUrl:
+      "//cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/images/",
+    sequenceMode: true,
+    tileSources: test,
+  });
+</script>
+{{ end }}
 
-{{ range $k, $v := .Params.resources }}
-{{ range $key, $value := $v }}
-<p>key: {{ $key }}</p>
-<p>value: {{ $value }}</p>
-<img src="/kiosk/{{ $value }}.webp" alt="" width="100">
-{{ end }}
-{{ end }}
 
 {{ partial "footer.html" . }}

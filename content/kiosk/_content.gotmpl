@@ -4,32 +4,27 @@
 
 {{ range $data }}
 
-  {{ $images := slice}} // Create an empty array
+  {{ $images := slice }} // Create an empty array
   {{ $files := dict 
   "images" .u2ers_site_files
   }}
-  {{/* getting the images */}}
+  {{/* getting the various images */}}
   {{ range $k, $v := $files }}
-  {{ range $key, $value := $v }}
-  {{ range $clef, $val := $value }}
-  {{ range $kk, $vv := $val }}
-  {{ range $id, $info := $val }}
-  		{{ $images = $images | append $info }}
-  {{ end }}
-  {{ end }} {{/* close range kk */}}
-  {{ end }} {{/* close range clef */}}
-  {{ end }} {{/* close range key */}}
+  {{ range $k1, $v1 := $v }}
+  {{ range $k2, $v2 := $v1 }}
+  {{ range $k3, $v3 := $v2 }}
+  		{{ $images = $images | append $v3 }}
+  {{ end }} {{/* close range k3 */}}
+  {{ end }} {{/* close range k2 */}}
+  {{ end }} {{/* close range k1 */}}
   {{ end }} {{/* close range k */}}
 
   {{ $content := dict 
     "mediaType" "text/html"
   }}
 
-  {{ $params := dict 
-    "date" "2023-10-15T13:18:50-07:00"
-    "kind" "page"
-    "draft" "false"
-
+  // Create an array to contain kiosk-specific data in params
+  {{ $kiosk := dict
     "periods" .at_periods
     "ansde #" .at_asnde_no
     "notes on dates" .at_dated_as
@@ -37,8 +32,14 @@
     "EES reference" .at_reference
     "Recent damage cause" .g_earth_damage_cause
     "Recent general condition" .g_earth_general_condition
+   }}
 
-    "resources" $images
+  {{ $params := dict 
+    "date" "2023-10-15T13:18:50-07:00"
+    "kind" "page"
+    "draft" "false"
+    "kiosk" $kiosk
+    "seadragon" $images
   }}
 
   {{ $page := dict
