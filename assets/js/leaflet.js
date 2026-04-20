@@ -65,16 +65,20 @@ function initKiosk(L) {
   let kioskLayer = L.featureGroup();
   let kioskPoints = new L.GeoJSON.AJAX(KIOSK_DATA, {
     onEachFeature: function(feature,layer) {
-      let file_urls;
-      const files = feature.properties.u2ers_site_files;
-      if (Array.isArray(files) ){
-        const file_urls = files.filter(x => x.images).map(x => x.images.map (y => y.uid));
-      }
-      else file_urls = [];
+        // Extract UIDs from the nested structure
+        const uids = feature.properties.u2ers_site_files || [];
+        
+        // Flatten and format the URLs
+        const images = uids.flatMap(file => 
+            file.images.map(img => `<img src="/kiosk/${img.uid}.webp" width="100" />`)
+        ).join("");
 
-      const name = feature.properties.site_name;
-      const page = "/kiosk/" + feature.properties.site_id;
-      layer.bindPopup("<p><a href='" + page + "'>" + name + "</a></p>");
+        layer.bindPopup(`
+            <p><a href="/kiosk/${feature.properties.site_id}">${feature.properties.site_name}</a></p>
+            <div class="thumbs">
+                ${images || "No images available"}
+            </div>
+        `);
       layer.addTo(kioskLayer);
     }
   });

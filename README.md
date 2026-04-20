@@ -26,10 +26,8 @@ The shortcode assumes the images are page resources. Multiple image comparisons 
 
 # Kiosk data
 
-Someday maybe we'll script this. But fornow, when getting updated images and json from Kiosk, put everything in the `/assets/kiosk` directory. Take the `docs.json` file and convert it to CSV with https://www.convertcsv.com, and then convert to geoJSON with the same site. (This is the tool that handles the coordinates being in a single array and not separate lat/lon fields best.) Then put the geojson file in `/static`.
+When getting updated images and json from Kiosk, put everything in the `/assets/kiosk` directory. Remove the wrapping `u2ers_sites` in docs.json. Run the json2geojson.py script in `/assets/js`: ```python assets/js/json2geojson.py -i assets/kiosk/docs.json -o static/kiosk.geojson``` to update the geojson.
 
 There has _got_ to be a less stupid way to make the Kiosk images, which should be global resources, published so the `{{ .RelParmalink }}` code works, but for now there is a Secret content page, which publishes all the images in the assets directory.
 
 # To-dos
-
-- hugo content adapter to turn json into pages for the image slider https://gohugo.io/content-management/content-adapters/
