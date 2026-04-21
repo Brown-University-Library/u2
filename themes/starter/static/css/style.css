@@ -158,15 +158,26 @@ footer {
 }
 
 /* Kiosk pages */
-.kiosk {
-    dl {
-        columns: 2;
+.kiosk main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 1rem;
+    h1, .thumbnail-gallery {
+        grid-column: span 2 / span 2;
     }
-
+    dl {
+        border: solid 1px var(--main-color);;
+        padding: 0.5rem 1rem;
+    }
     dt {
         font-variant: small-caps;
     }
-
+    .thumbnail-gallery {
+        background-color: var(--main-color);
+        padding: 0 1rem;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
     figure {
         margin-left: 0;
         display: inline-block;

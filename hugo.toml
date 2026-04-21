@@ -3,8 +3,6 @@ languageCode = 'en-us'
 title = 'U2 Aerial Photography of Egypt'
 theme = 'starter'
 
-disableKinds = ['taxonomy', 'term']
-
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
@@ -17,3 +15,6 @@ disableKinds = ['taxonomy', 'term']
     name = 'Brown Digital Repository'
     url = 'https://repository.library.brown.edu/studio/collections/bdr:88np2gke/'
     weight = 100
+
+[taxonomies]
+  period = "periods"

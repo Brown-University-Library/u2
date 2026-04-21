@@ -3,38 +3,136 @@
 
 {{ .Content }}
 <dl>
-  {{ range $k, $v := .Params.kiosk }}
-    {{ if $v }}
-    <dt>{{ $k }}</dt>
-    <dd>{{ $v }}</dd>
-    {{ end }}
+  {{ range $k, $v := .Params.metadata }}
+  <dt>{{ $k }}</dt>
+  <dd>{{ $v }}</dd>
   {{ end }}
 </dl>
-<hr>
-{{ range $k, $v := .Params.seadragon }}
-<figure>
-  <img src="/kiosk/{{$v.uid}}.webp" alt="" class="" width="80vw" />
-  <figcaption>{{$v.tags}}</figcaption>
-</figure>
-{{ end }}
-{{ range $k, $v := .Params.seadragon }}
-<script type="text/javascript">
-  var test = {
-    image: {
-      xmlns: "http://schemas.microsoft.com/deepzoom/2008",
-      url: "/kiosk/{{$v.uid}}.webp",
-      format: "webp",
-    },
-  };
-  var viewer = OpenSeadragon({
-    id: "openseadragon",
-    prefixUrl:
-      "//cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/images/",
-    sequenceMode: true,
-    tileSources: test,
+<dl>
+    {{ $terms := .GetTerms "periods" }} 
+    {{ range $k, $v := .Params.judgements }}
+    {{ if eq $k "periods" }}
+    <dt>{{ $k }}</dt>
+    {{ if $terms }}
+      <dd>
+        <ul>
+          {{ range $terms }}
+          <li>
+            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </dd>
+      {{ end }}
+    {{ else }}
+    <dt>{{ $k }}</dt>
+    <dd>{{ $v }}</dd>
+    {{ end }} 
+  {{ end }}
+</dl>
+<hr />
+<div class="thumbnail-gallery">
+  {{ range $k, $v := .Params.seadragon }}
+  <figure
+    style="display: inline-block; cursor: pointer"
+    onclick="openViewer({{ $k }})"
+  >
+    <img src="/kiosk/{{$v.uid}}.webp" alt="" width="100px" />
+    <figcaption>{{$v.tags}}</figcaption>
+  </figure>
+  {{ end }}
+</div>
+<div
+  id="viewer-modal"
+  style="
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+  "
+>
+  <button
+    onclick="closeViewer()"
+    style="
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 10000;
+      padding: 10px 20px;
+      cursor: pointer;
+    "
+  >
+    Close
+  </button>
+  <div id="osd-kiosk-viewer" style="width: 100%; height: 100%"></div>
+  <div
+    id="osd-caption"
+    style="
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px 20px;
+      pointer-events: none;
+      border-radius: 4px;
+    "
+  ></div>
+</div>
+
+<script type="text/javascript" async>
+  const captions = [{{ range .Params.seadragon }}"{{ .tags }}",{{ end }}];
+  const tileSources = [
+      {{ range .Params.seadragon }}{ type: 'image', url: '/kiosk/{{ .uid }}.webp', buildPyramid: false },{{ end }}
+  ];
+
+  let viewer = null;
+
+  function initViewer() {
+      viewer = OpenSeadragon({
+          id: "osd-kiosk-viewer",
+          prefixUrl: "https://cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/images/",
+          sequenceMode: true,
+          showReferenceStrip: true,
+          tileSources: tileSources
+      });
+
+      // Sync captions
+      viewer.addHandler('page', function(event) {
+          document.getElementById('osd-caption').innerHTML = captions[event.page] || "";
+      });
+  }
+
+  function openViewer(index) {
+      // Show the modal
+      document.getElementById('viewer-modal').style.display = 'block';
+
+      // Initialize OSD if it hasn't been yet
+      if (!viewer) {
+          initViewer();
+      }
+
+      // Jump to the clicked image (allow a tiny timeout for OSD to be ready)
+      setTimeout(() => {
+          viewer.goToPage(index);
+          document.getElementById('osd-caption').innerHTML = captions[index] || "";
+      }, 100);
+  }
+
+  function closeViewer() {
+      document.getElementById('viewer-modal').style.display = 'none';
+      // Optional: viewer.setFullScreen(false);
+  }
+
+  // Optional: Close on "Esc" key
+  document.addEventListener('keydown', (e) => {
+      if (e.key === "Escape") closeViewer();
   });
 </script>
-{{ end }}
-
 
 {{ partial "footer.html" . }}

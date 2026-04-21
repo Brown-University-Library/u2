@@ -23,23 +23,31 @@
     "mediaType" "text/html"
   }}
 
-  // Create an array to contain kiosk-specific data in params
-  {{ $kiosk := dict
-    "periods" .at_periods
+  // Create two arrays to contain kiosk-specific data in params
+  {{ $periods := slice }}
+  {{ $periods := .at_periods }}
+
+  {{ $metadata := dict
+    "govenorate" .at_governorate
     "ansde #" .at_asnde_no
-    "notes on dates" .at_dated_as
     "condition in EES Survey" .at_condition
+    "notes on dates" .at_dated_as
     "EES reference" .at_reference
-    "Recent damage cause" .g_earth_damage_cause
+    }}
+    {{ $judgements:= dict
     "Recent general condition" .g_earth_general_condition
+    "Recent damage cause" .g_earth_damage_cause
+    "periods" $periods
    }}
 
   {{ $params := dict 
     "date" "2023-10-15T13:18:50-07:00"
     "kind" "page"
     "draft" "false"
-    "kiosk" $kiosk
+    "metadata" $metadata
+    "judgements" $judgements
     "seadragon" $images
+    "periods" $periods
   }}
 
   {{ $page := dict
@@ -47,6 +55,8 @@
     "content" $content
     "path" .site_id
     "title" .site_name
+    "periods" $periods
+
   }}
 
   {{ $.AddPage $page }}

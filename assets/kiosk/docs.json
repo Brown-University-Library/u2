@@ -260,7 +260,7 @@
     {
       "site_id": "4",
       "site_name": "Kom Abbuda",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "372",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -348,7 +348,7 @@
     {
       "site_id": "6",
       "site_name": "Abdu Basha",
-      "at_periods": "Ptolemaic",
+      "at_periods": ["Ptolemaic"],
       "at_asnde_no": "621",
       "at_dated_as": "Ptolemaic?",
       "at_geometry": {
@@ -545,7 +545,7 @@
     {
       "site_id": "12",
       "site_name": "Tell Abu el-Afrita el-Kebir",
-      "at_periods": "Roman\rPtolemaic",
+      "at_periods": ["Roman","Ptolemaic"],
       "at_asnde_no": "424",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -589,7 +589,7 @@
     {
       "site_id": "15",
       "site_name": "Tell Abu el-Gudur",
-      "at_periods": "Roman\rPtolemaic",
+      "at_periods": ["Roman","Ptolemaic"],
       "at_asnde_no": "406",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -641,7 +641,7 @@
     {
       "site_id": "16",
       "site_name": "Kom Abu el-Humar el-Kebir",
-      "at_periods": "Late Period\rPtolemaic",
+      "at_periods": ["Late Period","Ptolemaic"],
       "at_asnde_no": "292",
       "at_dated_as": "Late Period and Ptolemaic",
       "at_geometry": {
@@ -729,7 +729,7 @@
     {
       "site_id": "18",
       "site_name": "Kom Abu el-Idda (Alt. Kom Adda)",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "403",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -1226,7 +1226,7 @@
     {
       "site_id": "31",
       "site_name": "El-Kom el-Ahmar",
-      "at_periods": "Late Period\rPtolemaic\rRoman",
+      "at_periods": ["Late Period","Ptolemaic","Roman"],
       "at_asnde_no": "440",
       "at_dated_as": "Persian Period-Roman Period",
       "at_geometry": {
@@ -1377,7 +1377,7 @@
     {
       "site_id": "36",
       "site_name": "Kom el-Akhdar",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "433",
       "at_dated_as": "Ptolemaic to Roman",
       "at_geometry": {
@@ -1528,7 +1528,7 @@
     {
       "site_id": "39",
       "site_name": "Kom Awad",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "637",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -1572,7 +1572,7 @@
     {
       "site_id": "41",
       "site_name": "Kom Aziza",
-      "at_periods": "Old Kingdom\rPtolemaic\rRoman",
+      "at_periods": ["Old Kingdom","Ptolemaic","Roman"],
       "at_asnde_no": "626",
       "at_dated_as": "Mostly Ptolemaic and Roman, but some Old Kingdom and one Late Period sherd",
       "at_geometry": {
@@ -1723,7 +1723,7 @@
     {
       "site_id": "45",
       "site_name": "Kom el-Baqar",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "298",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -1775,7 +1775,7 @@
     {
       "site_id": "46",
       "site_name": "El-Barnugi",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "296",
       "at_dated_as": "Roman",
       "at_geometry": {
@@ -2477,7 +2477,7 @@
     {
       "site_id": "63",
       "site_name": "Kom el-Dahab",
-      "at_periods": "Roman\rLate Roman\rIslamic",
+      "at_periods": ["Roman","Late Roman","Islamic"],
       "at_asnde_no": "302",
       "at_dated_as": "Roman-Early Islamic",
       "at_geometry": {
@@ -2628,7 +2628,7 @@
     {
       "site_id": "67",
       "site_name": "Kom Difshu",
-      "at_periods": "Late Period\rPtolemaic\rRoman",
+      "at_periods": ["Late Period","Ptolemaic","Roman"],
       "at_asnde_no": "624",
       "at_dated_as": "Later Pharaonic to Roman Period",
       "at_geometry": {
@@ -3039,7 +3039,7 @@
     {
       "site_id": "78",
       "site_name": "Kom Ganadi",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "617",
       "at_dated_as": "Ptolemaic to Roman",
       "at_geometry": {
@@ -3209,7 +3209,7 @@
     {
       "site_id": "83",
       "site_name": "Kom el-Ghasuli",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "362",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -3310,7 +3310,7 @@
     {
       "site_id": "86",
       "site_name": "Kom el-Ghuzz",
-      "at_periods": "Late Period\rPtolemaic\rRoman",
+      "at_periods": ["Late Period","Ptolemaic","Roman"],
       "at_asnde_no": "609",
       "at_dated_as": "Late Period to Roman?",
       "at_geometry": {
@@ -3354,7 +3354,7 @@
     {
       "site_id": "87",
       "site_name": "Kom el-Gill",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "628",
       "at_dated_as": "Ptolemaic to Roman",
       "at_geometry": {
@@ -3425,7 +3425,7 @@
     {
       "site_id": "89",
       "site_name": "Kom el-Giza",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "369",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -3557,7 +3557,7 @@
     {
       "site_id": "93",
       "site_name": "Kom el-Hagg",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "358",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -3620,7 +3620,7 @@
     {
       "site_id": "95",
       "site_name": "Kom el-Hamam",
-      "at_periods": "Ptolemaic\rRoman\rLate Roman",
+      "at_periods": ["Ptolemaic","Roman","Late Roman"],
       "at_asnde_no": "368",
       "at_dated_as": "Ptolemaic to Late Roman",
       "at_geometry": {
@@ -3735,7 +3735,7 @@
     {
       "site_id": "98",
       "site_name": "Kom Hasan (i)",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "373",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -3823,7 +3823,7 @@
     {
       "site_id": "104",
       "site_name": "Kom Ilwani",
-      "at_periods": "Modern",
+      "at_periods": ["Modern"],
       "at_asnde_no": "438",
       "at_dated_as": "No ancient ceramics visible",
       "at_geometry": {
@@ -3867,7 +3867,7 @@
     {
       "site_id": "105",
       "site_name": "Kom Ishu",
-      "at_periods": "Late Roman",
+      "at_periods": ["Late Roman"],
       "at_asnde_no": "357",
       "at_dated_as": "Late Roman",
       "at_geometry": {
@@ -3968,7 +3968,7 @@
     {
       "site_id": "109",
       "site_name": "Tell Kawady",
-      "at_periods": "Late Period",
+      "at_periods": ["Late Period"],
       "at_asnde_no": "11",
       "at_dated_as": "Late Period",
       "at_geometry": {
@@ -4124,7 +4124,7 @@
     {
       "site_id": "112",
       "site_name": "Kom el-Khalig",
-      "at_periods": "Ptolemaic\rRoman\rLate Roman\rIslamic",
+      "at_periods": ["Ptolemaic","Roman","Late Roman","Islamic"],
       "at_asnde_no": "429",
       "at_dated_as": "Ptolemaic to Early Islamic",
       "at_geometry": {
@@ -4577,7 +4577,7 @@
     {
       "site_id": "124",
       "site_name": "Kom Madbuh",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "412",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -4711,7 +4711,7 @@
     {
       "site_id": "127",
       "site_name": "Kom el-Magayir (i)",
-      "at_periods": "Ptolemaic\rLate Roman",
+      "at_periods": ["Ptolemaic","Late Roman"],
       "at_asnde_no": "395",
       "at_dated_as": "Early Ptolemaic and Late Roman",
       "at_geometry": {
@@ -4799,7 +4799,7 @@
     {
       "site_id": "129",
       "site_name": "Kom el-Magayir (iii)",
-      "at_periods": "Ptolemaic",
+      "at_periods": ["Ptolemaic"],
       "at_asnde_no": "698",
       "at_dated_as": "Otikenauc Oeruid",
       "at_geometry": {
@@ -4895,7 +4895,7 @@
     {
       "site_id": "131",
       "site_name": "Kom el-Mahar",
-      "at_periods": "Ptolemaic\rLate Roman\rRoman",
+      "at_periods": ["Ptolemaic","Late Roman", "Roman"],
       "at_asnde_no": "398",
       "at_dated_as": "Ptolemaic to Late Roman",
       "at_geometry": {
@@ -5314,7 +5314,7 @@
     {
       "site_id": "139",
       "site_name": "Kom Nagi",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "397",
       "at_dated_as": "Roman",
       "at_geometry": {
@@ -5358,7 +5358,7 @@
     {
       "site_id": "140",
       "site_name": "Kom Nakhla el-Bahariya",
-      "at_periods": "Ptolemaic\rRoman\rLate Roman\rIslamic",
+      "at_periods": ["Ptolemaic","Roman","Late Roman","Islamic"],
       "at_asnde_no": "374",
       "at_dated_as": "Ptolemaic to Early Islamic",
       "at_geometry": {
@@ -5597,7 +5597,7 @@
     {
       "site_id": "145",
       "site_name": "Kom el-Nawam",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "611",
       "at_dated_as": "Ptolemaic to Early Islamic",
       "at_geometry": {
@@ -5836,7 +5836,7 @@
     {
       "site_id": "150",
       "site_name": "Kom el-Nuss el-Kebir (also called Kom el-Ahmar ii)",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "286",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -5880,7 +5880,7 @@
     {
       "site_id": "151",
       "site_name": "Kom el-Nuss el-Saghrier (Kom el-Waset)",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "285",
       "at_dated_as": "Early Ptolemaic to early Roman",
       "at_geometry": {
@@ -5976,7 +5976,7 @@
     {
       "site_id": "153",
       "site_name": "Kom el-Qadi",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "396",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -6083,7 +6083,7 @@
     {
       "site_id": "156",
       "site_name": "El-Qarawi",
-      "at_periods": "Late Roman\rIslamic",
+      "at_periods": ["Late Roman","Islamic"],
       "at_asnde_no": "614",
       "at_dated_as": "Late Roman and Ealry Islamic",
       "at_geometry": {
@@ -6366,7 +6366,7 @@
     {
       "site_id": "163",
       "site_name": "Kom Radwan",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "421",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -6781,7 +6781,7 @@
     {
       "site_id": "176",
       "site_name": "Kom es-Sabiya (Kom Sabi?)",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "407",
       "at_dated_as": "Roman?",
       "at_geometry": {
@@ -6825,7 +6825,7 @@
     {
       "site_id": "177",
       "site_name": "Kom Saieda",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "378",
       "at_dated_as": "Ptolemaic and Roman",
       "at_geometry": {
@@ -7001,7 +7001,7 @@
     {
       "site_id": "181",
       "site_name": "Kom es-Sauwan",
-      "at_periods": "Late Period",
+      "at_periods": ["Late Period"],
       "at_asnde_no": "386",
       "at_dated_as": "Late Period?",
       "at_geometry": {
@@ -7220,7 +7220,7 @@
     {
       "site_id": "186",
       "site_name": "Tell Sherif Khalaf",
-      "at_periods": "Late Roman\rRoman\rPtolemaic",
+      "at_periods": ["Late Roman","Roman","Ptolemaic"],
       "at_asnde_no": "636",
       "at_dated_as": "Ptolemaic to Late Roman",
       "at_geometry": {
@@ -7726,7 +7726,7 @@
     {
       "site_id": "200",
       "site_name": "Kom Taqala",
-      "at_periods": "Roman",
+      "at_periods": ["Roman"],
       "at_asnde_no": "370",
       "at_dated_as": "Roman",
       "at_geometry": {
@@ -7898,7 +7898,7 @@
     {
       "site_id": "206",
       "site_name": "Kom Turuga (Psenemphaia)",
-      "at_periods": "Ptolemaic\rRoman",
+      "at_periods": ["Ptolemaic","Roman"],
       "at_asnde_no": "303",
       "at_dated_as": "Ptolemaic to Roman",
       "at_geometry": {
@@ -7942,7 +7942,7 @@
     {
       "site_id": "207",
       "site_name": "Kom Umm el-Laban",
-      "at_periods": "Late Period\rPtolemaic",
+      "at_periods": ["Late Period","Ptolemaic"],
       "at_asnde_no": "608",
       "at_dated_as": "Late Period, Ptolemaic",
       "at_geometry": {
