@@ -26,7 +26,20 @@ The shortcode assumes the images are page resources. Multiple image comparisons 
 
 # Kiosk data
 
-When getting updated images and json from Kiosk, put everything in the `/assets/kiosk` directory. Remove the wrapping `u2ers_sites` in docs.json. Run the json2geojson.py script in `/assets/js`: ```python assets/js/json2geojson.py -i assets/kiosk/docs.json -o static/kiosk.geojson``` to update the geojson.
+When getting updated images and json from Kiosk, put everything in the `/assets/kiosk` directory.
+
+## Cleaning/reformatting
+
+In the project root, run `python assets/js/clean_data.py -i assets/kiosk/docs.json -o assets/kiosk/data.json`. This script:
+
+1. removes the wrapping `u2ers_sites` so the values are easier to access
+2. removes sites where the `limit_view_to` field is not null, which shouldn't be made public
+3. transforms the `at_periods` and `g_earth_damage_cause` field values into arrays, so Hugo can loop through them appropriately (and use at_periods as a taxonomy)
+4. transforms the `u2_images_showing_the_site` field, although we're currently not using it.
+
+## Creating geojson
+
+Run the json2geojson.py script in `/assets/js`: ```python assets/js/json2geojson.py -i assets/kiosk/data.json -o static/kiosk.geojson``` to update the geojson.
 
 There has _got_ to be a less stupid way to make the Kiosk images, which should be global resources, published so the `{{ .RelParmalink }}` code works, but for now there is a Secret content page, which publishes all the images in the assets directory.
 

@@ -172,6 +172,9 @@ footer {
     dt {
         font-variant: small-caps;
     }
+    dd ul {
+        padding-left: 0;
+    }
     .thumbnail-gallery {
         background-color: var(--main-color);
         padding: 0 1rem;
@@ -181,5 +184,6 @@ footer {
     figure {
         margin-left: 0;
         display: inline-block;
+        cursor: pointer;
     }
 }

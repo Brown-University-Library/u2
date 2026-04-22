@@ -1,5 +1,5 @@
 {{ $data := dict }}
-{{ $path := "kiosk/docs.json" }}
+{{ $path := "kiosk/data.json" }}
 {{ $data := resources.Get $path | transform.Unmarshal }}
 
 {{ range $data }}
@@ -23,9 +23,12 @@
     "mediaType" "text/html"
   }}
 
-  // Create two arrays to contain kiosk-specific data in params
+  // Create arrays to contain kiosk-specific data in params
   {{ $periods := slice }}
   {{ $periods := .at_periods }}
+
+  {{ $damage := slice }}
+  {{ $damage := .g_earth_damage_cause }}
 
   {{ $metadata := dict
     "govenorate" .at_governorate
@@ -36,7 +39,7 @@
     }}
     {{ $judgements:= dict
     "Recent general condition" .g_earth_general_condition
-    "Recent damage cause" .g_earth_damage_cause
+    "Recent damage cause" $damage
     "periods" $periods
    }}
 
