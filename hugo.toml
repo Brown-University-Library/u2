@@ -1,5 +1,5 @@
 baseURL = '/'
-languageCode = 'en-us'
+locale = 'en-us'
 title = 'U2 Aerial Photography of Egypt'
 theme = 'starter'
 

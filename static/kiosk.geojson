@@ -6,6 +6,1566 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
+          30.183667962691654,
+          31.140395769079106
+        ]
+      },
+      "properties": {
+        "site_id": "186",
+        "site_name": "Tell Sherif Khalaf",
+        "at_periods": [
+          "Late Roman",
+          "Roman",
+          "Ptolemaic"
+        ],
+        "at_asnde_no": "636",
+        "at_dated_as": "Ptolemaic to Late Roman",
+        "at_condition": "Overbuilt",
+        "at_reference": "Wilson and Grigoropoulos 2009, 98, 332-334",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "5a52a0b8-9372-fc47-8562-25ac8f8da93c",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "ba331e6b-8bda-f844-a3ff-47245e374de8",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "ffafab08-7bf1-4949-bf68-ab470650cfbd",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "c7a58dc0-77ce-a64b-903e-3029c4d7495b",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "34b4e195-3b5d-bb43-ab3e-5c1b0b055bc2",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "cb597e00-d1fe-2a41-a036-44cce840d3b0",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture",
+          "overbuilding",
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "destroyed",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-044-9L-01_modified",
+          "U2-B8649-5796-047-9L-01_modified"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.169478292050428,
+          30.914022440906397
+        ]
+      },
+      "properties": {
+        "site_id": "19",
+        "site_name": "Kom Abu el-Matamir",
+        "at_periods": [],
+        "at_asnde_no": "454",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "04b76337-d585-cf40-94d9-904864b89839",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "d4ae4fed-be9b-9244-a44f-cce2e3e0fbbf",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "dc9454d7-2fb0-ff42-8fde-6c665452001d",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.27496395940364,
+          30.9277402325209
+        ]
+      },
+      "properties": {
+        "site_id": "21",
+        "site_name": "Kom Abu Hireiz",
+        "at_periods": [],
+        "at_asnde_no": "434",
+        "at_dated_as": null,
+        "at_condition": "Average",
+        "at_reference": "SoE 1916",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "ea290b38-dd50-a74d-a469-31728076c0ac",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "2dadf32c-174f-d340-995e-4133ff6f4f18",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "5bb565a7-7102-844e-bd13-c21fe7a3784d",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "good",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-054-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:j76pgjrn"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.19647838758381,
+          30.90467194104584
+        ]
+      },
+      "properties": {
+        "site_id": "26",
+        "site_name": "Abu Sidan",
+        "at_periods": [],
+        "at_asnde_no": "453",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "d93e3d8c-9d4d-a54a-beb0-a98d4ede0b3c",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "58286b3b-c6b3-b94a-a779-af20ce85f10a",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "bcf07aec-ba21-2440-af33-68ce12749d58",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8648-5812-045-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.16165899193813,
+          30.913965665300786
+        ]
+      },
+      "properties": {
+        "site_id": "49",
+        "site_name": "Tell Bat el-Kom",
+        "at_periods": [],
+        "at_asnde_no": "523",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "Abu el-Kasim 1988",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "51f86e55-fc60-3a4e-becf-e4b01c113e56",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "9b7cdb95-0081-1949-b573-0bae8b5c466f",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "92c300e8-ff44-1f43-a936-9f9984fab95b",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-045-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:x463ufkk"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.30733829995882,
+          30.890278335180557
+        ]
+      },
+      "properties": {
+        "site_id": "50",
+        "site_name": "Kom el-Behaira (Kom el-Zekri Behaira)",
+        "at_periods": [],
+        "at_asnde_no": "449",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1916",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "713efeef-2085-7e47-beeb-f838f0e94777",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "e757e26c-f610-6241-be30-bbbc19ca1b22",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "a69b247b-6554-b24d-833e-81f65bef87ac",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "infrastructure/roads",
+          "illicit excavation"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.292563479879895,
+          30.888866055257985
+        ]
+      },
+      "properties": {
+        "site_id": "57",
+        "site_name": "Kom el-Buta",
+        "at_periods": [],
+        "at_asnde_no": "450",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "c1621156-2099-0141-9a0e-7ae3620ce47c",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "07c5166b-30cb-cd44-8286-413ff87ae635",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "54a72cd3-a73e-5b46-b109-32a58aafb9c5",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          29.958463420038907,
+          30.934227934111856
+        ]
+      },
+      "properties": {
+        "site_id": "71",
+        "site_name": "Ezbet es Safih",
+        "at_periods": [],
+        "at_asnde_no": "714",
+        "at_dated_as": null,
+        "at_condition": "Mostly overbuilt",
+        "at_reference": null,
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "9afd1b3f-4c78-3642-9c75-2da65e23cf66",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "d485f0a9-2c3a-454e-be1a-2e5bea1c8b9b",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "d6d27513-b93e-e146-a70a-b43131585fa8",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "0f7aee87-092c-9c46-a471-7fde5772ed6e",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture",
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-033-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.312071675839892,
+          31.11772335942973
+        ]
+      },
+      "properties": {
+        "site_id": "78",
+        "site_name": "Kom Ganadi",
+        "at_periods": [
+          "Ptolemaic",
+          "Roman"
+        ],
+        "at_asnde_no": "617",
+        "at_dated_as": "Ptolemaic to Roman",
+        "at_condition": "Overbuilt",
+        "at_reference": "Wilson and Grigoropoulos 2009, 136-137, 359-361",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "1819e122-5199-df4a-a015-00ba62ba57ad",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "aa6aa4f2-bcf4-6a4e-9d3d-f88578cbee9a",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "9b4aab1d-d1b0-c54b-854b-50d8413295b6",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-053-9L-01",
+          "U2-B8649-5796-056-9L-01",
+          "U2-B8649-5796-050-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:bd766p6r",
+          "bdr:exbp7u4c",
+          "bdr:y3efydag"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.020504080731204,
+          30.98905479501836
+        ]
+      },
+      "properties": {
+        "site_id": "87",
+        "site_name": "Kom el-Gill",
+        "at_periods": [
+          "Ptolemaic",
+          "Roman"
+        ],
+        "at_asnde_no": "628",
+        "at_dated_as": "Ptolemaic to Roman",
+        "at_condition": "Overbuilt, partially levelled",
+        "at_reference": "Wilson and Grigoropoulos 2009, 49-50, 295-296",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "3f88539b-8e83-004b-890c-6bd559022939",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "70b9b895-2df3-f44b-97de-3bf228a5148b",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "b3d34562-ee8d-a742-b0e0-5183504b494c",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "3884b5a3-8559-c74a-9b66-0590562a8d59",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-036-9L-01",
+          "U2-B8649-5812-039-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:d48c6tjb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.002625921498463,
+          31.091523068022738
+        ]
+      },
+      "properties": {
+        "site_id": "93",
+        "site_name": "Kom el-Hagg",
+        "at_periods": [
+          "Ptolemaic",
+          "Roman"
+        ],
+        "at_asnde_no": "358",
+        "at_dated_as": "Ptolemaic and Roman",
+        "at_condition": "Overbuilt",
+        "at_reference": "Wilson and Grigoropoulos 2009, 45-46, 289-291",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "b0863a67-3787-614d-8bf8-74ffe886012f",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "ea351c73-66af-c746-8cb6-6c0563d34839",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "0f4faf88-92c2-d44d-a254-1d09c6f7a338",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture",
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-034-9L-01",
+          "U2-B8649-5812-035-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:debe5h8x"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.00740631766973,
+          31.10806180889148
+        ]
+      },
+      "properties": {
+        "site_id": "105",
+        "site_name": "Kom Ishu",
+        "at_periods": [
+          "Late Roman"
+        ],
+        "at_asnde_no": "357",
+        "at_dated_as": "Late Roman",
+        "at_condition": "Overbuilt",
+        "at_reference": "Wilson and Grigoropoulos 2009, 47-48, 292-294",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "f41900f0-f490-8d4e-9a66-287f7b050048",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "101b2f03-d501-9648-a500-a5555dc02883",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "6e171c7b-6ecf-2f49-8447-bc1e67ae1599",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture",
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-035-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.243813887886713,
+          31.026333221514975
+        ]
+      },
+      "properties": {
+        "site_id": "110",
+        "site_name": "Tell el-Kayasir",
+        "at_periods": [],
+        "at_asnde_no": "390",
+        "at_dated_as": null,
+        "at_condition": "Levelled for agriculture",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "f00da98d-a680-7246-b461-b96d779a20e2",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "8e9e92a6-c928-f549-a256-fae530ef766a",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "0772ef46-5477-bf41-83b0-4f4675e8573a",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-049-9L-01",
+          "U2-B8649-5812-056-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:2fqc2k7s",
+          "bdr:46fx32fc"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.019716490870316,
+          31.131337319530257
+        ]
+      },
+      "properties": {
+        "site_id": "122",
+        "site_name": "Kom Limsan",
+        "at_periods": [],
+        "at_asnde_no": "356",
+        "at_dated_as": null,
+        "at_condition": "Tracks, modern buildings in the NW corner",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "2ff9ac5b-7100-1c4b-8312-3c55eee0ebb7",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "0a2752ef-22e3-7147-a4d0-6a7a110d9bc7",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "9d85d910-6f5a-d743-883d-6c6ea5281b8f",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "good",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-032-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.213189311649938,
+          30.957241307543374
+        ]
+      },
+      "properties": {
+        "site_id": "170",
+        "site_name": "Kom el-Rumadniya",
+        "at_periods": [],
+        "at_asnde_no": "418",
+        "at_dated_as": null,
+        "at_condition": "Pretty good",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "7313bb6a-c8a1-0a45-a19e-a046591c65cc",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "b8c5e006-a5c8-f341-aefa-6bcc93e84438",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "7ecc28ef-605c-ee4b-9d84-2391d06b4904",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture",
+          "illicit excavation"
+        ],
+        "g_earth_general_condition": "fair",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.059521778770495,
+          31.022612750719045
+        ]
+      },
+      "properties": {
+        "site_id": "131",
+        "site_name": "Kom el-Mahar",
+        "at_periods": [
+          "Ptolemaic",
+          "Late Roman",
+          "Roman"
+        ],
+        "at_asnde_no": "398",
+        "at_dated_as": "Ptolemaic to Late Roman",
+        "at_condition": "Overbuilt by cemetery",
+        "at_reference": "Wilson and Grigoropoulos 2009, 53-55, 297-301",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "23fff1e8-939c-4a44-9111-465616280169",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "02bdffc3-7f72-f943-bf18-32a632ef29fd",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "515a3034-aadd-324c-9dbf-48210b421384",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "ab971461-ad13-1d48-b2c0-7b611ad1c6c6",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "fair",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-040-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:zb3z5w9b"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.312553633814655,
+          30.908277475308164
+        ]
+      },
+      "properties": {
+        "site_id": "134",
+        "site_name": "Kom el-Maqta",
+        "at_periods": [],
+        "at_asnde_no": "447",
+        "at_dated_as": null,
+        "at_condition": "Levelled for Agriculture but visible in field pattern",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "5be9348d-e7ca-844b-82cb-71abfd6f8f36",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "d4558cba-a5af-9242-80a1-4118b177b067",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "668a3c41-6717-9945-a463-e4afd32b8328",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.225064547166006,
+          30.897886354725436
+        ]
+      },
+      "properties": {
+        "site_id": "149",
+        "site_name": "Kom el-Nigili",
+        "at_periods": [],
+        "at_asnde_no": "451",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt, partially levelled",
+        "at_reference": "Kenawi 2010; SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "02395119-35b4-f14d-922e-764dcdb3b40c",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "5aff9df8-e11d-2746-afe7-02fce71476d4",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "f72eabea-5220-2b43-957d-2c8de8475b4f",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.267393257307386,
+          30.90864952643774
+        ]
+      },
+      "properties": {
+        "site_id": "157",
+        "site_name": "Kom el-Qarinein",
+        "at_periods": [],
+        "at_asnde_no": "448",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt, once extended beyond cemetery to the west",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "e8679201-85f8-e947-af39-6f112825f009",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "ddc483c6-92f5-3245-b968-78ee2845a0a0",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "bd9b665e-7911-7f4b-9810-04c9b3bc71f3",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.208288752514807,
+          30.95243387035266
+        ]
+      },
+      "properties": {
+        "site_id": "160",
+        "site_name": "Kom Qinas",
+        "at_periods": [],
+        "at_asnde_no": "417",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt,  levelled",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "d160c1cf-37a9-7f49-81b4-9c48d2766239",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "1364cbe7-4e3b-d648-8186-ac4687c77b09",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "294341c5-6225-da47-935e-46be010df0d3",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "illicit excavation",
+          "infrastructure/roads",
+          "agriculture"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.04838841894442,
+          30.98073736676117
+        ]
+      },
+      "properties": {
+        "site_id": "161",
+        "site_name": "Kom el-Qubur (Maqboura)",
+        "at_periods": [],
+        "at_asnde_no": "399",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt by cemetery",
+        "at_reference": "SoE 1914; surveyed by P. Wilson",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "28286a6c-b216-0d4e-a7a7-5db61ea20d81",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "1a5d12c6-b8b7-aa43-9e9a-d61cac3b1bbe",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "775e7a19-41e2-e24a-9f6e-de89a8a349ca",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-036-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:d48c6tjb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.21349233129793,
+          30.928603691375322
+        ]
+      },
+      "properties": {
+        "site_id": "163",
+        "site_name": "Kom Radwan",
+        "at_periods": [
+          "Roman"
+        ],
+        "at_asnde_no": "421",
+        "at_dated_as": "Roman?",
+        "at_condition": "Overbuilt in east by cemetery, otherwise pretty good",
+        "at_reference": "Kenawi 2010; SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "cf138aa2-d1e9-ce44-a967-1db99616abf4",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "720f5e96-1f98-7c49-adcd-c0acbbd948ba",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "9883fbc5-d697-e541-b7cd-d04c13a5c5dc",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "fair",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.252153458803058,
+          30.945820448703948
+        ]
+      },
+      "properties": {
+        "site_id": "167",
+        "site_name": "Tell el-Rizimat",
+        "at_periods": [],
+        "at_asnde_no": "425",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "dad2a65a-4f60-a244-a21a-c844982c9b9d",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "35c09bc3-2bbf-6847-81c9-b7b3f1fc30a8",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "421691f6-f9c2-df4a-87d1-c691d7296aff",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.184919668281015,
+          30.950699907733174
+        ]
+      },
+      "properties": {
+        "site_id": "179",
+        "site_name": "Kom el-Saqya",
+        "at_periods": [],
+        "at_asnde_no": "416",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "880c2e54-387c-dc45-8553-102e33b48081",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "d289727a-4861-3b41-9f0f-1bc0be3c5bfb",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "7ca0d128-1ae5-4148-85c7-990ea5248632",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
+        ],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.249600169238246,
+          30.949179180837874
+        ]
+      },
+      "properties": {
+        "site_id": "204",
+        "site_name": "Kom el-Tibn",
+        "at_periods": [],
+        "at_asnde_no": "426",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt and levelled for agriculture, originally 3 mounds (pre 2009)",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "413985f7-fd73-7f4c-8377-a99c4d403159",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "20bc8d07-1639-9a43-acbe-df7793b8eaef",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "b7b4f273-f958-264d-b9f1-f57100252e35",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.24129559573036,
+          30.9223654583299
+        ]
+      },
+      "properties": {
+        "site_id": "209",
+        "site_name": "Tell el-(Daoud) Waq",
+        "at_periods": [],
+        "at_asnde_no": "423",
+        "at_dated_as": null,
+        "at_condition": "Clear",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "272ff76f-5545-5449-8411-410d7f1cd9d9",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "e943b49c-8674-6745-b47b-f1380d4449be",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "706c400f-e2ad-964b-aa75-f7c0ec0b977f",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "agriculture",
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "good",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
           30.616674340289887,
           30.7457369455925
         ]
@@ -23,7 +1583,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -75,7 +1636,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5797-048-9L-01\r"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5797-048-9L-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -127,7 +1691,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-058-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-058-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:wmemtdsj"
+        ]
       }
     },
     {
@@ -179,7 +1748,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-062-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-062-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:we2xnzqj"
+        ]
       }
     },
     {
@@ -233,7 +1807,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-064-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-064-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:n34jggqb"
+        ]
       }
     },
     {
@@ -285,7 +1864,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-047-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-047-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:rcxfvvuz"
+        ]
       }
     },
     {
@@ -310,7 +1894,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -365,7 +1950,74 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-056-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-056-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:exbp7u4c"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.241997511490435,
+          30.94064947364765
+        ]
+      },
+      "properties": {
+        "site_id": "12",
+        "site_name": "Tell Abu el-Afrita el-Kebir",
+        "at_periods": [
+          "Roman",
+          "Ptolemaic"
+        ],
+        "at_asnde_no": "424",
+        "at_dated_as": "Ptolemaic and Roman",
+        "at_condition": "Survives",
+        "at_reference": "SoE 1916",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "a3dd7fc2-fed1-a046-9e97-8bc370e2210e",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "30442964-4df8-8741-9d55-c0d59467bfba",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "7209c063-e098-1647-8525-60e20a46fed5",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture",
+          "infrastructure/roads"
+        ],
+        "g_earth_general_condition": "poor",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
       }
     },
     {
@@ -417,7 +2069,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-049-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-049-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:46fx32fc"
+        ]
       }
     },
     {
@@ -473,7 +2130,12 @@
           "animal pens?"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-043-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-043-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:mx48z2qp"
+        ]
       }
     },
     {
@@ -498,7 +2160,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -523,7 +2186,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -575,7 +2239,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-052-9R-01\rU2-B8649-5796-054-9L-01\rU2-B8649-5796-057-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-052-9R-01",
+          "U2-B8649-5796-054-9L-01",
+          "U2-B8649-5796-057-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:u7kr6f3u",
+          "bdr:uehrf7fn",
+          "bdr:cwj7f94n"
+        ]
       }
     },
     {
@@ -600,7 +2273,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -660,64 +2334,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.241997511490435,
-          30.94064947364765
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
         ]
-      },
-      "properties": {
-        "site_id": "12",
-        "site_name": "Tell Abu el-Afrita el-Kebir",
-        "at_periods": [
-          "Roman",
-          "Ptolemaic"
-        ],
-        "at_asnde_no": "424",
-        "at_dated_as": "Ptolemaic and Roman",
-        "at_condition": "Survives",
-        "at_reference": "SoE 1916",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "a3dd7fc2-fed1-a046-9e97-8bc370e2210e",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "30442964-4df8-8741-9d55-c0d59467bfba",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "7209c063-e098-1647-8525-60e20a46fed5",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture",
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01\r"
       }
     },
     {
@@ -782,7 +2404,12 @@
           "illicit excavation"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-045-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-045-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:x463ufkk"
+        ]
       }
     },
     {
@@ -838,7 +2465,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-066-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-066-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:br76xwn6"
+        ]
       }
     },
     {
@@ -891,7 +2523,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-066-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-066-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:br76xwn6"
+        ]
       }
     },
     {
@@ -945,59 +2582,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.169478292050428,
-          30.914022440906397
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
         ]
-      },
-      "properties": {
-        "site_id": "19",
-        "site_name": "Kom Abu el-Matamir",
-        "at_periods": [],
-        "at_asnde_no": "454",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "04b76337-d585-cf40-94d9-904864b89839",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "d4ae4fed-be9b-9244-a44f-cce2e3e0fbbf",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "dc9454d7-2fb0-ff42-8fde-6c665452001d",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01\r"
       }
     },
     {
@@ -1022,59 +2612,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.27496395940364,
-          30.9277402325209
-        ]
-      },
-      "properties": {
-        "site_id": "21",
-        "site_name": "Kom Abu Hireiz",
-        "at_periods": [],
-        "at_asnde_no": "434",
-        "at_dated_as": null,
-        "at_condition": "Average",
-        "at_reference": "SoE 1916",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "ea290b38-dd50-a74d-a469-31728076c0ac",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "2dadf32c-174f-d340-995e-4133ff6f4f18",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "5bb565a7-7102-844e-bd13-c21fe7a3784d",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-054-9R-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -1127,7 +2666,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-039-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-039-9R-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -1180,7 +2722,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01\rU2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4",
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -1232,7 +2781,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4"
+        ]
       }
     },
     {
@@ -1284,7 +2838,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-046-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-046-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:pns55vbk"
+        ]
       }
     },
     {
@@ -1337,60 +2896,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-045-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.19647838758381,
-          30.90467194104584
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-045-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:x463ufkk"
         ]
-      },
-      "properties": {
-        "site_id": "26",
-        "site_name": "Abu Sidan",
-        "at_periods": [],
-        "at_asnde_no": "453",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "d93e3d8c-9d4d-a54a-beb0-a98d4ede0b3c",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "58286b3b-c6b3-b94a-a779-af20ce85f10a",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "bcf07aec-ba21-2440-af33-68ce12749d58",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8648-5812-045-9R-01\r"
       }
     },
     {
@@ -1415,7 +2926,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -1468,7 +2980,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-049-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-049-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:46fx32fc"
+        ]
       }
     },
     {
@@ -1493,7 +3010,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -1551,7 +3069,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -1603,7 +3126,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-065-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-065-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:tyhnhezd"
+        ]
       }
     },
     {
@@ -1628,7 +3156,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -1680,7 +3209,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-059-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-059-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:agjbg7k5"
+        ]
       }
     },
     {
@@ -1735,7 +3269,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-051-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-051-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:r6ezkrja"
+        ]
       }
     },
     {
@@ -1788,7 +3327,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -1840,7 +3384,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-059-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-059-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:bt9rgzrd"
+        ]
       }
     },
     {
@@ -1865,7 +3414,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -1920,7 +3470,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-053-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-053-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:g8g6xkhc"
+        ]
       }
     },
     {
@@ -1978,7 +3533,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:y3efydag"
+        ]
       }
     },
     {
@@ -2003,7 +3563,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -2056,7 +3617,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-049-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-049-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:46fx32fc"
+        ]
       }
     },
     {
@@ -2109,7 +3675,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-056-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-056-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:2fqc2k7s"
+        ]
       }
     },
     {
@@ -2169,7 +3740,12 @@
         ],
         "g_earth_damage_cause": [],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-054-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-054-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:j76pgjrn"
+        ]
       }
     },
     {
@@ -2225,7 +3801,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -2277,7 +3858,15 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-066-9L-01\rU2-B8649-5812-069-9L-01\rU2-B8649-5796-063-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-066-9L-01",
+          "U2-B8649-5812-069-9L-01",
+          "U2-B8649-5796-063-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:42q2hwud",
+          "bdr:u7zde582"
+        ]
       }
     },
     {
@@ -2346,7 +3935,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-056-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-056-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:exbp7u4c"
+        ]
       }
     },
     {
@@ -2371,113 +3965,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.16165899193813,
-          30.913965665300786
-        ]
-      },
-      "properties": {
-        "site_id": "49",
-        "site_name": "Tell Bat el-Kom",
-        "at_periods": [],
-        "at_asnde_no": "523",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "Abu el-Kasim 1988",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "51f86e55-fc60-3a4e-becf-e4b01c113e56",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "9b7cdb95-0081-1949-b573-0bae8b5c466f",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "92c300e8-ff44-1f43-a936-9f9984fab95b",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-045-9R-01\r"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.30733829995882,
-          30.890278335180557
-        ]
-      },
-      "properties": {
-        "site_id": "50",
-        "site_name": "Kom el-Behaira (Kom el-Zekri Behaira)",
-        "at_periods": [],
-        "at_asnde_no": "449",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1916",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "713efeef-2085-7e47-beeb-f838f0e94777",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "e757e26c-f610-6241-be30-bbbc19ca1b22",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "a69b247b-6554-b24d-833e-81f65bef87ac",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "infrastructure/roads",
-          "illicit excavation"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -2529,7 +4018,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-041-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-041-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:gc9mt3wg"
+        ]
       }
     },
     {
@@ -2582,7 +4076,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-040-9L-01\rU2-B8649-5796-037-9L-01\rU2-B8649-5812-041-9L-01\rU2-B8649-5812-038-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-040-9L-01",
+          "U2-B8649-5796-037-9L-01",
+          "U2-B8649-5812-041-9L-01",
+          "U2-B8649-5812-038-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fejex48r",
+          "bdr:55sqdpzr"
+        ]
       }
     },
     {
@@ -2634,7 +4137,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\rU2-B8649-5796-048-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-051-9R-01",
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:c7u5h3fb",
+          "bdr:9gedsjxr"
+        ]
       }
     },
     {
@@ -2659,7 +4169,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -2711,7 +4222,15 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-059-9L-01\rU2-B8649-5796-056-9L-01\rU2-B8649-5812-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-059-9L-01",
+          "U2-B8649-5796-056-9L-01",
+          "U2-B8649-5812-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:exbp7u4c",
+          "bdr:bt9rgzrd"
+        ]
       }
     },
     {
@@ -2763,7 +4282,15 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-045-9L-01\rU2-B8649-5796-048-9L-01\rU2-B8649-5812-049-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-045-9L-01",
+          "U2-B8649-5796-048-9L-01",
+          "U2-B8649-5812-049-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr",
+          "bdr:fy4fptvf"
+        ]
       }
     },
     {
@@ -2815,59 +4342,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-049-9R-01\rU2-B8649-5812-052-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.292563479879895,
-          30.888866055257985
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-049-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:uehrf7fn",
+          "bdr:fums58fy"
         ]
-      },
-      "properties": {
-        "site_id": "57",
-        "site_name": "Kom el-Buta",
-        "at_periods": [],
-        "at_asnde_no": "450",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "c1621156-2099-0141-9a0e-7ae3620ce47c",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "07c5166b-30cb-cd44-8286-413ff87ae635",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "54a72cd3-a73e-5b46-b109-32a58aafb9c5",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\r"
       }
     },
     {
@@ -2892,7 +4374,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -2917,7 +4400,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -2969,7 +4453,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-064-9L-01\rU2-B8649-5812-062-9R-01\rU2-B8649-5812-065-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-064-9L-01",
+          "U2-B8649-5812-062-9R-01",
+          "U2-B8649-5812-065-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:n34jggqb",
+          "bdr:we2xnzqj",
+          "bdr:tpvakxkc"
+        ]
       }
     },
     {
@@ -2994,7 +4487,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3019,7 +4513,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3076,7 +4571,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-054-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-054-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:cwj7f94n"
+        ]
       }
     },
     {
@@ -3101,7 +4601,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3153,7 +4654,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-062-9R-01\rU2-B8649-5812-059-9R-01\rU2-B8649-5812-065-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-062-9R-01",
+          "U2-B8649-5812-059-9R-01",
+          "U2-B8649-5812-065-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:agjbg7k5",
+          "bdr:we2xnzqj",
+          "bdr:tpvakxkc"
+        ]
       }
     },
     {
@@ -3206,7 +4716,16 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-065-9L-01\rU2-B8649-5796-068-9L-01\rU2-B8649-5796-071-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-065-9L-01",
+          "U2-B8649-5796-068-9L-01",
+          "U2-B8649-5796-071-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:s8ey69sm",
+          "bdr:tyhnhezd",
+          "bdr:yha5e3m5"
+        ]
       }
     },
     {
@@ -3262,7 +4781,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-070-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-070-9L-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -3287,7 +4809,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3340,7 +4863,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-058-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-058-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:wmemtdsj"
+        ]
       }
     },
     {
@@ -3365,68 +4893,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          29.958463420038907,
-          30.934227934111856
-        ]
-      },
-      "properties": {
-        "site_id": "71",
-        "site_name": "Ezbet es Safih",
-        "at_periods": [],
-        "at_asnde_no": "714",
-        "at_dated_as": null,
-        "at_condition": "Mostly overbuilt",
-        "at_reference": null,
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "9afd1b3f-4c78-3642-9c75-2da65e23cf66",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "d485f0a9-2c3a-454e-be1a-2e5bea1c8b9b",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "d6d27513-b93e-e146-a70a-b43131585fa8",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "0f7aee87-092c-9c46-a471-7fde5772ed6e",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture",
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-033-9R-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3451,7 +4919,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3476,7 +4945,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3529,7 +4999,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-045-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-045-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:x463ufkk"
+        ]
       }
     },
     {
@@ -3581,7 +5056,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-055-9L-01\rU2-B8649-5796-052-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-055-9L-01",
+          "U2-B8649-5796-052-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:rpf9y7tt",
+          "bdr:ytcas6ge"
+        ]
       }
     },
     {
@@ -3606,7 +5088,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3658,7 +5141,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01\rU2-B8649-5796-052-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01",
+          "U2-B8649-5796-052-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4",
+          "bdr:rpf9y7tt"
+        ]
       }
     },
     {
@@ -3711,63 +5201,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-063-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.312071675839892,
-          31.11772335942973
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-063-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:emczfmdt"
         ]
-      },
-      "properties": {
-        "site_id": "78",
-        "site_name": "Kom Ganadi",
-        "at_periods": [
-          "Ptolemaic",
-          "Roman"
-        ],
-        "at_asnde_no": "617",
-        "at_dated_as": "Ptolemaic to Roman",
-        "at_condition": "Overbuilt",
-        "at_reference": "Wilson and Grigoropoulos 2009, 136-137, 359-361",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "1819e122-5199-df4a-a015-00ba62ba57ad",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "aa6aa4f2-bcf4-6a4e-9d3d-f88578cbee9a",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "9b4aab1d-d1b0-c54b-854b-50d8413295b6",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-053-9L-01\rU2-B8649-5796-056-9L-01\rU2-B8649-5796-050-9L-01\r"
       }
     },
     {
@@ -3819,7 +5258,13 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-055-9L-01\rU2-B8649-5812-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-055-9L-01",
+          "U2-B8649-5812-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:ytcas6ge"
+        ]
       }
     },
     {
@@ -3844,7 +5289,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3869,7 +5315,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -3922,7 +5369,13 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-055-9L-01\rU2-B8649-5812-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-055-9L-01",
+          "U2-B8649-5812-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:ytcas6ge"
+        ]
       }
     },
     {
@@ -3978,7 +5431,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01\rU2-B8649-5812-038-9L-01\rU2-B8649-5812-041-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01",
+          "U2-B8649-5812-038-9L-01",
+          "U2-B8649-5812-041-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -4003,7 +5463,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4028,7 +5489,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4053,7 +5515,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4109,71 +5572,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.020504080731204,
-          30.98905479501836
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
         ]
-      },
-      "properties": {
-        "site_id": "87",
-        "site_name": "Kom el-Gill",
-        "at_periods": [
-          "Ptolemaic",
-          "Roman"
-        ],
-        "at_asnde_no": "628",
-        "at_dated_as": "Ptolemaic to Roman",
-        "at_condition": "Overbuilt, partially levelled",
-        "at_reference": "Wilson and Grigoropoulos 2009, 49-50, 295-296",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "3f88539b-8e83-004b-890c-6bd559022939",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "70b9b895-2df3-f44b-97de-3bf228a5148b",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "b3d34562-ee8d-a742-b0e0-5183504b494c",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "3884b5a3-8559-c74a-9b66-0590562a8d59",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-036-9L-01\rU2-B8649-5812-039-9L-01\r"
       }
     },
     {
@@ -4198,7 +5602,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4254,7 +5659,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-047-9L-01\rU2-B8649-5796-044-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-047-9L-01",
+          "U2-B8649-5796-044-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:dryjktqj",
+          "bdr:9bkm8kk9"
+        ]
       }
     },
     {
@@ -4307,7 +5719,15 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-056-9R-01\rU2-B8649-5796-059-9L-01\rU2-B8649-5812-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-056-9R-01",
+          "U2-B8649-5796-059-9L-01",
+          "U2-B8649-5812-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:bt9rgzrd",
+          "bdr:2fqc2k7s"
+        ]
       }
     },
     {
@@ -4360,63 +5780,16 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01\rU2-B8649-5796-050-9L-01\rU2-B8649-5796-047-9L-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.002625921498463,
-          31.091523068022738
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01",
+          "U2-B8649-5796-050-9L-01",
+          "U2-B8649-5796-047-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:bd766p6r",
+          "bdr:9bkm8kk9",
+          "bdr:jy5uatju"
         ]
-      },
-      "properties": {
-        "site_id": "93",
-        "site_name": "Kom el-Hagg",
-        "at_periods": [
-          "Ptolemaic",
-          "Roman"
-        ],
-        "at_asnde_no": "358",
-        "at_dated_as": "Ptolemaic and Roman",
-        "at_condition": "Overbuilt",
-        "at_reference": "Wilson and Grigoropoulos 2009, 45-46, 289-291",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "b0863a67-3787-614d-8bf8-74ffe886012f",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "ea351c73-66af-c746-8cb6-6c0563d34839",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "0f4faf88-92c2-d44d-a254-1d09c6f7a338",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture",
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-034-9L-01\rU2-B8649-5812-035-9L-01\r"
       }
     },
     {
@@ -4441,7 +5814,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4506,7 +5880,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-047-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-047-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9bkm8kk9"
+        ]
       }
     },
     {
@@ -4531,7 +5910,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4583,7 +5963,13 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-036-9L-01\rU2-B8649-5812-039-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-036-9L-01",
+          "U2-B8649-5812-039-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:d48c6tjb"
+        ]
       }
     },
     {
@@ -4638,7 +6024,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-053-9L-01\rU2-B8649-5796-056-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-053-9L-01",
+          "U2-B8649-5796-056-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:exbp7u4c",
+          "bdr:y3efydag"
+        ]
       }
     },
     {
@@ -4691,7 +6084,13 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-049-9R-01\rU2-B8649-5812-046-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-049-9R-01",
+          "U2-B8649-5812-046-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fums58fy"
+        ]
       }
     },
     {
@@ -4746,62 +6145,16 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01\rU2-B8649-5796-054-9L-01\rU2-B8649-5796-057-9L-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.00740631766973,
-          31.10806180889148
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01",
+          "U2-B8649-5796-054-9L-01",
+          "U2-B8649-5796-057-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:u7kr6f3u",
+          "bdr:gq98sdft",
+          "bdr:cwj7f94n"
         ]
-      },
-      "properties": {
-        "site_id": "105",
-        "site_name": "Kom Ishu",
-        "at_periods": [
-          "Late Roman"
-        ],
-        "at_asnde_no": "357",
-        "at_dated_as": "Late Roman",
-        "at_condition": "Overbuilt",
-        "at_reference": "Wilson and Grigoropoulos 2009, 47-48, 292-294",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "f41900f0-f490-8d4e-9a66-287f7b050048",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "101b2f03-d501-9648-a500-a5555dc02883",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "6e171c7b-6ecf-2f49-8447-bc1e67ae1599",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture",
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-035-9R-01\r"
       }
     },
     {
@@ -4826,7 +6179,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4851,7 +6205,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4876,7 +6231,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -4930,59 +6286,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-070-9R-01\rU2-B8649-5812-067-9R-01\rU2-B8649-5812-073-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.243813887886713,
-          31.026333221514975
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-070-9R-01",
+          "U2-B8649-5812-067-9R-01",
+          "U2-B8649-5812-073-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:adg68sbz",
+          "bdr:g9h6rvba",
+          "bdr:6dfunxxq"
         ]
-      },
-      "properties": {
-        "site_id": "110",
-        "site_name": "Tell el-Kayasir",
-        "at_periods": [],
-        "at_asnde_no": "390",
-        "at_dated_as": null,
-        "at_condition": "Levelled for agriculture",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "f00da98d-a680-7246-b461-b96d779a20e2",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "8e9e92a6-c928-f549-a256-fae530ef766a",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "0772ef46-5477-bf41-83b0-4f4675e8573a",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-049-9L-01\rU2-B8649-5812-056-9R-01\r"
       }
     },
     {
@@ -5009,7 +6322,7 @@
             "images": [
               {
                 "uid": "8e96c729-233b-9e46-9035-93184e46ef58",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
+                "tags": "\"Corona image\""
               }
             ]
           },
@@ -5017,7 +6330,7 @@
             "images": [
               {
                 "uid": "e841a129-a2b6-0341-af6e-bf64b29c3efc",
-                "tags": "\"recent satellite image\",\"NOT_AN_IMAGE\""
+                "tags": "\"recent satellite image\""
               }
             ]
           },
@@ -5025,7 +6338,7 @@
             "images": [
               {
                 "uid": "b3842ab2-478c-5c4c-84af-a0096564d19c",
-                "tags": "\"U2 image\",\"NOT_AN_IMAGE\""
+                "tags": "\"U2 image\""
               }
             ]
           },
@@ -5058,7 +6371,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-044-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-044-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:dryjktqj"
+        ]
       }
     },
     {
@@ -5115,7 +6433,14 @@
           "Perhaps SCA excavations to judge from google earth?"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-049-9R-01\rU2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-049-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:uehrf7fn",
+          "bdr:fums58fy"
+        ]
       }
     },
     {
@@ -5140,7 +6465,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -5165,7 +6491,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -5217,7 +6544,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-048-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:9gedsjxr"
+        ]
       }
     },
     {
@@ -5270,7 +6602,14 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01\rU2-B8649-5812-031-9R-01\rU2-B8649-5812-038-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01",
+          "U2-B8649-5812-031-9R-01",
+          "U2-B8649-5812-038-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -5323,7 +6662,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -5375,7 +6719,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-046-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-046-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:6rqqnk64"
+        ]
       }
     },
     {
@@ -5428,7 +6777,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4"
+        ]
       }
     },
     {
@@ -5480,7 +6834,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -5505,60 +6862,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.019716490870316,
-          31.131337319530257
-        ]
-      },
-      "properties": {
-        "site_id": "122",
-        "site_name": "Kom Limsan",
-        "at_periods": [],
-        "at_asnde_no": "356",
-        "at_dated_as": null,
-        "at_condition": "Tracks, modern buildings in the NW corner",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "2ff9ac5b-7100-1c4b-8312-3c55eee0ebb7",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "0a2752ef-22e3-7147-a4d0-6a7a110d9bc7",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "9d85d910-6f5a-d743-883d-6c6ea5281b8f",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-032-9R-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -5610,7 +6915,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -5672,7 +6982,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-042-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-042-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fjtsf4sd"
+        ]
       }
     },
     {
@@ -5697,7 +7012,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -5722,61 +7038,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.213189311649938,
-          30.957241307543374
-        ]
-      },
-      "properties": {
-        "site_id": "170",
-        "site_name": "Kom el-Rumadniya",
-        "at_periods": [],
-        "at_asnde_no": "418",
-        "at_dated_as": null,
-        "at_condition": "Pretty good",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "7313bb6a-c8a1-0a45-a19e-a046591c65cc",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "b8c5e006-a5c8-f341-aefa-6bcc93e84438",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "7ecc28ef-605c-ee4b-9d84-2391d06b4904",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture",
-          "illicit excavation"
-        ],
-        "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -5831,7 +7094,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-043-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-043-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:udgpucxu"
+        ]
       }
     },
     {
@@ -5883,7 +7151,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-043-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-043-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:udgpucxu"
+        ]
       }
     },
     {
@@ -5938,7 +7211,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-043-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-043-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:udgpucxu"
+        ]
       }
     },
     {
@@ -5998,71 +7276,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-043-9L-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.059521778770495,
-          31.022612750719045
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-043-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:mx48z2qp"
         ]
-      },
-      "properties": {
-        "site_id": "131",
-        "site_name": "Kom el-Mahar",
-        "at_periods": [
-          "Ptolemaic",
-          "Late Roman",
-          "Roman"
-        ],
-        "at_asnde_no": "398",
-        "at_dated_as": "Ptolemaic to Late Roman",
-        "at_condition": "Overbuilt by cemetery",
-        "at_reference": "Wilson and Grigoropoulos 2009, 53-55, 297-301",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "23fff1e8-939c-4a44-9111-465616280169",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "02bdffc3-7f72-f943-bf18-32a632ef29fd",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "515a3034-aadd-324c-9dbf-48210b421384",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "ab971461-ad13-1d48-b2c0-7b611ad1c6c6",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-040-9R-01\r"
       }
     },
     {
@@ -6123,59 +7342,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.312553633814655,
-          30.908277475308164
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
         ]
-      },
-      "properties": {
-        "site_id": "134",
-        "site_name": "Kom el-Maqta",
-        "at_periods": [],
-        "at_asnde_no": "447",
-        "at_dated_as": null,
-        "at_condition": "Levelled for Agriculture but visible in field pattern",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "5be9348d-e7ca-844b-82cb-71abfd6f8f36",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "d4558cba-a5af-9242-80a1-4118b177b067",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "668a3c41-6717-9945-a463-e4afd32b8328",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\r"
       }
     },
     {
@@ -6228,7 +7400,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -6255,7 +7430,7 @@
             "images": [
               {
                 "uid": "7241b7d1-5c1e-ff47-93f9-d9249a6f6aae",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
+                "tags": "\"Corona image\""
               }
             ]
           },
@@ -6263,7 +7438,7 @@
             "images": [
               {
                 "uid": "b22f5bdf-7818-164b-a0d2-0ff951569f36",
-                "tags": "\"recent satellite image\",\"NOT_AN_IMAGE\""
+                "tags": "\"recent satellite image\""
               }
             ]
           },
@@ -6271,7 +7446,7 @@
             "images": [
               {
                 "uid": "303b42fc-dc7f-014d-b3eb-05209a5c5917",
-                "tags": "\"U2 image\",\"NOT_AN_IMAGE\""
+                "tags": "\"U2 image\""
               }
             ]
           },
@@ -6304,7 +7479,10 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-041-9L-01_modified"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-041-9L-01_modified"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -6329,7 +7507,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -6382,7 +7561,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -6435,7 +7619,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-045-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-045-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fy4fptvf"
+        ]
       }
     },
     {
@@ -6496,7 +7685,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
+        ]
       }
     },
     {
@@ -6551,7 +7745,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-043-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-043-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:udgpucxu"
+        ]
       }
     },
     {
@@ -6609,7 +7808,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-053-9L-01\rU2-B8649-5796-056-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-053-9L-01",
+          "U2-B8649-5796-056-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:exbp7u4c",
+          "bdr:y3efydag"
+        ]
       }
     },
     {
@@ -6661,7 +7867,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-064-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-064-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:6y63yy97"
+        ]
       }
     },
     {
@@ -6713,7 +7924,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-043-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-043-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:mx48z2qp"
+        ]
       }
     },
     {
@@ -6738,7 +7954,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -6791,7 +8008,16 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-062-9R-01\rU2-B8649-5796-061-9L-01\rU2-B8649-5796-064-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-062-9R-01",
+          "U2-B8649-5796-061-9L-01",
+          "U2-B8649-5796-064-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:n34jggqb",
+          "bdr:we2xnzqj",
+          "bdr:dtvffj8n"
+        ]
       }
     },
     {
@@ -6843,7 +8069,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -6899,7 +8130,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-064-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-064-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:n34jggqb"
+        ]
       }
     },
     {
@@ -6952,7 +8188,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -6977,7 +8218,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -7030,59 +8272,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-057-9L-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.225064547166006,
-          30.897886354725436
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-057-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:u7kr6f3u"
         ]
-      },
-      "properties": {
-        "site_id": "149",
-        "site_name": "Kom el-Nigili",
-        "at_periods": [],
-        "at_asnde_no": "451",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt, partially levelled",
-        "at_reference": "Kenawi 2010; SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "02395119-35b4-f14d-922e-764dcdb3b40c",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "5aff9df8-e11d-2746-afe7-02fce71476d4",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "f72eabea-5220-2b43-957d-2c8de8475b4f",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01\r"
       }
     },
     {
@@ -7135,7 +8330,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -7191,7 +8391,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5796-062-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-062-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:6azjuwfh"
+        ]
       }
     },
     {
@@ -7246,7 +8451,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5796-062-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-062-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:6azjuwfh"
+        ]
       }
     },
     {
@@ -7307,7 +8517,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-045-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-045-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fy4fptvf"
+        ]
       }
     },
     {
@@ -7364,7 +8579,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
       }
     },
     {
@@ -7389,7 +8609,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -7441,7 +8662,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-052-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-052-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:rpf9y7tt"
+        ]
       }
     },
     {
@@ -7496,59 +8722,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-053-9R-01\rU2-B8649-5812-056-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.267393257307386,
-          30.90864952643774
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-053-9R-01",
+          "U2-B8649-5812-056-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:g8g6xkhc",
+          "bdr:2fqc2k7s"
         ]
-      },
-      "properties": {
-        "site_id": "157",
-        "site_name": "Kom el-Qarinein",
-        "at_periods": [],
-        "at_asnde_no": "448",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt, once extended beyond cemetery to the west",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "e8679201-85f8-e947-af39-6f112825f009",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "ddc483c6-92f5-3245-b968-78ee2845a0a0",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "bd9b665e-7911-7f4b-9810-04c9b3bc71f3",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\r"
       }
     },
     {
@@ -7601,7 +8782,38 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:jy5uatju"
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.17590744599095,
+          31.213350901216657
+        ]
+      },
+      "properties": {
+        "site_id": "162",
+        "site_name": "Kom Quleila(t)",
+        "at_periods": [],
+        "at_asnde_no": "225",
+        "at_dated_as": null,
+        "at_condition": "Levelled for fish lagoons",
+        "at_reference": "SoE 1914",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": null,
+        "g_earth_damage_cause": [],
+        "g_earth_general_condition": null,
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -7653,193 +8865,10 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01\r"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.208288752514807,
-          30.95243387035266
-        ]
-      },
-      "properties": {
-        "site_id": "160",
-        "site_name": "Kom Qinas",
-        "at_periods": [],
-        "at_asnde_no": "417",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt,  levelled",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "d160c1cf-37a9-7f49-81b4-9c48d2766239",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "1364cbe7-4e3b-d648-8186-ac4687c77b09",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "294341c5-6225-da47-935e-46be010df0d3",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-048-9R-01"
         ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "illicit excavation",
-          "infrastructure/roads",
-          "agriculture"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01\r"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.04838841894442,
-          30.98073736676117
-        ]
-      },
-      "properties": {
-        "site_id": "161",
-        "site_name": "Kom el-Qubur (Maqboura)",
-        "at_periods": [],
-        "at_asnde_no": "399",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt by cemetery",
-        "at_reference": "SoE 1914; surveyed by P. Wilson",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "28286a6c-b216-0d4e-a7a7-5db61ea20d81",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "1a5d12c6-b8b7-aa43-9e9a-d61cac3b1bbe",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "775e7a19-41e2-e24a-9f6e-de89a8a349ca",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-036-9L-01\r"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.17590744599095,
-          31.213350901216657
-        ]
-      },
-      "properties": {
-        "site_id": "162",
-        "site_name": "Kom Quleila(t)",
-        "at_periods": [],
-        "at_asnde_no": "225",
-        "at_dated_as": null,
-        "at_condition": "Levelled for fish lagoons",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": null,
-        "g_earth_damage_cause": [],
-        "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.21349233129793,
-          30.928603691375322
-        ]
-      },
-      "properties": {
-        "site_id": "163",
-        "site_name": "Kom Radwan",
-        "at_periods": [
-          "Roman"
-        ],
-        "at_asnde_no": "421",
-        "at_dated_as": "Roman?",
-        "at_condition": "Overbuilt in east by cemetery, otherwise pretty good",
-        "at_reference": "Kenawi 2010; SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "cf138aa2-d1e9-ce44-a967-1db99616abf4",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "720f5e96-1f98-7c49-adcd-c0acbbd948ba",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "9883fbc5-d697-e541-b7cd-d04c13a5c5dc",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01\r"
+        "bdr_pids": []
       }
     },
     {
@@ -7892,7 +8921,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-065-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-065-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:tyhnhezd"
+        ]
       }
     },
     {
@@ -7945,7 +8979,10 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-044-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-044-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -7970,59 +9007,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.252153458803058,
-          30.945820448703948
-        ]
-      },
-      "properties": {
-        "site_id": "167",
-        "site_name": "Tell el-Rizimat",
-        "at_periods": [],
-        "at_asnde_no": "425",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "dad2a65a-4f60-a244-a21a-c844982c9b9d",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "35c09bc3-2bbf-6847-81c9-b7b3f1fc30a8",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "421691f6-f9c2-df4a-87d1-c691d7296aff",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -8074,7 +9060,16 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-052-9R-01\rU2-B8649-5796-054-9L-01\rU2-B8649-5796-057-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-052-9R-01",
+          "U2-B8649-5796-054-9L-01",
+          "U2-B8649-5796-057-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:u7kr6f3u",
+          "bdr:uehrf7fn",
+          "bdr:cwj7f94n"
+        ]
       }
     },
     {
@@ -8127,7 +9122,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01\rU2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4",
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -8179,7 +9181,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01\rU2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4",
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -8232,7 +9241,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-053-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-053-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:g8g6xkhc"
+        ]
       }
     },
     {
@@ -8285,7 +9299,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-056-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-056-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:2fqc2k7s"
+        ]
       }
     },
     {
@@ -8340,7 +9359,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
+        ]
       }
     },
     {
@@ -8397,7 +9421,14 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-053-9R-01\rU2-B8649-5812-056-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-053-9R-01",
+          "U2-B8649-5812-056-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:g8g6xkhc",
+          "bdr:2fqc2k7s"
+        ]
       }
     },
     {
@@ -8450,59 +9481,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.184919668281015,
-          30.950699907733174
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
         ]
-      },
-      "properties": {
-        "site_id": "179",
-        "site_name": "Kom el-Saqya",
-        "at_periods": [],
-        "at_asnde_no": "416",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "880c2e54-387c-dc45-8553-102e33b48081",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "d289727a-4861-3b41-9f0f-1bc0be3c5bfb",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "7ca0d128-1ae5-4148-85c7-990ea5248632",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-048-9R-01\r"
       }
     },
     {
@@ -8554,7 +9538,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-049-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-049-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:46fx32fc"
+        ]
       }
     },
     {
@@ -8608,7 +9597,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-052-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-052-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:rpf9y7tt"
+        ]
       }
     },
     {
@@ -8661,84 +9655,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-062-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.657201323790016,
-          30.899529905621172
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-062-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:we2xnzqj"
         ]
-      },
-      "properties": {
-        "site_id": "183",
-        "site_name": "El-Shahedi",
-        "at_periods": [],
-        "at_asnde_no": "709",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt and Levelled",
-        "at_reference": "SCA Register",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "65618327-3701-4f40-a7bf-df9b00ed63ac",
-                "tags": "\"U2 image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "b164edd6-2d3c-c049-84eb-77b4ff1ba580",
-                "tags": "\"recent satellite image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "f3fa7183-048b-3e4f-9971-645d64c1580d",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "e1b839ce-6bb8-504e-9fba-48db6b4a2139",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "b5474b84-4b7a-9549-afdf-9ce1ae9642bb",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "c266fe3e-e6c0-344d-bc60-4e0e4235a145",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-072-9R-01\r"
       }
     },
     {
@@ -8763,7 +9685,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -8815,89 +9738,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-046-9L-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.183667962691654,
-          31.140395769079106
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-046-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:6rqqnk64"
         ]
-      },
-      "properties": {
-        "site_id": "186",
-        "site_name": "Tell Sherif Khalaf",
-        "at_periods": [
-          "Late Roman",
-          "Roman",
-          "Ptolemaic"
-        ],
-        "at_asnde_no": "636",
-        "at_dated_as": "Ptolemaic to Late Roman",
-        "at_condition": "Overbuilt",
-        "at_reference": "Wilson and Grigoropoulos 2009, 98, 332-334",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "5a52a0b8-9372-fc47-8562-25ac8f8da93c",
-                "tags": "\"Corona image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "ba331e6b-8bda-f844-a3ff-47245e374de8",
-                "tags": "\"U2 image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "ffafab08-7bf1-4949-bf68-ab470650cfbd",
-                "tags": "\"recent satellite image\",\"NOT_AN_IMAGE\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "c7a58dc0-77ce-a64b-903e-3029c4d7495b",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "34b4e195-3b5d-bb43-ab3e-5c1b0b055bc2",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "cb597e00-d1fe-2a41-a036-44cce840d3b0",
-                "tags": "\"Corona image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture",
-          "overbuilding",
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "destroyed",
-        "u2_images_showing_the_site": "U2-B8649-5796-044-9L-01_modified, \rU2-B8649-5796-047-9L-01_modified"
       }
     },
     {
@@ -8922,7 +9768,90 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          30.657201323790016,
+          30.899529905621172
+        ]
+      },
+      "properties": {
+        "site_id": "183",
+        "site_name": "El-Shahedi",
+        "at_periods": [],
+        "at_asnde_no": "709",
+        "at_dated_as": null,
+        "at_condition": "Overbuilt and Levelled",
+        "at_reference": "SCA Register",
+        "limit_view_to": null,
+        "at_governorate": "Beheira",
+        "u2ers_site_files": [
+          {
+            "images": [
+              {
+                "uid": "65618327-3701-4f40-a7bf-df9b00ed63ac",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "b164edd6-2d3c-c049-84eb-77b4ff1ba580",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "f3fa7183-048b-3e4f-9971-645d64c1580d",
+                "tags": "\"Corona image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "e1b839ce-6bb8-504e-9fba-48db6b4a2139",
+                "tags": "\"recent satellite image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "b5474b84-4b7a-9549-afdf-9ce1ae9642bb",
+                "tags": "\"U2 image\""
+              }
+            ]
+          },
+          {
+            "images": [
+              {
+                "uid": "c266fe3e-e6c0-344d-bc60-4e0e4235a145",
+                "tags": "\"Corona image\""
+              }
+            ]
+          }
+        ],
+        "g_earth_damage_cause": [
+          "overbuilding",
+          "agriculture"
+        ],
+        "g_earth_general_condition": "very bad",
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-072-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:g8jhguem"
+        ]
       }
     },
     {
@@ -8976,7 +9905,10 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-060-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-060-9L-01"
+        ],
+        "bdr_pids": []
       }
     },
     {
@@ -9028,7 +9960,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-055-9R-01\rU2-B8649-5812-052-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-055-9R-01",
+          "U2-B8649-5812-052-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:dsfngxd4",
+          "bdr:uehrf7fn"
+        ]
       }
     },
     {
@@ -9053,7 +9992,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9078,7 +10018,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9140,7 +10081,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-040-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-040-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:zb3z5w9b"
+        ]
       }
     },
     {
@@ -9194,7 +10140,12 @@
           "illicit excavation"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-045-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-045-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fy4fptvf"
+        ]
       }
     },
     {
@@ -9219,7 +10170,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9271,7 +10223,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-050-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-050-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:bd766p6r"
+        ]
       }
     },
     {
@@ -9325,7 +10282,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-055-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-055-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:ytcas6ge"
+        ]
       }
     },
     {
@@ -9350,7 +10312,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9412,7 +10375,14 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01\rU2-B8649-5812-063-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01",
+          "U2-B8649-5812-063-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:emczfmdt",
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -9437,7 +10407,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9499,7 +10470,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-053-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-053-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:y3efydag"
+        ]
       }
     },
     {
@@ -9524,7 +10500,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9549,7 +10526,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9574,60 +10552,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.249600169238246,
-          30.949179180837874
-        ]
-      },
-      "properties": {
-        "site_id": "204",
-        "site_name": "Kom el-Tibn",
-        "at_periods": [],
-        "at_asnde_no": "426",
-        "at_dated_as": null,
-        "at_condition": "Overbuilt and levelled for agriculture, originally 3 mounds (pre 2009)",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "413985f7-fd73-7f4c-8377-a99c4d403159",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "20bc8d07-1639-9a43-acbe-df7793b8eaef",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "b7b4f273-f958-264d-b9f1-f57100252e35",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "overbuilding",
-          "agriculture"
-        ],
-        "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-048-9L-01\r"
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9652,7 +10578,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9709,7 +10636,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "fair",
-        "u2_images_showing_the_site": "U2-B8649-5796-045-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-045-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:fy4fptvf"
+        ]
       }
     },
     {
@@ -9765,7 +10697,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
+        ]
       }
     },
     {
@@ -9819,60 +10756,12 @@
           "infrastructure/roads"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-060-9R-01"
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          30.24129559573036,
-          30.9223654583299
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-060-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:gq98sdft"
         ]
-      },
-      "properties": {
-        "site_id": "209",
-        "site_name": "Tell el-(Daoud) Waq",
-        "at_periods": [],
-        "at_asnde_no": "423",
-        "at_dated_as": null,
-        "at_condition": "Clear",
-        "at_reference": "SoE 1914",
-        "limit_view_to": null,
-        "at_governorate": "Beheira",
-        "u2ers_site_files": [
-          {
-            "images": [
-              {
-                "uid": "272ff76f-5545-5449-8411-410d7f1cd9d9",
-                "tags": "\"U2 image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "e943b49c-8674-6745-b47b-f1380d4449be",
-                "tags": "\"Corona image\""
-              }
-            ]
-          },
-          {
-            "images": [
-              {
-                "uid": "706c400f-e2ad-964b-aa75-f7c0ec0b977f",
-                "tags": "\"recent satellite image\""
-              }
-            ]
-          }
-        ],
-        "g_earth_damage_cause": [
-          "agriculture",
-          "infrastructure/roads"
-        ],
-        "g_earth_general_condition": "good",
-        "u2_images_showing_the_site": "U2-B8649-5812-051-9R-01\r"
       }
     },
     {
@@ -9897,7 +10786,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -9949,7 +10839,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5812-064-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-064-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:6y63yy97"
+        ]
       }
     },
     {
@@ -9974,7 +10869,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -10027,7 +10923,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-049-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-049-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:fums58fy"
+        ]
       }
     },
     {
@@ -10052,7 +10953,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     },
     {
@@ -10105,7 +11007,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "poor",
-        "u2_images_showing_the_site": "U2-B8649-5796-055-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-055-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:ytcas6ge"
+        ]
       }
     },
     {
@@ -10157,7 +11064,12 @@
           "agriculture"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5796-064-9L-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5796-064-9L-01"
+        ],
+        "bdr_pids": [
+          "bdr:n34jggqb"
+        ]
       }
     },
     {
@@ -10209,7 +11121,12 @@
           "overbuilding"
         ],
         "g_earth_general_condition": "very bad",
-        "u2_images_showing_the_site": "U2-B8649-5812-042-9R-01"
+        "u2_images_showing_the_site": [
+          "U2-B8649-5812-042-9R-01"
+        ],
+        "bdr_pids": [
+          "bdr:ngbxz7ry"
+        ]
       }
     },
     {
@@ -10234,7 +11151,8 @@
         "u2ers_site_files": null,
         "g_earth_damage_cause": [],
         "g_earth_general_condition": null,
-        "u2_images_showing_the_site": null
+        "u2_images_showing_the_site": [],
+        "bdr_pids": []
       }
     }
   ]

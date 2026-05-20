@@ -3,7 +3,7 @@ import argparse
 import os
 
 def clean_json_fields(input_path, output_path):
-    fields_to_process = ["at_periods", "g_earth_damage_cause"]
+    fields_to_process = ["at_periods", "g_earth_damage_cause", "u2_images_showing_the_site"]
     forbidden_tag = "NOT_AN_IMAGE"
 
     try:

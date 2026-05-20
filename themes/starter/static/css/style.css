@@ -165,6 +165,9 @@ footer {
     h1, .thumbnail-gallery {
         grid-column: span 2 / span 2;
     }
+    h2 {
+        margin: 0;
+    }
     dl {
         border: solid 1px var(--main-color);;
         padding: 0.5rem 1rem;

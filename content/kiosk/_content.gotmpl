@@ -30,6 +30,9 @@
   {{ $damage := slice }}
   {{ $damage := .g_earth_damage_cause }}
 
+  {{ $pids := slice }}
+  {{ $pids := .bdr_pids }}
+
   {{ $metadata := dict
     "govenorate" .at_governorate
     "ansde #" .at_asnde_no
@@ -51,6 +54,8 @@
     "judgements" $judgements
     "seadragon" $images
     "periods" $periods
+    "pids" $pids
+
   }}
 
   {{ $page := dict

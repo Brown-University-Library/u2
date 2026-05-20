@@ -3,44 +3,54 @@
 
 {{ .Content }}
 <dl>
-  {{ range $k, $v := .Params.metadata }} 
-    {{ if eq $k "ees reference"}}
-      <dt><a href="/ees">{{ $k }}</a></dt>
-      <dd>{{ $v }}</dd>
-    {{ else }}
-    <dt>{{ $k }}</dt>
-    <dd>{{ $v }}</dd>
-    {{ end }} 
-  {{ end }}
+  <h2>Site metadata</h2>
+  {{ range $k, $v := .Params.metadata }} {{ if eq $k "ees reference"}}
+  <dt><a href="/ees">{{ $k }}</a></dt>
+  <dd>{{ $v }}</dd>
+  {{ else }}
+  <dt>{{ $k }}</dt>
+  <dd>{{ $v }}</dd>
+  {{ end }} {{ end }}
 </dl>
-<dl>
-  {{ $terms := .GetTerms "periods" }}
-  {{ range $k, $v := .Params.judgements }}
+<div>
+  <dl>
+    <h2>Observations</h2>
+    {{ $terms := .GetTerms "periods" }} {{ range $k, $v := .Params.judgements }}
     {{ if eq $k "periods" }}
     <dt>{{ $k }}</dt>
-      {{ if $terms }}
-      <dd>
-        <ul>
-          {{ range $terms }}
-          <li>
-            <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          </li>
-          {{ end }}
-        </ul>
-      </dd>
-      {{ end }}
-    {{ else if eq $k "recent damage cause" }}
-      <dt>{{ $k }}</dt>
-      {{ if $v }}
-      <dd><ul>{{ range $v }}<li>{{ . }}</li>{{end}}</ul></dd>
-      {{ end }}
-    {{ else }}
+    {{ if $terms }}
+    <dd>
+      <ul>
+        {{ range $terms }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        </li>
+        {{ end }}
+      </ul>
+    </dd>
+    {{ end }} {{ else if eq $k "recent damage cause" }}
+    <dt>{{ $k }}</dt>
+    {{ if $v }}
+    <dd>
+      <ul>
+        {{ range $v }}
+        <li>{{ . }}</li>
+        {{end}}
+      </ul>
+    </dd>
+    {{ end }} {{ else }}
     <dt>{{ $k }}</dt>
     <dd>{{ $v }}</dd>
-  {{ end }} 
-  {{ end }}
-</dl>
-<hr />
+    {{ end }} {{ end }}
+  </dl>
+  {{ range $k, $v := .Params.pids }} {{ if $v }}
+  <p>
+    <a href="https://repository.library.brown.edu/studio/item/{{ . }}"
+      >Image {{ $k }}: Full U2 negative in the Brown Digital Repository</a
+    >
+  </p>
+  {{ end }} {{ end }}
+</div>
 <div class="thumbnail-gallery">
   {{ range $k, $v := .Params.seadragon }}
   <figure onclick="openViewer({{ $k }})">
