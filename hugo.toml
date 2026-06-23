@@ -15,6 +15,9 @@ theme = 'starter'
     name = 'Brown Digital Repository'
     url = 'https://repository.library.brown.edu/studio/collections/bdr:88np2gke/'
     weight = 100
+  [[menu.main]]
+    name = 'Periods'
+    url = '/periods'
 
 [taxonomies]
   period = "periods"
