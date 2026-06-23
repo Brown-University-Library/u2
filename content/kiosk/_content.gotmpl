@@ -1,0 +1,72 @@
+{{ $data := dict }}
+{{ $path := "kiosk/data.json" }}
+{{ $data := resources.Get $path | transform.Unmarshal }}
+
+{{ range $data }}
+
+  {{ $images := slice }} // Create an empty array
+  {{ $files := dict 
+  "images" .u2ers_site_files
+  }}
+  {{/* getting the various images */}}
+  {{ range $k, $v := $files }}
+  {{ range $k1, $v1 := $v }}
+  {{ range $k2, $v2 := $v1 }}
+  {{ range $k3, $v3 := $v2 }}
+  		{{ $images = $images | append $v3 }}
+  {{ end }} {{/* close range k3 */}}
+  {{ end }} {{/* close range k2 */}}
+  {{ end }} {{/* close range k1 */}}
+  {{ end }} {{/* close range k */}}
+
+  {{ $content := dict 
+    "mediaType" "text/html"
+  }}
+
+  // Create arrays to contain kiosk-specific data in params
+  {{ $periods := slice }}
+  {{ $periods := .at_periods }}
+
+  {{ $damage := slice }}
+  {{ $damage := .g_earth_damage_cause }}
+
+  {{ $pids := slice }}
+  {{ $pids := .bdr_pids }}
+
+  {{ $metadata := dict
+    "govenorate" .at_governorate
+    "ansde #" .at_asnde_no
+    "condition in EES Survey" .at_condition
+    "notes on dates" .at_dated_as
+    "EES reference" .at_reference
+    }}
+    {{ $judgements:= dict
+    "Recent general condition" .g_earth_general_condition
+    "Recent damage cause" $damage
+    "periods" $periods
+   }}
+
+  {{ $params := dict 
+    "date" "2023-10-15T13:18:50-07:00"
+    "kind" "page"
+    "draft" "false"
+    "metadata" $metadata
+    "judgements" $judgements
+    "seadragon" $images
+    "periods" $periods
+    "pids" $pids
+
+  }}
+
+  {{ $page := dict
+    "params" $params 
+    "content" $content
+    "path" .site_id
+    "title" .site_name
+    "periods" $periods
+
+  }}
+
+  {{ $.AddPage $page }}
+
+{{ end }} {{/* close range data */}}
