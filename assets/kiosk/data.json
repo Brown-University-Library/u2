@@ -80,7 +80,7 @@
       "U2-B8649-5796-044-9L-01_modified",
       "U2-B8649-5796-047-9L-01_modified"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "19",
@@ -132,7 +132,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "21",
@@ -184,9 +184,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-054-9R-01"
     ],
-    "image_pids": [
-      "bdr:j76pgjrn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-054-9R-01": "bdr:j76pgjrn"
+    }
   },
   {
     "site_id": "26",
@@ -239,7 +239,7 @@
     "u2_images_showing_the_site": [
       "U2-B8648-5812-045-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "49",
@@ -291,9 +291,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-045-9R-01"
     ],
-    "image_pids": [
-      "bdr:x463ufkk"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-045-9R-01": "bdr:x463ufkk"
+    }
   },
   {
     "site_id": "50",
@@ -347,9 +347,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-051-9R-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb"
+    }
   },
   {
     "site_id": "57",
@@ -401,9 +401,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-051-9R-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb"
+    }
   },
   {
     "site_id": "71",
@@ -464,7 +464,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-033-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "78",
@@ -522,11 +522,11 @@
       "U2-B8649-5796-056-9L-01",
       "U2-B8649-5796-050-9L-01"
     ],
-    "image_pids": [
-      "bdr:bd766p6r",
-      "bdr:y3efydag",
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-053-9L-01": "bdr:y3efydag",
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c",
+      "U2-B8649-5796-050-9L-01": "bdr:bd766p6r"
+    }
   },
   {
     "site_id": "87",
@@ -591,9 +591,9 @@
       "U2-B8649-5796-036-9L-01",
       "U2-B8649-5812-039-9L-01"
     ],
-    "image_pids": [
-      "bdr:d48c6tjb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-036-9L-01": "bdr:d48c6tjb"
+    }
   },
   {
     "site_id": "93",
@@ -650,9 +650,9 @@
       "U2-B8649-5796-034-9L-01",
       "U2-B8649-5812-035-9L-01"
     ],
-    "image_pids": [
-      "bdr:debe5h8x"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-034-9L-01": "bdr:debe5h8x"
+    }
   },
   {
     "site_id": "105",
@@ -707,7 +707,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-035-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "110",
@@ -760,10 +760,10 @@
       "U2-B8649-5796-049-9L-01",
       "U2-B8649-5812-056-9R-01"
     ],
-    "image_pids": [
-      "bdr:46fx32fc",
-      "bdr:2fqc2k7s"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-049-9L-01": "bdr:46fx32fc",
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s"
+    }
   },
   {
     "site_id": "122",
@@ -816,7 +816,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-032-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "170",
@@ -870,9 +870,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "131",
@@ -936,9 +936,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-040-9R-01"
     ],
-    "image_pids": [
-      "bdr:zb3z5w9b"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-040-9R-01": "bdr:zb3z5w9b"
+    }
   },
   {
     "site_id": "134",
@@ -990,9 +990,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-051-9R-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb"
+    }
   },
   {
     "site_id": "149",
@@ -1044,7 +1044,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "157",
@@ -1096,9 +1096,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-051-9R-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb"
+    }
   },
   {
     "site_id": "160",
@@ -1153,9 +1153,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "161",
@@ -1207,9 +1207,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-036-9L-01"
     ],
-    "image_pids": [
-      "bdr:d48c6tjb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-036-9L-01": "bdr:d48c6tjb"
+    }
   },
   {
     "site_id": "163",
@@ -1263,7 +1263,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "167",
@@ -1315,9 +1315,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "179",
@@ -1369,7 +1369,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "204",
@@ -1422,9 +1422,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "209",
@@ -1477,9 +1477,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-051-9R-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb"
+    }
   },
   {
     "site_id": "13",
@@ -1531,7 +1531,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5797-048-9L-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "1",
@@ -1583,9 +1583,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-058-9R-01"
     ],
-    "image_pids": [
-      "bdr:wmemtdsj"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-058-9R-01": "bdr:wmemtdsj"
+    }
   },
   {
     "site_id": "2",
@@ -1637,9 +1637,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-062-9R-01"
     ],
-    "image_pids": [
-      "bdr:we2xnzqj"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-062-9R-01": "bdr:we2xnzqj"
+    }
   },
   {
     "site_id": "3",
@@ -1693,9 +1693,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-064-9L-01"
     ],
-    "image_pids": [
-      "bdr:n34jggqb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-064-9L-01": "bdr:n34jggqb"
+    }
   },
   {
     "site_id": "14",
@@ -1747,9 +1747,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-047-9R-01"
     ],
-    "image_pids": [
-      "bdr:rcxfvvuz"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-047-9R-01": "bdr:rcxfvvuz"
+    }
   },
   {
     "site_id": "4",
@@ -1804,9 +1804,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-056-9L-01"
     ],
-    "image_pids": [
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c"
+    }
   },
   {
     "site_id": "12",
@@ -1863,9 +1863,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "5",
@@ -1917,9 +1917,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-049-9L-01"
     ],
-    "image_pids": [
-      "bdr:46fx32fc"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-049-9L-01": "bdr:46fx32fc"
+    }
   },
   {
     "site_id": "6",
@@ -1975,9 +1975,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-043-9L-01"
     ],
-    "image_pids": [
-      "bdr:mx48z2qp"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-043-9L-01": "bdr:mx48z2qp"
+    }
   },
   {
     "site_id": "9",
@@ -2031,11 +2031,11 @@
       "U2-B8649-5796-054-9L-01",
       "U2-B8649-5796-057-9L-01"
     ],
-    "image_pids": [
-      "bdr:cwj7f94n",
-      "bdr:u7kr6f3u",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn",
+      "U2-B8649-5796-054-9L-01": "bdr:cwj7f94n",
+      "U2-B8649-5796-057-9L-01": "bdr:u7kr6f3u"
+    }
   },
   {
     "site_id": "11",
@@ -2095,9 +2095,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "15",
@@ -2162,9 +2162,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-045-9R-01"
     ],
-    "image_pids": [
-      "bdr:x463ufkk"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-045-9R-01": "bdr:x463ufkk"
+    }
   },
   {
     "site_id": "16",
@@ -2220,9 +2220,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-066-9R-01"
     ],
-    "image_pids": [
-      "bdr:br76xwn6"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-066-9R-01": "bdr:br76xwn6"
+    }
   },
   {
     "site_id": "17",
@@ -2275,9 +2275,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-066-9R-01"
     ],
-    "image_pids": [
-      "bdr:br76xwn6"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-066-9R-01": "bdr:br76xwn6"
+    }
   },
   {
     "site_id": "18",
@@ -2331,9 +2331,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "40",
@@ -2386,7 +2386,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-039-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "22",
@@ -2440,10 +2440,10 @@
       "U2-B8649-5812-055-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "23",
@@ -2495,9 +2495,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-055-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4"
+    }
   },
   {
     "site_id": "24",
@@ -2549,9 +2549,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-046-9R-01"
     ],
-    "image_pids": [
-      "bdr:pns55vbk"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-046-9R-01": "bdr:pns55vbk"
+    }
   },
   {
     "site_id": "25",
@@ -2604,9 +2604,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-045-9R-01"
     ],
-    "image_pids": [
-      "bdr:x463ufkk"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-045-9R-01": "bdr:x463ufkk"
+    }
   },
   {
     "site_id": "29",
@@ -2659,9 +2659,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-049-9L-01"
     ],
-    "image_pids": [
-      "bdr:46fx32fc"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-049-9L-01": "bdr:46fx32fc"
+    }
   },
   {
     "site_id": "31",
@@ -2719,9 +2719,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "33",
@@ -2773,9 +2773,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-065-9L-01"
     ],
-    "image_pids": [
-      "bdr:tyhnhezd"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-065-9L-01": "bdr:tyhnhezd"
+    }
   },
   {
     "site_id": "35",
@@ -2827,9 +2827,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-059-9R-01"
     ],
-    "image_pids": [
-      "bdr:agjbg7k5"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-059-9R-01": "bdr:agjbg7k5"
+    }
   },
   {
     "site_id": "36",
@@ -2884,9 +2884,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-051-9L-01"
     ],
-    "image_pids": [
-      "bdr:r6ezkrja"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-051-9L-01": "bdr:r6ezkrja"
+    }
   },
   {
     "site_id": "37",
@@ -2939,9 +2939,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "38",
@@ -2993,9 +2993,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-059-9L-01"
     ],
-    "image_pids": [
-      "bdr:bt9rgzrd"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-059-9L-01": "bdr:bt9rgzrd"
+    }
   },
   {
     "site_id": "39",
@@ -3050,9 +3050,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-053-9R-01"
     ],
-    "image_pids": [
-      "bdr:g8g6xkhc"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-053-9R-01": "bdr:g8g6xkhc"
+    }
   },
   {
     "site_id": "41",
@@ -3110,9 +3110,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:y3efydag"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-053-9L-01": "bdr:y3efydag"
+    }
   },
   {
     "site_id": "43",
@@ -3165,9 +3165,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-049-9L-01"
     ],
-    "image_pids": [
-      "bdr:46fx32fc"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-049-9L-01": "bdr:46fx32fc"
+    }
   },
   {
     "site_id": "44",
@@ -3220,9 +3220,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-056-9R-01"
     ],
-    "image_pids": [
-      "bdr:2fqc2k7s"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s"
+    }
   },
   {
     "site_id": "45",
@@ -3282,9 +3282,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-054-9R-01"
     ],
-    "image_pids": [
-      "bdr:j76pgjrn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-054-9R-01": "bdr:j76pgjrn"
+    }
   },
   {
     "site_id": "46",
@@ -3340,9 +3340,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "70",
@@ -3396,10 +3396,10 @@
       "U2-B8649-5812-069-9L-01",
       "U2-B8649-5796-063-9L-01"
     ],
-    "image_pids": [
-      "bdr:42q2hwud",
-      "bdr:u7zde582"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-066-9L-01": "bdr:42q2hwud",
+      "U2-B8649-5796-063-9L-01": "bdr:u7zde582"
+    }
   },
   {
     "site_id": "47",
@@ -3468,9 +3468,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-056-9L-01"
     ],
-    "image_pids": [
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c"
+    }
   },
   {
     "site_id": "51",
@@ -3522,9 +3522,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-041-9L-01"
     ],
-    "image_pids": [
-      "bdr:gc9mt3wg"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-041-9L-01": "bdr:gc9mt3wg"
+    }
   },
   {
     "site_id": "52",
@@ -3580,10 +3580,10 @@
       "U2-B8649-5812-041-9L-01",
       "U2-B8649-5812-038-9L-01"
     ],
-    "image_pids": [
-      "bdr:55sqdpzr",
-      "bdr:fejex48r"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-040-9L-01": "bdr:fejex48r",
+      "U2-B8649-5796-037-9L-01": "bdr:55sqdpzr"
+    }
   },
   {
     "site_id": "53",
@@ -3636,10 +3636,10 @@
       "U2-B8649-5812-051-9R-01",
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:c7u5h3fb",
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-051-9R-01": "bdr:c7u5h3fb",
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "54",
@@ -3693,10 +3693,10 @@
       "U2-B8649-5796-056-9L-01",
       "U2-B8649-5812-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:bt9rgzrd",
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-059-9L-01": "bdr:bt9rgzrd",
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c"
+    }
   },
   {
     "site_id": "55",
@@ -3750,10 +3750,10 @@
       "U2-B8649-5796-048-9L-01",
       "U2-B8649-5812-049-9L-01"
     ],
-    "image_pids": [
-      "bdr:fy4fptvf",
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-045-9L-01": "bdr:fy4fptvf",
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "56",
@@ -3806,10 +3806,10 @@
       "U2-B8649-5812-049-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:fums58fy",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-049-9R-01": "bdr:fums58fy",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "60",
@@ -3863,11 +3863,11 @@
       "U2-B8649-5812-062-9R-01",
       "U2-B8649-5812-065-9R-01"
     ],
-    "image_pids": [
-      "bdr:n34jggqb",
-      "bdr:we2xnzqj",
-      "bdr:tpvakxkc"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-064-9L-01": "bdr:n34jggqb",
+      "U2-B8649-5812-062-9R-01": "bdr:we2xnzqj",
+      "U2-B8649-5812-065-9R-01": "bdr:tpvakxkc"
+    }
   },
   {
     "site_id": "63",
@@ -3924,9 +3924,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-054-9L-01"
     ],
-    "image_pids": [
-      "bdr:cwj7f94n"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-054-9L-01": "bdr:cwj7f94n"
+    }
   },
   {
     "site_id": "65",
@@ -3980,11 +3980,11 @@
       "U2-B8649-5812-059-9R-01",
       "U2-B8649-5812-065-9R-01"
     ],
-    "image_pids": [
-      "bdr:tpvakxkc",
-      "bdr:we2xnzqj",
-      "bdr:agjbg7k5"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-062-9R-01": "bdr:we2xnzqj",
+      "U2-B8649-5812-059-9R-01": "bdr:agjbg7k5",
+      "U2-B8649-5812-065-9R-01": "bdr:tpvakxkc"
+    }
   },
   {
     "site_id": "66",
@@ -4039,11 +4039,11 @@
       "U2-B8649-5796-068-9L-01",
       "U2-B8649-5796-071-9L-01"
     ],
-    "image_pids": [
-      "bdr:yha5e3m5",
-      "bdr:s8ey69sm",
-      "bdr:tyhnhezd"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-065-9L-01": "bdr:tyhnhezd",
+      "U2-B8649-5796-068-9L-01": "bdr:yha5e3m5",
+      "U2-B8649-5796-071-9L-01": "bdr:s8ey69sm"
+    }
   },
   {
     "site_id": "67",
@@ -4099,7 +4099,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-070-9L-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "69",
@@ -4152,9 +4152,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-058-9R-01"
     ],
-    "image_pids": [
-      "bdr:wmemtdsj"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-058-9R-01": "bdr:wmemtdsj"
+    }
   },
   {
     "site_id": "74",
@@ -4207,9 +4207,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-045-9R-01"
     ],
-    "image_pids": [
-      "bdr:x463ufkk"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-045-9R-01": "bdr:x463ufkk"
+    }
   },
   {
     "site_id": "75",
@@ -4262,10 +4262,10 @@
       "U2-B8649-5796-055-9L-01",
       "U2-B8649-5796-052-9L-01"
     ],
-    "image_pids": [
-      "bdr:rpf9y7tt",
-      "bdr:ytcas6ge"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-055-9L-01": "bdr:ytcas6ge",
+      "U2-B8649-5796-052-9L-01": "bdr:rpf9y7tt"
+    }
   },
   {
     "site_id": "77",
@@ -4318,10 +4318,10 @@
       "U2-B8649-5812-055-9R-01",
       "U2-B8649-5796-052-9L-01"
     ],
-    "image_pids": [
-      "bdr:rpf9y7tt",
-      "bdr:dsfngxd4"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4",
+      "U2-B8649-5796-052-9L-01": "bdr:rpf9y7tt"
+    }
   },
   {
     "site_id": "101",
@@ -4374,9 +4374,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-063-9R-01"
     ],
-    "image_pids": [
-      "bdr:emczfmdt"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-063-9R-01": "bdr:emczfmdt"
+    }
   },
   {
     "site_id": "79",
@@ -4429,9 +4429,9 @@
       "U2-B8649-5796-055-9L-01",
       "U2-B8649-5812-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:ytcas6ge"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-055-9L-01": "bdr:ytcas6ge"
+    }
   },
   {
     "site_id": "82",
@@ -4485,9 +4485,9 @@
       "U2-B8649-5796-055-9L-01",
       "U2-B8649-5812-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:ytcas6ge"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-055-9L-01": "bdr:ytcas6ge"
+    }
   },
   {
     "site_id": "83",
@@ -4545,9 +4545,9 @@
       "U2-B8649-5812-038-9L-01",
       "U2-B8649-5812-041-9L-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "86",
@@ -4603,9 +4603,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "89",
@@ -4662,10 +4662,10 @@
       "U2-B8649-5796-047-9L-01",
       "U2-B8649-5796-044-9L-01"
     ],
-    "image_pids": [
-      "bdr:9bkm8kk9",
-      "bdr:dryjktqj"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-047-9L-01": "bdr:9bkm8kk9",
+      "U2-B8649-5796-044-9L-01": "bdr:dryjktqj"
+    }
   },
   {
     "site_id": "90",
@@ -4720,10 +4720,10 @@
       "U2-B8649-5796-059-9L-01",
       "U2-B8649-5812-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:bt9rgzrd",
-      "bdr:2fqc2k7s"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s",
+      "U2-B8649-5796-059-9L-01": "bdr:bt9rgzrd"
+    }
   },
   {
     "site_id": "91",
@@ -4778,11 +4778,11 @@
       "U2-B8649-5796-050-9L-01",
       "U2-B8649-5796-047-9L-01"
     ],
-    "image_pids": [
-      "bdr:9bkm8kk9",
-      "bdr:bd766p6r",
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju",
+      "U2-B8649-5796-050-9L-01": "bdr:bd766p6r",
+      "U2-B8649-5796-047-9L-01": "bdr:9bkm8kk9"
+    }
   },
   {
     "site_id": "95",
@@ -4847,9 +4847,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-047-9L-01"
     ],
-    "image_pids": [
-      "bdr:9bkm8kk9"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-047-9L-01": "bdr:9bkm8kk9"
+    }
   },
   {
     "site_id": "97",
@@ -4902,9 +4902,9 @@
       "U2-B8649-5796-036-9L-01",
       "U2-B8649-5812-039-9L-01"
     ],
-    "image_pids": [
-      "bdr:d48c6tjb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-036-9L-01": "bdr:d48c6tjb"
+    }
   },
   {
     "site_id": "98",
@@ -4960,10 +4960,10 @@
       "U2-B8649-5796-053-9L-01",
       "U2-B8649-5796-056-9L-01"
     ],
-    "image_pids": [
-      "bdr:y3efydag",
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-053-9L-01": "bdr:y3efydag",
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c"
+    }
   },
   {
     "site_id": "99",
@@ -5017,9 +5017,9 @@
       "U2-B8649-5812-049-9R-01",
       "U2-B8649-5812-046-9L-01"
     ],
-    "image_pids": [
-      "bdr:fums58fy"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-049-9R-01": "bdr:fums58fy"
+    }
   },
   {
     "site_id": "104",
@@ -5076,11 +5076,11 @@
       "U2-B8649-5796-054-9L-01",
       "U2-B8649-5796-057-9L-01"
     ],
-    "image_pids": [
-      "bdr:cwj7f94n",
-      "bdr:u7kr6f3u",
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft",
+      "U2-B8649-5796-054-9L-01": "bdr:cwj7f94n",
+      "U2-B8649-5796-057-9L-01": "bdr:u7kr6f3u"
+    }
   },
   {
     "site_id": "109",
@@ -5136,11 +5136,11 @@
       "U2-B8649-5812-067-9R-01",
       "U2-B8649-5812-073-9R-01"
     ],
-    "image_pids": [
-      "bdr:6dfunxxq",
-      "bdr:adg68sbz",
-      "bdr:g9h6rvba"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-070-9R-01": "bdr:g9h6rvba",
+      "U2-B8649-5812-067-9R-01": "bdr:6dfunxxq",
+      "U2-B8649-5812-073-9R-01": "bdr:adg68sbz"
+    }
   },
   {
     "site_id": "111",
@@ -5216,9 +5216,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-044-9L-01"
     ],
-    "image_pids": [
-      "bdr:dryjktqj"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-044-9L-01": "bdr:dryjktqj"
+    }
   },
   {
     "site_id": "112",
@@ -5276,10 +5276,10 @@
       "U2-B8649-5812-049-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:fums58fy",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-049-9R-01": "bdr:fums58fy",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "115",
@@ -5331,9 +5331,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-048-9L-01"
     ],
-    "image_pids": [
-      "bdr:9gedsjxr"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-048-9L-01": "bdr:9gedsjxr"
+    }
   },
   {
     "site_id": "116",
@@ -5388,9 +5388,9 @@
       "U2-B8649-5812-031-9R-01",
       "U2-B8649-5812-038-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "117",
@@ -5443,9 +5443,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "118",
@@ -5497,9 +5497,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-046-9L-01"
     ],
-    "image_pids": [
-      "bdr:6rqqnk64"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-046-9L-01": "bdr:6rqqnk64"
+    }
   },
   {
     "site_id": "119",
@@ -5552,9 +5552,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-055-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4"
+    }
   },
   {
     "site_id": "120",
@@ -5606,7 +5606,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "123",
@@ -5658,9 +5658,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "124",
@@ -5722,9 +5722,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-042-9L-01"
     ],
-    "image_pids": [
-      "bdr:fjtsf4sd"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-042-9L-01": "bdr:fjtsf4sd"
+    }
   },
   {
     "site_id": "127",
@@ -5779,9 +5779,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-043-9R-01"
     ],
-    "image_pids": [
-      "bdr:udgpucxu"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-043-9R-01": "bdr:udgpucxu"
+    }
   },
   {
     "site_id": "128",
@@ -5833,9 +5833,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-043-9R-01"
     ],
-    "image_pids": [
-      "bdr:udgpucxu"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-043-9R-01": "bdr:udgpucxu"
+    }
   },
   {
     "site_id": "129",
@@ -5890,9 +5890,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-043-9R-01"
     ],
-    "image_pids": [
-      "bdr:udgpucxu"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-043-9R-01": "bdr:udgpucxu"
+    }
   },
   {
     "site_id": "130",
@@ -5952,9 +5952,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-043-9L-01"
     ],
-    "image_pids": [
-      "bdr:mx48z2qp"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-043-9L-01": "bdr:mx48z2qp"
+    }
   },
   {
     "site_id": "132",
@@ -6015,9 +6015,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "133",
@@ -6070,7 +6070,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "135",
@@ -6146,7 +6146,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-041-9L-01_modified"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "137",
@@ -6199,9 +6199,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "171",
@@ -6254,9 +6254,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-045-9L-01"
     ],
-    "image_pids": [
-      "bdr:fy4fptvf"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-045-9L-01": "bdr:fy4fptvf"
+    }
   },
   {
     "site_id": "138",
@@ -6317,9 +6317,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "139",
@@ -6374,9 +6374,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-043-9R-01"
     ],
-    "image_pids": [
-      "bdr:udgpucxu"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-043-9R-01": "bdr:udgpucxu"
+    }
   },
   {
     "site_id": "140",
@@ -6435,10 +6435,10 @@
       "U2-B8649-5796-053-9L-01",
       "U2-B8649-5796-056-9L-01"
     ],
-    "image_pids": [
-      "bdr:y3efydag",
-      "bdr:exbp7u4c"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-053-9L-01": "bdr:y3efydag",
+      "U2-B8649-5796-056-9L-01": "bdr:exbp7u4c"
+    }
   },
   {
     "site_id": "141",
@@ -6490,9 +6490,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-064-9R-01"
     ],
-    "image_pids": [
-      "bdr:6y63yy97"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-064-9R-01": "bdr:6y63yy97"
+    }
   },
   {
     "site_id": "142",
@@ -6544,9 +6544,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-043-9L-01"
     ],
-    "image_pids": [
-      "bdr:mx48z2qp"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-043-9L-01": "bdr:mx48z2qp"
+    }
   },
   {
     "site_id": "143",
@@ -6601,11 +6601,11 @@
       "U2-B8649-5796-061-9L-01",
       "U2-B8649-5796-064-9L-01"
     ],
-    "image_pids": [
-      "bdr:n34jggqb",
-      "bdr:we2xnzqj",
-      "bdr:dtvffj8n"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-062-9R-01": "bdr:we2xnzqj",
+      "U2-B8649-5796-061-9L-01": "bdr:dtvffj8n",
+      "U2-B8649-5796-064-9L-01": "bdr:n34jggqb"
+    }
   },
   {
     "site_id": "144",
@@ -6657,9 +6657,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "145",
@@ -6715,9 +6715,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-064-9L-01"
     ],
-    "image_pids": [
-      "bdr:n34jggqb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-064-9L-01": "bdr:n34jggqb"
+    }
   },
   {
     "site_id": "146",
@@ -6770,9 +6770,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "148",
@@ -6825,9 +6825,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-057-9L-01"
     ],
-    "image_pids": [
-      "bdr:u7kr6f3u"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-057-9L-01": "bdr:u7kr6f3u"
+    }
   },
   {
     "site_id": "213",
@@ -6880,9 +6880,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "150",
@@ -6938,9 +6938,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-062-9L-01"
     ],
-    "image_pids": [
-      "bdr:6azjuwfh"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-062-9L-01": "bdr:6azjuwfh"
+    }
   },
   {
     "site_id": "151",
@@ -6995,9 +6995,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-062-9L-01"
     ],
-    "image_pids": [
-      "bdr:6azjuwfh"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-062-9L-01": "bdr:6azjuwfh"
+    }
   },
   {
     "site_id": "152",
@@ -7058,9 +7058,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-045-9L-01"
     ],
-    "image_pids": [
-      "bdr:fy4fptvf"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-045-9L-01": "bdr:fy4fptvf"
+    }
   },
   {
     "site_id": "153",
@@ -7117,9 +7117,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "155",
@@ -7171,9 +7171,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-052-9L-01"
     ],
-    "image_pids": [
-      "bdr:rpf9y7tt"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-052-9L-01": "bdr:rpf9y7tt"
+    }
   },
   {
     "site_id": "156",
@@ -7229,10 +7229,10 @@
       "U2-B8649-5812-053-9R-01",
       "U2-B8649-5812-056-9R-01"
     ],
-    "image_pids": [
-      "bdr:2fqc2k7s",
-      "bdr:g8g6xkhc"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-053-9R-01": "bdr:g8g6xkhc",
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s"
+    }
   },
   {
     "site_id": "158",
@@ -7285,9 +7285,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ],
-    "image_pids": [
-      "bdr:jy5uatju"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-044-9R-01": "bdr:jy5uatju"
+    }
   },
   {
     "site_id": "159",
@@ -7339,7 +7339,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-048-9R-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "164",
@@ -7392,9 +7392,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-065-9L-01"
     ],
-    "image_pids": [
-      "bdr:tyhnhezd"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-065-9L-01": "bdr:tyhnhezd"
+    }
   },
   {
     "site_id": "165",
@@ -7447,7 +7447,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "168",
@@ -7501,11 +7501,11 @@
       "U2-B8649-5796-054-9L-01",
       "U2-B8649-5796-057-9L-01"
     ],
-    "image_pids": [
-      "bdr:cwj7f94n",
-      "bdr:u7kr6f3u",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn",
+      "U2-B8649-5796-054-9L-01": "bdr:cwj7f94n",
+      "U2-B8649-5796-057-9L-01": "bdr:u7kr6f3u"
+    }
   },
   {
     "site_id": "169",
@@ -7559,10 +7559,10 @@
       "U2-B8649-5812-055-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "173",
@@ -7615,10 +7615,10 @@
       "U2-B8649-5812-055-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "174",
@@ -7671,9 +7671,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-053-9R-01"
     ],
-    "image_pids": [
-      "bdr:g8g6xkhc"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-053-9R-01": "bdr:g8g6xkhc"
+    }
   },
   {
     "site_id": "175",
@@ -7726,9 +7726,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-056-9R-01"
     ],
-    "image_pids": [
-      "bdr:2fqc2k7s"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s"
+    }
   },
   {
     "site_id": "176",
@@ -7783,9 +7783,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "177",
@@ -7843,10 +7843,10 @@
       "U2-B8649-5812-053-9R-01",
       "U2-B8649-5812-056-9R-01"
     ],
-    "image_pids": [
-      "bdr:2fqc2k7s",
-      "bdr:g8g6xkhc"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-053-9R-01": "bdr:g8g6xkhc",
+      "U2-B8649-5812-056-9R-01": "bdr:2fqc2k7s"
+    }
   },
   {
     "site_id": "178",
@@ -7899,9 +7899,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   },
   {
     "site_id": "180",
@@ -7953,9 +7953,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-049-9L-01"
     ],
-    "image_pids": [
-      "bdr:46fx32fc"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-049-9L-01": "bdr:46fx32fc"
+    }
   },
   {
     "site_id": "181",
@@ -8009,9 +8009,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-052-9L-01"
     ],
-    "image_pids": [
-      "bdr:rpf9y7tt"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-052-9L-01": "bdr:rpf9y7tt"
+    }
   },
   {
     "site_id": "182",
@@ -8064,9 +8064,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-062-9R-01"
     ],
-    "image_pids": [
-      "bdr:we2xnzqj"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-062-9R-01": "bdr:we2xnzqj"
+    }
   },
   {
     "site_id": "185",
@@ -8118,9 +8118,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-046-9L-01"
     ],
-    "image_pids": [
-      "bdr:6rqqnk64"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-046-9L-01": "bdr:6rqqnk64"
+    }
   },
   {
     "site_id": "183",
@@ -8197,9 +8197,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-072-9R-01"
     ],
-    "image_pids": [
-      "bdr:g8jhguem"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-072-9R-01": "bdr:g8jhguem"
+    }
   },
   {
     "site_id": "188",
@@ -8253,7 +8253,7 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-060-9L-01"
     ],
-    "image_pids": []
+    "image_pids": {}
   },
   {
     "site_id": "189",
@@ -8306,10 +8306,10 @@
       "U2-B8649-5812-055-9R-01",
       "U2-B8649-5812-052-9R-01"
     ],
-    "image_pids": [
-      "bdr:dsfngxd4",
-      "bdr:uehrf7fn"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-055-9R-01": "bdr:dsfngxd4",
+      "U2-B8649-5812-052-9R-01": "bdr:uehrf7fn"
+    }
   },
   {
     "site_id": "192",
@@ -8371,9 +8371,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-040-9R-01"
     ],
-    "image_pids": [
-      "bdr:zb3z5w9b"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-040-9R-01": "bdr:zb3z5w9b"
+    }
   },
   {
     "site_id": "193",
@@ -8427,9 +8427,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-045-9L-01"
     ],
-    "image_pids": [
-      "bdr:fy4fptvf"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-045-9L-01": "bdr:fy4fptvf"
+    }
   },
   {
     "site_id": "195",
@@ -8481,9 +8481,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-050-9L-01"
     ],
-    "image_pids": [
-      "bdr:bd766p6r"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-050-9L-01": "bdr:bd766p6r"
+    }
   },
   {
     "site_id": "196",
@@ -8537,9 +8537,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-055-9L-01"
     ],
-    "image_pids": [
-      "bdr:ytcas6ge"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-055-9L-01": "bdr:ytcas6ge"
+    }
   },
   {
     "site_id": "198",
@@ -8602,10 +8602,10 @@
       "U2-B8649-5812-060-9R-01",
       "U2-B8649-5812-063-9R-01"
     ],
-    "image_pids": [
-      "bdr:emczfmdt",
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft",
+      "U2-B8649-5812-063-9R-01": "bdr:emczfmdt"
+    }
   },
   {
     "site_id": "200",
@@ -8667,9 +8667,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-053-9L-01"
     ],
-    "image_pids": [
-      "bdr:y3efydag"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-053-9L-01": "bdr:y3efydag"
+    }
   },
   {
     "site_id": "206",
@@ -8726,9 +8726,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-045-9L-01"
     ],
-    "image_pids": [
-      "bdr:fy4fptvf"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-045-9L-01": "bdr:fy4fptvf"
+    }
   },
   {
     "site_id": "207",
@@ -8784,9 +8784,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "208",
@@ -8840,9 +8840,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ],
-    "image_pids": [
-      "bdr:gq98sdft"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-060-9R-01": "bdr:gq98sdft"
+    }
   },
   {
     "site_id": "211",
@@ -8894,9 +8894,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-064-9R-01"
     ],
-    "image_pids": [
-      "bdr:6y63yy97"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-064-9R-01": "bdr:6y63yy97"
+    }
   },
   {
     "site_id": "214",
@@ -8949,9 +8949,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-049-9R-01"
     ],
-    "image_pids": [
-      "bdr:fums58fy"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-049-9R-01": "bdr:fums58fy"
+    }
   },
   {
     "site_id": "216",
@@ -9004,9 +9004,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-055-9L-01"
     ],
-    "image_pids": [
-      "bdr:ytcas6ge"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-055-9L-01": "bdr:ytcas6ge"
+    }
   },
   {
     "site_id": "217",
@@ -9058,9 +9058,9 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-064-9L-01"
     ],
-    "image_pids": [
-      "bdr:n34jggqb"
-    ]
+    "image_pids": {
+      "U2-B8649-5796-064-9L-01": "bdr:n34jggqb"
+    }
   },
   {
     "site_id": "218",
@@ -9112,8 +9112,8 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ],
-    "image_pids": [
-      "bdr:ngbxz7ry"
-    ]
+    "image_pids": {
+      "U2-B8649-5812-042-9R-01": "bdr:ngbxz7ry"
+    }
   }
 ]

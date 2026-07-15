@@ -12,7 +12,7 @@ def link_pids(site_json_path, lookup_json_path, output_path):
         print(f"Error: {e}")
         return
 
-    # 1. Build the Lookup Map
+    # 1. Build the Lookup Map (local_id -> PID)
     pid_map = {}
     repo_docs = lookup_data.get("response", {}).get("docs", [])
     for doc in repo_docs:
@@ -27,29 +27,38 @@ def link_pids(site_json_path, lookup_json_path, output_path):
     insertion_count = 0
 
     for site in site_list:
-        # Expecting an array based on your requirement
+        site_id = site.get("site_id")
+        if not site_id:
+            continue
+
         image_ids = site.get("u2_images_showing_the_site")
         
-        found_pids = []
-        if isinstance(image_ids, list):
-            for img_id in image_ids:
-                if img_id in pid_map:
-                    found_pids.append(pid_map[img_id])
-        
-        # Remove duplicates
-        unique_pids = list(set(found_pids))
-        site["image_pids"] = unique_pids
+        # Ensure image_ids is treated as an array
+        if isinstance(image_ids, str):
+            image_ids = [image_ids]
+        elif not isinstance(image_ids, list):
+            image_ids = []
 
-        # 3. Increment counter only if the resulting array is not empty
-        if unique_pids:
+        # Map each individual image_id to its specific matching PID
+        # Retains 1-to-1 relationships in a structured dictionary format
+        resolved_mappings = {}
+        for img_id in image_ids:
+            if img_id in pid_map:
+                resolved_mappings[img_id] = pid_map[img_id]
+        
+        # Save the structured mapping dictionary to the site object
+        site["image_pids"] = resolved_mappings
+
+        # Increment count if we actually resolved at least one mapping
+        if resolved_mappings:
             insertion_count += 1
 
-    # 4. Save the result
+    # 3. Save the result
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
     with open(output_path, 'w', encoding='utf-8') as f:
         json.dump(site_list, f, indent=2)
 
-    print(f"Success: Inserted non-empty PID arrays into {insertion_count} site objects.")
+    print(f"Success: Linked specific PIDs for {insertion_count} site objects containing valid images.")
     print(f"Output saved to: {output_path}")
 
 if __name__ == "__main__":
