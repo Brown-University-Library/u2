@@ -1419,28 +1419,6 @@
     ]
   },
   {
-    "site_id": "103",
-    "site_name": "Tell Ibqa",
-    "at_periods": [],
-    "at_asnde_no": "26",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.616674340289887,
-        30.7457369455925
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "13",
     "site_name": "Tell el-Afrita es Saghir",
     "at_periods": [],
@@ -1698,28 +1676,6 @@
     ]
   },
   {
-    "site_id": "32",
-    "site_name": "Kom el-Ahmar (iv)",
-    "at_periods": [],
-    "at_asnde_no": "712",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.4647482996404,
-        30.879093105402056
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "4",
     "site_name": "Kom Abbuda",
     "at_periods": [
@@ -1936,50 +1892,6 @@
     ]
   },
   {
-    "site_id": "7",
-    "site_name": "El-Kom el Abiad",
-    "at_periods": [],
-    "at_asnde_no": "22",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.55443514948319,
-        30.813105983453664
-      ]
-    },
-    "at_condition": "Farmland",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "8",
-    "site_name": "Tell el-Abqa'in",
-    "at_periods": [],
-    "at_asnde_no": "297",
-    "at_dated_as": "Ramesside and Post Ramesside",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.328389458034277,
-        30.8829462088147
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "9",
     "site_name": "Kom Abu Aggur",
     "at_periods": [],
@@ -2031,28 +1943,6 @@
       "U2-B8649-5796-054-9L-01",
       "U2-B8649-5796-057-9L-01"
     ]
-  },
-  {
-    "site_id": "10",
-    "site_name": "Abu Ali",
-    "at_periods": [],
-    "at_asnde_no": "629",
-    "at_dated_as": "Ptolemaic to Late Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.422576323799518,
-        30.834760814112894
-      ]
-    },
-    "at_condition": "Some preserved",
-    "at_reference": "Kenawi 2014, 133",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "11",
@@ -2338,28 +2228,6 @@
     ]
   },
   {
-    "site_id": "20",
-    "site_name": "Tell Abu el-Zarazir",
-    "at_periods": [],
-    "at_asnde_no": null,
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.44906442061729,
-        30.862300853026827
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "SoE 1916",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "40",
     "site_name": "Kom el-Awiri",
     "at_periods": [],
@@ -2619,28 +2487,6 @@
     ]
   },
   {
-    "site_id": "28",
-    "site_name": "Kiman el-Abyar",
-    "at_periods": [],
-    "at_asnde_no": "231",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.31824352430268,
-        31.22449989190592
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "29",
     "site_name": "Kom el-Ahad",
     "at_periods": [],
@@ -2691,28 +2537,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-049-9L-01"
     ]
-  },
-  {
-    "site_id": "30",
-    "site_name": "Kom el-Ahmar",
-    "at_periods": [],
-    "at_asnde_no": "30",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.72063620194192,
-        30.791491150415883
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "31",
@@ -2821,28 +2645,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-065-9L-01"
     ]
-  },
-  {
-    "site_id": "34",
-    "site_name": "Kom el-Ahmar",
-    "at_periods": [],
-    "at_asnde_no": "443",
-    "at_dated_as": "Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.41063665307105,
-        30.87283932923703
-      ]
-    },
-    "at_condition": "Partially levelled but preserved",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "35",
@@ -3053,28 +2855,6 @@
     ]
   },
   {
-    "site_id": "27",
-    "site_name": "Kom Ashrin",
-    "at_periods": [],
-    "at_asnde_no": "633",
-    "at_dated_as": "Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.41671097796924,
-        30.82803458090892
-      ]
-    },
-    "at_condition": "Levelled, Overbuilt",
-    "at_reference": "SoE 1916",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "39",
     "site_name": "Kom Awad",
     "at_periods": [
@@ -3184,28 +2964,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-053-9L-01"
     ]
-  },
-  {
-    "site_id": "42",
-    "site_name": "Kiman el-Azla",
-    "at_periods": [],
-    "at_asnde_no": "232",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.331336062887658,
-        31.219138532313185
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "43",
@@ -3547,28 +3305,6 @@
     ]
   },
   {
-    "site_id": "48",
-    "site_name": "Kom el-Barud",
-    "at_periods": [],
-    "at_asnde_no": "295",
-    "at_dated_as": "Late Period to Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.496380764505542,
-        30.81641733527221
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": "Trampier 2014, 165-175, 178-193",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "51",
     "site_name": "Kom el-Beida",
     "at_periods": [],
@@ -3725,28 +3461,6 @@
       "U2-B8649-5812-051-9R-01",
       "U2-B8649-5796-048-9L-01"
     ]
-  },
-  {
-    "site_id": "92",
-    "site_name": "Kom el-Haeh",
-    "at_periods": [],
-    "at_asnde_no": "713",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.581874101058574,
-        30.771475520893027
-      ]
-    },
-    "at_condition": "Overbuilt partially",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "54",
@@ -3907,50 +3621,6 @@
     ]
   },
   {
-    "site_id": "58",
-    "site_name": "Kom el-Dab'a el Bahari",
-    "at_periods": [],
-    "at_asnde_no": "612",
-    "at_dated_as": "Ptolemaic and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.306559852932065,
-        31.20140664871272
-      ]
-    },
-    "at_condition": null,
-    "at_reference": "Wilson and Grigoropoulos 109-116, 341-342",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "59",
-    "site_name": "Kom el Dab'a el-Qibli",
-    "at_periods": [],
-    "at_asnde_no": "613",
-    "at_dated_as": "Ptolemaic and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.306878546010143,
-        31.1977332532311
-      ]
-    },
-    "at_condition": null,
-    "at_reference": "Hasegawa and Nishimoto 2022; Wilson and Grigoropoulos 2009, 109-116, 341-345",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "60",
     "site_name": "Kom el-Dab'a",
     "at_periods": [],
@@ -4002,50 +3672,6 @@
       "U2-B8649-5812-062-9R-01",
       "U2-B8649-5812-065-9R-01"
     ]
-  },
-  {
-    "site_id": "61",
-    "site_name": "Kom el-Dahab",
-    "at_periods": [],
-    "at_asnde_no": "591",
-    "at_dated_as": "Old Kingdom and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.497854066931946,
-        30.859826759144887
-      ]
-    },
-    "at_condition": "Partially overbuilt",
-    "at_reference": "Masson-Berghoff",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "62",
-    "site_name": "Kom el-Dahab (Kom el-Tarfaya)",
-    "at_periods": [],
-    "at_asnde_no": "635",
-    "at_dated_as": "Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.149391920670467,
-        31.23249073175784
-      ]
-    },
-    "at_condition": "Partially levelled",
-    "at_reference": "Wilson and Grigoropoulos 2009, 71-77, 308-315",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "63",
@@ -4102,28 +3728,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-054-9L-01"
     ]
-  },
-  {
-    "site_id": "64",
-    "site_name": "Kom Deibi",
-    "at_periods": [],
-    "at_asnde_no": "625",
-    "at_dated_as": "Ptolemaic or Late Dynastic to Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.513025947239328,
-        31.31327845200726
-      ]
-    },
-    "at_condition": "Overbuilt, cemetery",
-    "at_reference": "Wilson and Grigoropoulos 2009, 188-189, 411-414",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "65",
@@ -4288,28 +3892,6 @@
     ]
   },
   {
-    "site_id": "68",
-    "site_name": "Kom Dilingat",
-    "at_periods": [],
-    "at_asnde_no": "21",
-    "at_dated_as": "Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.54404888982383,
-        30.82293650596878
-      ]
-    },
-    "at_condition": "Overbuilt/Levelled",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "69",
     "site_name": "Kom Dimeis",
     "at_periods": [],
@@ -4360,72 +3942,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-058-9R-01"
     ]
-  },
-  {
-    "site_id": "100",
-    "site_name": "Hashem",
-    "at_periods": [],
-    "at_asnde_no": "642",
-    "at_dated_as": "Late Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.33029987501093,
-        31.199315243953386
-      ]
-    },
-    "at_condition": "Levelled/Overbuilt",
-    "at_reference": "Wilson and Grigoropoulos 2009, 119-120, 349-350",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "72",
-    "site_name": "Ezbet el-Jizawi",
-    "at_periods": [],
-    "at_asnde_no": "731",
-    "at_dated_as": "Roman?",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.398103133492107,
-        30.860333542486547
-      ]
-    },
-    "at_condition": "Partially levelled",
-    "at_reference": "Trampier 2014, 227",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "73",
-    "site_name": "Ezbet el-Naggar",
-    "at_periods": [],
-    "at_asnde_no": "732",
-    "at_dated_as": "Roman and Medieval",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.49538288945762,
-        30.87583174628825
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "Trampier 2014, 227",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "74",
@@ -4530,28 +4046,6 @@
       "U2-B8649-5796-055-9L-01",
       "U2-B8649-5796-052-9L-01"
     ]
-  },
-  {
-    "site_id": "76",
-    "site_name": "Kom Firin",
-    "at_periods": [],
-    "at_asnde_no": "294",
-    "at_dated_as": "Ramesside to Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.490142739337685,
-        30.86428456677858
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": "Spencer 2008; Spencer 2014",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "77",
@@ -4710,50 +4204,6 @@
     ]
   },
   {
-    "site_id": "80",
-    "site_name": "Kom Gebel",
-    "at_periods": [],
-    "at_asnde_no": "630",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.437291933142895,
-        30.81860240599973
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914 (unnamed)",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "81",
-    "site_name": "Kom Geif (Naukratis)",
-    "at_periods": [],
-    "at_asnde_no": "17",
-    "at_dated_as": "Late Period to Ptolemaic Period",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.5924379929255,
-        30.89751874481585
-      ]
-    },
-    "at_condition": "Overbuilt/levelled for agriculture, some preserved",
-    "at_reference": "Leclere 2008, 113-157",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "82",
     "site_name": "El-Geradat",
     "at_periods": [],
@@ -4864,72 +4314,6 @@
     ]
   },
   {
-    "site_id": "84",
-    "site_name": "Kom Ghitas",
-    "at_periods": [],
-    "at_asnde_no": "226",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.258855156276812,
-        31.228563897691423
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "85",
-    "site_name": "Kom Ghurauf",
-    "at_periods": [],
-    "at_asnde_no": "229",
-    "at_dated_as": "Ptolemaic and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.417386676954454,
-        31.214874545098
-      ]
-    },
-    "at_condition": "Relatively Good",
-    "at_reference": "Publications by Lanna and Sist",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "102",
-    "site_name": "Kom el-Hisn",
-    "at_periods": [],
-    "at_asnde_no": "24",
-    "at_dated_as": "Old Kingdom, FIP, Middle Kingdom, SIP, NK, TIP, Late Period",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.600290381390433,
-        30.795008192422667
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": "Numerous, but see Warden et al.",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "86",
     "site_name": "Kom el-Ghuzz",
     "at_periods": [
@@ -4983,28 +4367,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-060-9R-01"
     ]
-  },
-  {
-    "site_id": "88",
-    "site_name": "Kom el-Gilla",
-    "at_periods": [],
-    "at_asnde_no": "740",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.40126394188949,
-        30.82341207852802
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "89",
@@ -5171,28 +4533,6 @@
     ]
   },
   {
-    "site_id": "94",
-    "site_name": "Kom Hamada",
-    "at_periods": [],
-    "at_asnde_no": "31",
-    "at_dated_as": "May not be an ancient site",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.70138922981624,
-        30.7604679928225
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "SoE 1916",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "95",
     "site_name": "Kom el-Hamam",
     "at_periods": [
@@ -5255,28 +4595,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-047-9L-01"
     ]
-  },
-  {
-    "site_id": "96",
-    "site_name": "Kom Hamrit",
-    "at_periods": [],
-    "at_asnde_no": "638",
-    "at_dated_as": "New Kingdom and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.4413356781009,
-        30.87062559795421
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": "Trampier 2014, 108-109, 111-113, 128-132, 134-137, 139-142",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "97",
@@ -5495,72 +4813,6 @@
     ]
   },
   {
-    "site_id": "106",
-    "site_name": "Itayi el-Barud",
-    "at_periods": [],
-    "at_asnde_no": "456",
-    "at_dated_as": "antiquites found here maybe from Naukratis",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.665251524552353,
-        30.884032761943775
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "Griffith in Gardner 1888, 81; Coulson and Leonard 1981, 86",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "107",
-    "site_name": "Kalabt Shafiq",
-    "at_periods": [],
-    "at_asnde_no": "457",
-    "at_dated_as": "Ptolemaic?",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.500816345215167,
-        30.849434867754617
-      ]
-    },
-    "at_condition": "Levelled",
-    "at_reference": "Coulson and Leonard 1981, 86",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "108",
-    "site_name": "Tell el-Kanayis",
-    "at_periods": [],
-    "at_asnde_no": "376",
-    "at_dated_as": "Roman?",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.21020482934073,
-        31.195883094931457
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "Wilson and Grigoropoulos 2009, 91-93, SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "109",
     "site_name": "Tell Kawady",
     "at_periods": [
@@ -5746,50 +4998,6 @@
       "U2-B8649-5812-049-9R-01",
       "U2-B8649-5812-052-9R-01"
     ]
-  },
-  {
-    "site_id": "113",
-    "site_name": "Kom el-Kharaz",
-    "at_periods": [],
-    "at_asnde_no": "23",
-    "at_dated_as": "Ptolemaic and Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.598698222119204,
-        30.7582591528418
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "Hamada and Farid 1948b, 327-349; Trampier 2014, 38-39, 230",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "114",
-    "site_name": "Kom el-Khatimi",
-    "at_periods": [],
-    "at_asnde_no": "602",
-    "at_dated_as": "Few sherds, but metal slag",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.37233209610019,
-        30.88307773172003
-      ]
-    },
-    "at_condition": "Partially levelled for agriculture",
-    "at_reference": null,
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "115",
@@ -6103,28 +5311,6 @@
     ]
   },
   {
-    "site_id": "121",
-    "site_name": "Kom Kortas",
-    "at_periods": [],
-    "at_asnde_no": "16",
-    "at_dated_as": "FIP, MK, Late Period, Ptolemaic, Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.528267051862997,
-        30.87676891263317
-      ]
-    },
-    "at_condition": "Overbuilt (between 2004-2021)",
-    "at_reference": "Trampier 2014, 38-39, 208-212",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "123",
     "site_name": "Tell Luqin",
     "at_periods": [],
@@ -6235,50 +5421,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-042-9L-01"
     ]
-  },
-  {
-    "site_id": "125",
-    "site_name": "Kom el-Magadieb",
-    "at_periods": [],
-    "at_asnde_no": "32",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.67991793674008,
-        30.69588791010806
-      ]
-    },
-    "at_condition": "Partially overbuilt by modern cemetery",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "126",
-    "site_name": "Tulul el-Magar",
-    "at_periods": [],
-    "at_asnde_no": "228",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.323117525681575,
-        31.20609426620324
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "127",
@@ -6686,28 +5828,6 @@
     ]
   },
   {
-    "site_id": "136",
-    "site_name": "Kom el-Medina",
-    "at_periods": [],
-    "at_asnde_no": "230",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.421285442684393,
-        31.20552675957214
-      ]
-    },
-    "at_condition": "Levelled if there was actually a site here",
-    "at_reference": "SCA Beheira Register (possibly incorrect location)",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "137",
     "site_name": "Meshelma",
     "at_periods": [],
@@ -7086,28 +6206,6 @@
     ]
   },
   {
-    "site_id": "172",
-    "site_name": "Kom el-Saadiya",
-    "at_periods": [],
-    "at_asnde_no": "444",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.440563761670116,
-        30.873594168524463
-      ]
-    },
-    "at_condition": "Levelled for agriculture except for small part",
-    "at_reference": "SoE 1916",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "143",
     "site_name": "Kom en-Nasra",
     "at_periods": [],
@@ -7318,28 +6416,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-9R-01"
     ]
-  },
-  {
-    "site_id": "147",
-    "site_name": "El Neqrash (toponym related to Naukratis?)",
-    "at_periods": [],
-    "at_asnde_no": "742",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.610965293387128,
-        30.89347494265736
-      ]
-    },
-    "at_condition": "Overbuilt, unclear if actually an ancient site",
-    "at_reference": "Coulson and Leonard 1979, 15",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "148",
@@ -7671,28 +6747,6 @@
     ]
   },
   {
-    "site_id": "154",
-    "site_name": "Kom Qamha",
-    "at_periods": [],
-    "at_asnde_no": "710",
-    "at_dated_as": "Ptolemaic to Late Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.47943386824277,
-        30.83183739804959
-      ]
-    },
-    "at_condition": "Partially levelled for agriculture",
-    "at_reference": "Trampier 2014, 165-171, 173, 175-180, 185-190, 192-193",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "155",
     "site_name": "Kom el-Qanatir",
     "at_periods": [],
@@ -7851,28 +6905,6 @@
     ]
   },
   {
-    "site_id": "162",
-    "site_name": "Kom Quleila(t)",
-    "at_periods": [],
-    "at_asnde_no": "225",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.17590744599095,
-        31.213350901216657
-      ]
-    },
-    "at_condition": "Levelled for fish lagoons",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "159",
     "site_name": "Kom Qayid",
     "at_periods": [],
@@ -8026,28 +7058,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-044-01"
     ]
-  },
-  {
-    "site_id": "166",
-    "site_name": "Kom el-Rekawya",
-    "at_periods": [],
-    "at_asnde_no": "711",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.47574016322305,
-        30.826924961361012
-      ]
-    },
-    "at_condition": "Partially overbuilt by cemetery",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "168",
@@ -8631,28 +7641,6 @@
     ]
   },
   {
-    "site_id": "184",
-    "site_name": "Kom Sheikh Said Ahmed",
-    "at_periods": [],
-    "at_asnde_no": "632",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.453013145222723,
-        30.846282203555546
-      ]
-    },
-    "at_condition": "Good",
-    "at_reference": "Trampier 2014, 140-144, 152-166; SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "185",
     "site_name": "Tell el-Sheikh Soliman",
     "at_periods": [],
@@ -8702,28 +7690,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-046-9L-01"
     ]
-  },
-  {
-    "site_id": "187",
-    "site_name": "Kom el-Shimuli",
-    "at_periods": [],
-    "at_asnde_no": "442",
-    "at_dated_as": "Ptolemaic to Late Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.43269611246479,
-        30.871614900572222
-      ]
-    },
-    "at_condition": "Clear",
-    "at_reference": "Trampier 2014, 108-117, 124-128, 131-138",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "183",
@@ -8907,50 +7873,6 @@
     ]
   },
   {
-    "site_id": "190",
-    "site_name": "Sidi Ambar",
-    "at_periods": [],
-    "at_asnde_no": "29",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.719991824206563,
-        30.801381217020143
-      ]
-    },
-    "at_condition": "Levelled for Agriculture if it ever existed",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "191",
-    "site_name": "Sidi Aqaba",
-    "at_periods": [],
-    "at_asnde_no": "618",
-    "at_dated_as": "Late Roman to Islamic",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.466067084144484,
-        31.25402140639098
-      ]
-    },
-    "at_condition": "Overbuilt",
-    "at_reference": "Wilson and Grigoropoulos 2009, 171-172, 387-389;  SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "192",
     "site_name": "Sidi Ghazi (Kom et-Turab)",
     "at_periods": [],
@@ -9065,28 +7987,6 @@
     ]
   },
   {
-    "site_id": "194",
-    "site_name": "Sidi Hineish",
-    "at_periods": [],
-    "at_asnde_no": "18",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.729444206462578,
-        30.853568613989683
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "195",
     "site_name": "Sidi Yusef",
     "at_periods": [],
@@ -9191,28 +8091,6 @@
     ]
   },
   {
-    "site_id": "197",
-    "site_name": "Silvagou",
-    "at_periods": [],
-    "at_asnde_no": "459",
-    "at_dated_as": "New Kingdom, Late Period, maybe some MK?",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.481168539384193,
-        30.859817680210195
-      ]
-    },
-    "at_condition": "Largely levelled and overbuilt",
-    "at_reference": "Spencer 2008, 8-17",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "198",
     "site_name": "Kom Taeb",
     "at_periods": [],
@@ -9275,28 +8153,6 @@
     ]
   },
   {
-    "site_id": "199",
-    "site_name": "Kom Talluz",
-    "at_periods": [],
-    "at_asnde_no": "227",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.313719328712345,
-        31.236429816690407
-      ]
-    },
-    "at_condition": "Reclaimed land for fish farms",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "200",
     "site_name": "Kom Taqala",
     "at_periods": [
@@ -9356,94 +8212,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5796-053-9L-01"
     ]
-  },
-  {
-    "site_id": "201",
-    "site_name": "Kom el-Tarfaya",
-    "at_periods": [],
-    "at_asnde_no": "224",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.140233898163146,
-        31.235446064087178
-      ]
-    },
-    "at_condition": "Overbuilt, drill cores confirm marshy nature of the site",
-    "at_reference": "Wilson and Grigoropoulos 2009, 71-77",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "202",
-    "site_name": "El-Kom el-Tawil",
-    "at_periods": [],
-    "at_asnde_no": "37",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.819622168821862,
-        30.501220029804344
-      ]
-    },
-    "at_condition": "Levelled for Agriculture, partially overbuilt, maybe should be in Menoufia?",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "203",
-    "site_name": "Kom Thuweiya",
-    "at_periods": [],
-    "at_asnde_no": "28",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.64700918197671,
-        30.7337654194945
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
-    "site_id": "205",
-    "site_name": "Kom et-Tubul (Abu el-Tubul)",
-    "at_periods": [],
-    "at_asnde_no": "446",
-    "at_dated_as": "Roman",
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.423292805167144,
-        30.8568874571663
-      ]
-    },
-    "at_condition": "Partially levelled and overbuilt",
-    "at_reference": "Trampier 2014, 140-146, 148-153, 158-160, 165",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "206",
@@ -9610,28 +8378,6 @@
     ]
   },
   {
-    "site_id": "210",
-    "site_name": "Kom el-Waqidi",
-    "at_periods": [],
-    "at_asnde_no": "27",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.64640392415702,
-        30.74782989380148
-      ]
-    },
-    "at_condition": "Levelled for Agriculture",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
-  },
-  {
     "site_id": "211",
     "site_name": "Kom el-Yahud",
     "at_periods": [],
@@ -9681,28 +8427,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-064-9R-01"
     ]
-  },
-  {
-    "site_id": "212",
-    "site_name": "Kom el-Zalat",
-    "at_periods": [],
-    "at_asnde_no": "631",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.39889164531967,
-        30.831382311250938
-      ]
-    },
-    "at_condition": "Levelled for Agriculture by 2007",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "214",
@@ -9755,28 +8479,6 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-049-9R-01"
     ]
-  },
-  {
-    "site_id": "215",
-    "site_name": "Kom ez-Zarqa",
-    "at_periods": [],
-    "at_asnde_no": "25",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.613730907440548,
-        30.77010108219989
-      ]
-    },
-    "at_condition": "Overbuilt by houses",
-    "at_reference": "SoE 1914",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   },
   {
     "site_id": "216",
@@ -9931,27 +8633,5 @@
     "u2_images_showing_the_site": [
       "U2-B8649-5812-042-9R-01"
     ]
-  },
-  {
-    "site_id": "219",
-    "site_name": "Kom Zumran",
-    "at_periods": [],
-    "at_asnde_no": "741",
-    "at_dated_as": null,
-    "at_geometry": {
-      "type": "Point",
-      "coordinates": [
-        30.577441338934374,
-        30.833168547630226
-      ]
-    },
-    "at_condition": "Modern village on ancient site? Overbuilt",
-    "at_reference": "SoE 1914; Trampier 2014, 367",
-    "limit_view_to": null,
-    "at_governorate": "Beheira",
-    "u2ers_site_files": null,
-    "g_earth_damage_cause": [],
-    "g_earth_general_condition": null,
-    "u2_images_showing_the_site": []
   }
 ]

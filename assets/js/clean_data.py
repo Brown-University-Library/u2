@@ -25,6 +25,9 @@ def clean_json_fields(input_path, output_path):
         # 2. Privacy Filter: Remove object if limit_view_to is NOT null
         if item.get("limit_view_to") is not None:
             continue  # Skip this site entirely
+        # Completeness Filter: Skip if u2ers_site_files IS null
+        if item.get("u2ers_site_files") is None:
+            continue
 
         # 3. Transform delimited strings to arrays
         for field in fields_to_process:

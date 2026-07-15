@@ -11,18 +11,6 @@ const BDR_URL_STEM = "https://repository.library.brown.edu",
 
 function initializeBasemaps(L) {
   const basemaps = {
-    Topo: L.tileLayer("https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {
-      attribution:
-        'Map data: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
-    }),
-    Outdoors: L.tileLayer(
-      "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.{ext}",
-      {
-        attribution:
-          '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-        ext: "png",
-      }
-    ),
     Terrain: L.tileLayer(
       "https://tiles.stadiamaps.com/tiles/stamen_terrain/{z}/{x}/{y}{r}.{ext}",
       {
@@ -245,7 +233,7 @@ async function initializeMap() {
   let overlayMaps = {
     Flights: flightLayer,
     Images: bdr,
-    Kiosk: kioskLayer,
+    Sites: kioskLayer,
   };
   bdr.addTo(map);
   

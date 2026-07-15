@@ -31,7 +31,7 @@
   {{ $damage := .g_earth_damage_cause }}
 
   {{ $pids := slice }}
-  {{ $pids := .bdr_pids }}
+  {{ $pids := .image_pids }}
 
   {{ $metadata := dict
     "govenorate" .at_governorate
@@ -67,6 +67,6 @@
 
   }}
 
-  {{ $.AddPage $page }}
+    {{ $.AddPage $page }}
 
 {{ end }} {{/* close range data */}}

@@ -35,7 +35,7 @@ In the project root, run `python assets/js/clean_data.py -i assets/kiosk/docs.js
 1. removes the wrapping `u2ers_sites` so the values are easier to access
 2. removes sites where the `limit_view_to` field is not null, which shouldn't be made public
 3. transforms the `at_periods` and `g_earth_damage_cause` field values into arrays, so Hugo can loop through them appropriately (and use at_periods as a taxonomy)
-4. transforms the `u2_images_showing_the_site` field, although we're currently not using it.
+4. transforms the `u2_images_showing_the_site` field into an array
 
 Once the data has been cleaned and formatted, we need to _add_ information about the BDR items which are part of the Kiosk dataset. To do so, run
 ```zsh
