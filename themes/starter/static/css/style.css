@@ -146,15 +146,66 @@ footer {
     }
 }
 
+.leaflet-control {
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, .65);
+}
+
 /* canister color legend */
 .legend.leaflet-control {
-    background-color: rgba(255, 255, 255, 0.5);
     padding: 0 0.5rem;
-
     ul {
         list-style: none;
         padding-left: 0;
     }
+}
+
+/* input control */
+.coordinate-control-container.leaflet-control {
+    cursor: pointer;
+    padding: 2px 5px 5px;    
+    button {
+        float: right;
+    }
+}
+.leaflet-control fieldset {
+  display: grid;
+  grid-gap: 5px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Custom marker wrapper */
+.custom-pin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The actual pin shape */
+.custom-pin {
+    width: 30px;
+    height: 30px;
+    border-radius: 50% 50% 50% 0;
+    background: var(--bright);
+    position: absolute;
+    transform: rotate(-45deg);
+    left: 50%;
+    top: 50%;
+    margin: -15px 0 0 -15px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+}
+
+/* The small inner circle */
+.custom-pin::after {
+    content: '';
+    width: 14px;
+    height: 14px;
+    margin: 8px 0 0 8px;
+    background: #fff;
+    position: absolute;
+    border-radius: 50%;
 }
 
 /* Kiosk pages */

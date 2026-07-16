@@ -3,9 +3,8 @@
 const BDR_URL_STEM = "https://repository.library.brown.edu",
   BDR_URL_ITEM_STEM = `${BDR_URL_STEM}/studio/item`,
   BDR_URL_THUMB_STEM = `${BDR_URL_STEM}/viewers/image/thumbnail`,
-  FLIGHTPATH_DATA_URL =
-    "/B8649_flightpath.geojson",
-    KIOSK_DATA = "/kiosk.geojson";
+  FLIGHTPATH_DATA_URL = "/B8649_flightpath.geojson",
+  KIOSK_DATA = "/kiosk.geojson";
 
 // Set up basemaps
 
@@ -17,14 +16,14 @@ function initializeBasemaps(L) {
         attribution:
           '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
         ext: "png",
-      }
+      },
     ),
     Satellite: L.tileLayer(
       "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
       {
         attribution:
           "Tiles &copy; Esri &mdash; Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community",
-      }
+      },
     ),
   };
 
@@ -41,7 +40,7 @@ function initializeFlightPaths(L) {
       //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
       layer.bindPopup("Mission #" + mission);
       //layer.setStyle({"color": randomColor})
-      layer.setStyle({ "color": "white" });
+      layer.setStyle({ color: "white" });
       layer.addTo(flightLayer);
     },
   });
@@ -52,23 +51,27 @@ function initializeFlightPaths(L) {
 function initKiosk(L) {
   let kioskLayer = L.featureGroup();
   let kioskPoints = new L.GeoJSON.AJAX(KIOSK_DATA, {
-    onEachFeature: function(feature,layer) {
-        // Extract UIDs from the nested structure
-        const uids = feature.properties.u2ers_site_files || [];
-        
-        // Flatten and format the URLs
-        const images = uids.flatMap(file => 
-            file.images.map(img => `<img src="/kiosk/${img.uid}.webp" width="100" />`)
-        ).join("");
+    onEachFeature: function (feature, layer) {
+      // Extract UIDs from the nested structure
+      const uids = feature.properties.u2ers_site_files || [];
 
-        layer.bindPopup(`
+      // Flatten and format the URLs
+      const images = uids
+        .flatMap((file) =>
+          file.images.map(
+            (img) => `<img src="/kiosk/${img.uid}.webp" width="100" />`,
+          ),
+        )
+        .join("");
+
+      layer.bindPopup(`
             <p><a href="/kiosk/${feature.properties.site_id}">${feature.properties.site_name}</a></p>
             <div class="thumbs">
                 ${images || "No images available"}
             </div>
         `);
       layer.addTo(kioskLayer);
-    }
+    },
   });
   return kioskLayer;
 }
@@ -94,12 +97,14 @@ async function getBdrData() {
 function createPopup(photoMeta, clickCoords, map, L) {
   const popupContent =
     "<p>Linked BDR pages:</p><ul>" +
-    photoMeta.map(
-      (photo) =>
-        `<li>Canister ${photo.canister}, frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}" target="_blank">${photo.pid} <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 28 28">
+    photoMeta
+      .map(
+        (photo) =>
+          `<li>Canister ${photo.canister}, frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}" target="_blank">${photo.pid} <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 28 28">
 <path d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"></path>
-</svg></a></li>`
-    ).join("") +
+</svg></a></li>`,
+      )
+      .join("") +
     "</ul>";
 
   L.popup(clickCoords, { content: popupContent }).openOn(map);
@@ -127,8 +132,8 @@ function mapClickHandler(a, coordControl, json, map, L) {
       return {
         pid: feature.properties.pid,
         frame: feature.properties.Frame,
-        canister: feature.properties.Canister
-      }
+        canister: feature.properties.Canister,
+      };
     });
   // only show the popup if the click is in a box
   if (photoMeta.length) {
@@ -154,7 +159,7 @@ async function initializeMap() {
   // Add flightpaths
 
   const flightLayer = initializeFlightPaths(L);
-  
+
   // Add Kiosk points
   const kioskLayer = initKiosk(L);
 
@@ -164,70 +169,53 @@ async function initializeMap() {
     fillOpacity: 0,
   };
 
-  // a key for the canister colors
-  let canisterKey = "<ul><li><input type=\"color\" value=\"#a3bc7e\" disabled /> Canister 5813</li><li><input type=\"color\" value=\"#d99c91\" disabled /> Canister 5812</li><li><input type=\"color\" value=\"#c75037\" disabled /> Canister 5796</li></ul>";
-  let canisterLegend = new L.control({ position: "bottomright" });
-  canisterLegend.onAdd = function (map) {
-    let div = L.DomUtil.create('div', 'info legend');
-    div.innerHTML += canisterKey;
-    return div;
-  }
-  canisterLegend.addTo(map);
-
   let bdr = L.featureGroup();
-  let boxes = new L.GeoJSON.AJAX(
-    "/geolocated.geojson",
-    {
-      onEachFeature: function (feature, layer) {
-        // get BDR pid for each set of coordinates so we can grab
-        // the image from there; we don't need hi-res images here
+  let boxes = new L.GeoJSON.AJAX("/geolocated.geojson", {
+    onEachFeature: function (feature, layer) {
+      // get BDR pid for each set of coordinates so we can grab
+      // the image from there; we don't need hi-res images here
 
-        let pid = feature.properties.pid;
-        let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
+      let pid = feature.properties.pid;
+      let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
 
-        // grab the canister number so we can color-code
-        switch (feature.properties.Canister) {
-          case 5813:
-            layer.setStyle({ color: '#a3bc7e' });
-            break;
-          case 5812:
-            layer.setStyle({ color: '#d99c91' });
-            break;
-          case 5796:
-            layer.setStyle({ color: '#c75037' });
-            break;
-          default:
-            layer.setStyle({ color: 'white' })
-        }
+      // grab the canister number so we can color-code
+      if (
+        feature.properties.Canister >= 5796 &&
+        feature.properties.Canister <= 5804
+      ) {
+        layer.setStyle({ color: "#a3bc7e" });
+      } else if (
+        feature.properties.Canister >= 5812 &&
+        feature.properties.Canister <= 5820
+      ) {
+        layer.setStyle({ color: "#94cfe1" });
+      } else layer.setStyle({ color: "#fff" });
 
+      // link to BDR item
 
-        // link to BDR item
+      let bdrViewer = `${BDR_URL_ITEM_STEM}/${pid}`;
+      let geoArray = feature.geometry.coordinates;
 
-        let bdrViewer = `${BDR_URL_ITEM_STEM}/${pid}`;
-        let geoArray = feature.geometry.coordinates;
+      // we have to take the arrays of coordinates from the geojson and
+      // flip them to be lon/lat for the rotated image overlay.
+      // why? no one knows. why is it 1-3-2? again: no one knows.
+      // the imageOverlayRotated plugin calls the required coordinates
+      // topLeft, topRight, bottomLeft, but this may or may not correspond to
+      // the actual points on the map, so I've used more-generic words
 
-        // we have to take the arrays of coordinates from the geojson and
-        // flip them to be lon/lat for the rotated image overlay.
-        // why? no one knows. why is it 1-3-2? again: no one knows.
-        // the imageOverlayRotated plugin calls the required coordinates
-        // topLeft, topRight, bottomLeft, but this may or may not correspond to
-        // the actual points on the map, so I've used more-generic words
+      const first = geoArray[0][0][0].reverse(),
+        second = geoArray[0][0][1].reverse(),
+        third = geoArray[0][0][3].reverse();
 
-        const first = geoArray[0][0][0].reverse(),
-          second = geoArray[0][0][1].reverse(),
-          third = geoArray[0][0][3].reverse();
-
-        // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
-        const image = L.imageOverlay.rotated(bdrThumb, first, second, third, {
-          opacity: 0.5,
-          interactive: true,
-        });
-        image.addTo(bdr);
-        layer.addTo(bdr).setStyle(boxStyle);
-      },
-
+      // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
+      const image = L.imageOverlay.rotated(bdrThumb, first, second, third, {
+        opacity: 0.5,
+        interactive: true,
+      });
+      image.addTo(bdr);
+      layer.addTo(bdr).setStyle(boxStyle);
     },
-  );
+  });
 
   // establish the overlays
   let overlayMaps = {
@@ -236,23 +224,110 @@ async function initializeMap() {
     Sites: kioskLayer,
   };
   bdr.addTo(map);
-  
+
   // Allow user to choose what overlays to display
   const layerControl = L.control
     .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
     .addTo(map);
 
-  // Set up coordinate control for mouse onclick
-  let coordControl = new L.Control.Coordinates({ position: "topright" });
+  // a key for the canister colors
+  let canisterKey =
+    '<ul><li><label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label></li><li><label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label></li></ul>';
+  let canisterLegend = new L.control({ position: "topright" });
+  canisterLegend.onAdd = function (map) {
+    let div = L.DomUtil.create("div", "info legend");
+    div.innerHTML += canisterKey;
+    return div;
+  };
+  canisterLegend.addTo(map);
+
+  // Set up viewer for mouse onclick coordinates
+  let coordControl = new L.Control.Coordinates({ position: "bottomright" });
   coordControl.addTo(map);
 
   // Get BDR json
-
   const json = await getBdrData();
 
   // Add click handler for map
-
   map.on("click", (a) => mapClickHandler(a, coordControl, json, map, L));
+
+  // Keep track of the user input marker so we can move or replace it
+  let currentMarker = null;
+  // Define the custom colored icon
+  const inputIcon = L.divIcon({
+    className: "custom-pin-container", // Wrapper class
+    iconAnchor: [0, 24], // Point of the icon which will correspond to marker's location
+    popupAnchor: [0, -30], // Point from which the popup should open relative to the iconAnchor
+    html: '<div class="custom-pin"></div>', // The actual HTML structure
+  });
+  // define the control content
+  let inputContent = `
+      <form>
+        <fieldset><legend>Find Coordinates</legend>
+        <label for="ctrl-lat">Latitude
+            <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
+        </label>
+        <label for="ctrl-lng">Longitude
+            <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
+        </label>
+        </fieldset>
+        <button id="ctrl-submit">Add Marker</button></form>
+    `;
+  L.Control.inputControl = L.Control.extend({
+    position: "bottomright", // Set default position
+    onAdd: function (map) {
+      let form = L.DomUtil.create("div", "coordinate-control-container");
+      form.innerHTML += inputContent;
+
+      // Handle the button click inside the control
+      const button = form.querySelector("#ctrl-submit");
+      console.log("button", button);
+      L.DomEvent.on(button, "click", () => {
+        const latVal = parseFloat(form.querySelector("#ctrl-lat").value);
+        const lngVal = parseFloat(form.querySelector("#ctrl-lng").value);
+
+        console.log(latVal);
+        console.log(lngVal);
+
+        // Validate coordinates
+        if (isNaN(latVal) || isNaN(lngVal)) {
+          alert("Please enter valid numeric latitude and longitude values.");
+          return;
+        }
+        if (latVal < -90 || latVal > 90 || lngVal < -180 || lngVal > 180) {
+          alert(
+            "Coordinates out of range. Latitude must be between -90 and 90. Longitude must be between -180 and 180.",
+          );
+          return;
+        }
+
+        const targetLatLng = [latVal, lngVal];
+
+        // Remove existing marker if it exists
+        if (currentMarker) {
+          map.removeLayer(currentMarker);
+        }
+
+        // Add new marker
+        currentMarker = L.marker(targetLatLng, { icon: inputIcon })
+          .addTo(map)
+          .bindPopup(
+            `<b>Custom Coordinate</b><br>Lat: ${latVal}<br>Lon: ${lngVal}`,
+          )
+          .openPopup();
+
+        // Center the map on the new marker
+        map.setView(targetLatLng, 14);
+      });
+      L.DomEvent.disableClickPropagation(form);
+      L.DomEvent.disableScrollPropagation(form);
+      return form;
+    },
+  });
+
+  const inputControl = new L.Control.inputControl();
+
+  inputControl.addTo(map);
 }
 
 initializeMap();
