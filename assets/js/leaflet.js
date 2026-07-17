@@ -9,18 +9,29 @@ const BDR_URL_STEM = "https://repository.library.brown.edu",
 // HTML for the Find Coordinates control
 
 const FIND_COORDS_CTL_HTML = `
-      <form>
-        <fieldset>
-          <legend>Find Coordinates</legend>
-          <label for="ctrl-lat">Latitude
-              <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
-          </label>
-          <label for="ctrl-lng">Longitude
-              <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
-          </label>
-        </fieldset>
-        <button id="ctrl-submit">Add Marker</button>
-      </form>`;
+  <form>
+    <fieldset>
+      <legend>Find Coordinates</legend>
+      <label for="ctrl-lat">Latitude
+          <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
+      </label>
+      <label for="ctrl-lng">Longitude
+          <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
+      </label>
+    </fieldset>
+    <button id="ctrl-submit">Add Marker</button>
+  </form>`;
+
+// a key for the canister colors
+const CANISTER_KEY_HTML = `
+  <ul>
+    <li>
+      <label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label>
+    </li>
+    <li>
+      <label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label>
+    </li>
+  </ul>`;
 
 // Set up basemaps
 
@@ -327,20 +338,10 @@ async function initializeMap() {
     .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
     .addTo(map);
 
-  // a key for the canister colors
-  let canisterKey = `
-    <ul>
-      <li>
-        <label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label>
-      </li>
-      <li>
-        <label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label>
-      </li>
-    </ul>`;
   let canisterLegend = new L.control({ position: "topright" });
   canisterLegend.onAdd = function (map) {
     let div = L.DomUtil.create("div", "info legend");
-    div.innerHTML += canisterKey;
+    div.innerHTML += CANISTER_KEY_HTML;
     return div;
   };
   canisterLegend.addTo(map);
