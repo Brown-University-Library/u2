@@ -234,12 +234,12 @@ function initializeFindCoordinatesControl(map, L) {
     html: '<div class="custom-pin"></div>', // The actual HTML structure
   });
 
-  const onAddMarkerClick = function (e) {
-    const latVal = parseFloat(form.querySelector("#ctrl-lat").value);
-    const lngVal = parseFloat(form.querySelector("#ctrl-lng").value);
-
-    console.log(latVal);
-    console.log(lngVal);
+  const onAddMarkerClick = function (form, e) {
+    const coordinateForm = form.querySelector("form"),
+      latInput = form.querySelector("#ctrl-lat"),
+      lngInput = form.querySelector("#ctrl-lng"),
+      latVal = parseFloat(latInput.value),
+      lngVal = parseFloat(lngInput.value);
 
     // Validate coordinates
     if (isNaN(latVal) || isNaN(lngVal)) {
@@ -268,6 +268,8 @@ function initializeFindCoordinatesControl(map, L) {
 
     // Center the map on the new marker
     map.setView(targetLatLng, 14);
+
+    return true;
   };
 
   const onAddFindCoordinatesControl = function (map) {
@@ -276,10 +278,12 @@ function initializeFindCoordinatesControl(map, L) {
 
     // Handle the button click inside the control
     const addMarkerSubmitButton = form.querySelector("#ctrl-submit");
-    console.log("button", addMarkerSubmitButton);
-    L.DomEvent.on(addMarkerSubmitButton, "click", onAddMarkerClick);
+    L.DomEvent.on(
+      addMarkerSubmitButton,
+      "click",
+      onAddMarkerClick.bind(null, form),
+    );
     L.DomEvent.disableClickPropagation(form);
-    L.DomEvent.disableScrollPropagation(form);
     return form;
   };
 
