@@ -145,6 +145,53 @@ function mapClickHandler(a, coordControl, json, map, L) {
   }
 }
 
+// Add a BDR image and its bounds to the map layer
+
+function addBdrFeature(bdr, boxStyle, L, feature, layer) {
+  // get BDR pid for each set of coordinates so we can grab
+  // the image from there; we don't need hi-res images here
+
+  let pid = feature.properties.pid;
+  let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
+
+  // grab the canister number so we can color-code
+  if (
+    feature.properties.Canister >= 5796 &&
+    feature.properties.Canister <= 5804
+  ) {
+    layer.setStyle({ color: "#a3bc7e" });
+  } else if (
+    feature.properties.Canister >= 5812 &&
+    feature.properties.Canister <= 5820
+  ) {
+    layer.setStyle({ color: "#94cfe1" });
+  } else layer.setStyle({ color: "#fff" });
+
+  // link to BDR item
+
+  let bdrViewer = `${BDR_URL_ITEM_STEM}/${pid}`;
+  let geoArray = feature.geometry.coordinates;
+
+  // we have to take the arrays of coordinates from the geojson and
+  // flip them to be lon/lat for the rotated image overlay.
+  // why? no one knows. why is it 1-3-2? again: no one knows.
+  // the imageOverlayRotated plugin calls the required coordinates
+  // topLeft, topRight, bottomLeft, but this may or may not correspond to
+  // the actual points on the map, so I've used more-generic words
+
+  const first = geoArray[0][0][0].reverse(),
+    second = geoArray[0][0][1].reverse(),
+    third = geoArray[0][0][3].reverse();
+
+  // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
+  const image = L.imageOverlay.rotated(bdrThumb, first, second, third, {
+    opacity: 0.5,
+    interactive: true,
+  });
+  image.addTo(bdr);
+  layer.addTo(bdr).setStyle(boxStyle);
+}
+
 // Main map setup function
 
 async function initializeMap() {
@@ -175,50 +222,7 @@ async function initializeMap() {
 
   let bdr = L.featureGroup();
   let boxes = new L.GeoJSON.AJAX("/geolocated.geojson", {
-    onEachFeature: function (feature, layer) {
-      // get BDR pid for each set of coordinates so we can grab
-      // the image from there; we don't need hi-res images here
-
-      let pid = feature.properties.pid;
-      let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
-
-      // grab the canister number so we can color-code
-      if (
-        feature.properties.Canister >= 5796 &&
-        feature.properties.Canister <= 5804
-      ) {
-        layer.setStyle({ color: "#a3bc7e" });
-      } else if (
-        feature.properties.Canister >= 5812 &&
-        feature.properties.Canister <= 5820
-      ) {
-        layer.setStyle({ color: "#94cfe1" });
-      } else layer.setStyle({ color: "#fff" });
-
-      // link to BDR item
-
-      let bdrViewer = `${BDR_URL_ITEM_STEM}/${pid}`;
-      let geoArray = feature.geometry.coordinates;
-
-      // we have to take the arrays of coordinates from the geojson and
-      // flip them to be lon/lat for the rotated image overlay.
-      // why? no one knows. why is it 1-3-2? again: no one knows.
-      // the imageOverlayRotated plugin calls the required coordinates
-      // topLeft, topRight, bottomLeft, but this may or may not correspond to
-      // the actual points on the map, so I've used more-generic words
-
-      const first = geoArray[0][0][0].reverse(),
-        second = geoArray[0][0][1].reverse(),
-        third = geoArray[0][0][3].reverse();
-
-      // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
-      const image = L.imageOverlay.rotated(bdrThumb, first, second, third, {
-        opacity: 0.5,
-        interactive: true,
-      });
-      image.addTo(bdr);
-      layer.addTo(bdr).setStyle(boxStyle);
-    },
+    onEachFeature: addBdrFeature.bind(null, bdr, boxStyle, L),
   });
 
   // establish the overlays
