@@ -19,7 +19,7 @@ const FIND_COORDS_CTL_HTML = `
           <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
       </label>
     </fieldset>
-    <button id="ctrl-submit">Add Marker</button>
+    <button id="ctrl-submit" type="button">Add Marker</button>
   </form>`;
 
 // a key for the canister colors
