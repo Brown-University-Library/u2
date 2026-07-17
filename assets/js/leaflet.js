@@ -100,9 +100,13 @@ function createPopup(photoMeta, clickCoords, map, L) {
     photoMeta
       .map(
         (photo) =>
-          `<li>Canister ${photo.canister}, frame ${photo.frame}: <a href="${BDR_URL_ITEM_STEM}/${photo.pid}" target="_blank">${photo.pid} <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 28 28">
-<path d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"></path>
-</svg></a></li>`,
+          `<li>Canister ${photo.canister}, frame ${photo.frame}: 
+            <a href="${BDR_URL_ITEM_STEM}/${photo.pid}" target="_blank">${photo.pid} 
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16" viewBox="0 0 28 28">
+                <path d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"></path>
+              </svg>
+            </a>
+          </li>`,
       )
       .join("") +
     "</ul>";
@@ -231,8 +235,15 @@ async function initializeMap() {
     .addTo(map);
 
   // a key for the canister colors
-  let canisterKey =
-    '<ul><li><label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label></li><li><label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label></li></ul>';
+  let canisterKey = `
+    <ul>
+      <li>
+        <label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label>
+      </li>
+      <li>
+        <label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label>
+      </li>
+    </ul>`;
   let canisterLegend = new L.control({ position: "topright" });
   canisterLegend.onAdd = function (map) {
     let div = L.DomUtil.create("div", "info legend");
@@ -263,16 +274,17 @@ async function initializeMap() {
   // define the control content
   let inputContent = `
       <form>
-        <fieldset><legend>Find Coordinates</legend>
-        <label for="ctrl-lat">Latitude
-            <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
-        </label>
-        <label for="ctrl-lng">Longitude
-            <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
-        </label>
+        <fieldset>
+          <legend>Find Coordinates</legend>
+          <label for="ctrl-lat">Latitude
+              <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
+          </label>
+          <label for="ctrl-lng">Longitude
+              <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
+          </label>
         </fieldset>
-        <button id="ctrl-submit">Add Marker</button></form>
-    `;
+        <button id="ctrl-submit">Add Marker</button>
+      </form>`;
   L.Control.inputControl = L.Control.extend({
     position: "bottomright", // Set default position
     onAdd: function (map) {
