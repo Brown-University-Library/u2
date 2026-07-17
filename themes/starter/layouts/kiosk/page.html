@@ -5,7 +5,8 @@
 <dl>
   <h2>Site metadata</h2>
   {{ range $k, $v := .Params.metadata }} {{ if eq $k "ees reference"}}
-  <dt><a href="/ees">{{ $k }}</a></dt>
+  <!--<dt><a href="/ees">{{ $k }}</a></dt>-->
+  <dt>{{ $k }}</dt>
   <dd>{{ $v }}</dd>
   {{ else }}
   <dt>{{ $k }}</dt>

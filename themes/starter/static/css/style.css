@@ -130,10 +130,9 @@ footer {
 
 /* MAP */
 .leaflet-popup-content {
+    width: fit-content;
     ul {
         padding-left: 1em;
-
-
     }
 
     .thumbs {
