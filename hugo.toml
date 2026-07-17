@@ -21,3 +21,6 @@ theme = 'starter'
 
 [taxonomies]
   period = "periods"
+
+[security]
+  allowContent = ['^text/markdown$', '^text/html$']
