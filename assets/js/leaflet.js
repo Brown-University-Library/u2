@@ -115,6 +115,8 @@ function createPopup(photoMeta, clickCoords, map, L) {
 }
 
 // Map click handler
+// If user clicks on a BDR box, show a popup with links to 
+//  the BDR items that fall under that box
 
 function mapClickHandler(a, coordControl, json, map, L) {
   // get the coordinates of the click
@@ -192,80 +194,9 @@ function addBdrFeature(bdr, boxStyle, L, feature, layer) {
   layer.addTo(bdr).setStyle(boxStyle);
 }
 
-// Main map setup function
+// Set up the control for finding coordinates
 
-async function initializeMap() {
-  // Initialize map object
-
-  let map = L.map("map", {
-    minZoom: 5,
-    maxZoom: 20,
-    zoomControl: true,
-  }).setView([30.407, 30.368], 8);
-
-  // Set up basemaps
-  const basemaps = initializeBasemaps(L);
-  basemaps.Satellite.addTo(map);
-
-  // Add flightpaths
-
-  const flightLayer = initializeFlightPaths(L);
-
-  // Add Kiosk points
-  const kioskLayer = initKiosk(L);
-
-  // Style photo boxes
-  let boxStyle = {
-    weight: 2,
-    fillOpacity: 0,
-  };
-
-  let bdr = L.featureGroup();
-  let boxes = new L.GeoJSON.AJAX("/geolocated.geojson", {
-    onEachFeature: addBdrFeature.bind(null, bdr, boxStyle, L),
-  });
-
-  // establish the overlays
-  let overlayMaps = {
-    Flights: flightLayer,
-    Images: bdr,
-    Sites: kioskLayer,
-  };
-  bdr.addTo(map);
-
-  // Allow user to choose what overlays to display
-  const layerControl = L.control
-    .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
-    .addTo(map);
-
-  // a key for the canister colors
-  let canisterKey = `
-    <ul>
-      <li>
-        <label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label>
-      </li>
-      <li>
-        <label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label>
-      </li>
-    </ul>`;
-  let canisterLegend = new L.control({ position: "topright" });
-  canisterLegend.onAdd = function (map) {
-    let div = L.DomUtil.create("div", "info legend");
-    div.innerHTML += canisterKey;
-    return div;
-  };
-  canisterLegend.addTo(map);
-
-  // Set up viewer for mouse onclick coordinates
-  let coordControl = new L.Control.Coordinates({ position: "bottomright" });
-  coordControl.addTo(map);
-
-  // Get BDR json
-  const json = await getBdrData();
-
-  // Add click handler for map
-  map.on("click", (a) => mapClickHandler(a, coordControl, json, map, L));
-
+function initializeFindCoordinatesControl(map, L) {
   // Keep track of the user input marker so we can move or replace it
   let currentMarker = null;
   // Define the custom colored icon
@@ -342,8 +273,86 @@ async function initializeMap() {
   });
 
   const inputControl = new L.Control.inputControl();
-
   inputControl.addTo(map);
+}
+
+// Main map setup function
+
+async function initializeMap() {
+  // Initialize map object
+
+  let map = L.map("map", {
+    minZoom: 5,
+    maxZoom: 20,
+    zoomControl: true,
+  }).setView([30.407, 30.368], 8);
+
+  // Set up basemaps
+  const basemaps = initializeBasemaps(L);
+  basemaps.Satellite.addTo(map);
+
+  // Add flightpaths
+
+  const flightLayer = initializeFlightPaths(L);
+
+  // Add Kiosk points
+  const kioskLayer = initKiosk(L);
+
+  // Style photo boxes
+  let boxStyle = {
+    weight: 2,
+    fillOpacity: 0,
+  };
+
+  let bdr = L.featureGroup();
+  let boxes = new L.GeoJSON.AJAX("/geolocated.geojson", {
+    onEachFeature: addBdrFeature.bind(null, bdr, boxStyle, L),
+  });
+
+  // establish the overlays
+  let overlayMaps = {
+    Flights: flightLayer,
+    Images: bdr,
+    Sites: kioskLayer,
+  };
+  bdr.addTo(map);
+
+  // Allow user to choose what overlays to display
+  const layerControl = L.control
+    .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
+    .addTo(map);
+
+  // a key for the canister colors
+  let canisterKey = `
+    <ul>
+      <li>
+        <label for="green"><input id="green" type="color" value="#a3bc7e" disabled /> Left</label>
+      </li>
+      <li>
+        <label for="blue"><input id="blue" type="color" value="#94cfe1" disabled /> Right</label>
+      </li>
+    </ul>`;
+  let canisterLegend = new L.control({ position: "topright" });
+  canisterLegend.onAdd = function (map) {
+    let div = L.DomUtil.create("div", "info legend");
+    div.innerHTML += canisterKey;
+    return div;
+  };
+  canisterLegend.addTo(map);
+
+  // Set up viewer for mouse onclick coordinates
+  let coordControl = new L.Control.Coordinates({ position: "bottomright" });
+  coordControl.addTo(map);
+
+  // Get BDR json
+  const json = await getBdrData();
+
+  // Add click handler for map (shows popup with BDR links if click is in a box)
+  map.on("click", (a) => mapClickHandler(a, coordControl, json, map, L));
+
+  // BEGIN FIND COORDINATES CONTROL
+  initializeFindCoordinatesControl(map, L);
+  // END FIND COORDINATES CONTROL
 }
 
 initializeMap();
