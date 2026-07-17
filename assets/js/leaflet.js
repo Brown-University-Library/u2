@@ -13,10 +13,10 @@ const FIND_COORDS_CTL_HTML = `
     <fieldset>
       <legend>Find Coordinates</legend>
       <label for="ctrl-lat">Latitude
-          <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
+          <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" min="-90" max="90" step="any" required>
       </label>
       <label for="ctrl-lng">Longitude
-          <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
+          <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" min="-180" max="180" step="any" required>
       </label>
     </fieldset>
     <button id="ctrl-submit" type="button">Add Marker</button>
@@ -242,15 +242,21 @@ function initializeFindCoordinatesControl(map, L) {
       latVal = parseFloat(latInput.value),
       lngVal = parseFloat(lngInput.value);
 
-    // Validate coordinates
-    if (isNaN(latVal) || isNaN(lngVal)) {
-      alert("Please enter valid numeric latitude and longitude values.");
-      return;
+    latInput.setCustomValidity("");
+    lngInput.setCustomValidity("");
+
+    // Validate coordinates; if invalid, show error messages & exit
+    if (isNaN(latVal)) {
+      latInput.setCustomValidity("Please enter a valid numeric latitude.");
+    } else if (isNaN(lngVal)) {
+      lngInput.setCustomValidity("Please enter a valid numeric longitude.");
+    } else if (latVal < -90 || latVal > 90) {
+      latInput.setCustomValidity("Latitude must be between -90 and 90.");
+    } else if (lngVal < -180 || lngVal > 180) {
+      lngInput.setCustomValidity("Longitude must be between -180 and 180.");
     }
-    if (latVal < -90 || latVal > 90 || lngVal < -180 || lngVal > 180) {
-      alert(
-        "Coordinates out of range. Latitude must be between -90 and 90. Longitude must be between -180 and 180.",
-      );
+
+    if (!coordinateForm.reportValidity()) {
       return;
     }
 
