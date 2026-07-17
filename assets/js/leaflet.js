@@ -6,6 +6,22 @@ const BDR_URL_STEM = "https://repository.library.brown.edu",
   FLIGHTPATH_DATA_URL = "/B8649_flightpath.geojson",
   KIOSK_DATA = "/kiosk.geojson";
 
+// HTML for the Find Coordinates control
+
+const FIND_COORDS_CTL_HTML = `
+      <form>
+        <fieldset>
+          <legend>Find Coordinates</legend>
+          <label for="ctrl-lat">Latitude
+              <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
+          </label>
+          <label for="ctrl-lng">Longitude
+              <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
+          </label>
+        </fieldset>
+        <button id="ctrl-submit">Add Marker</button>
+      </form>`;
+
 // Set up basemaps
 
 function initializeBasemaps(L) {
@@ -115,7 +131,7 @@ function createPopup(photoMeta, clickCoords, map, L) {
 }
 
 // Map click handler
-// If user clicks on a BDR box, show a popup with links to 
+// If user clicks on a BDR box, show a popup with links to
 //  the BDR items that fall under that box
 
 function mapClickHandler(a, coordControl, json, map, L) {
@@ -206,70 +222,59 @@ function initializeFindCoordinatesControl(map, L) {
     popupAnchor: [0, -30], // Point from which the popup should open relative to the iconAnchor
     html: '<div class="custom-pin"></div>', // The actual HTML structure
   });
-  // define the control content
-  let inputContent = `
-      <form>
-        <fieldset>
-          <legend>Find Coordinates</legend>
-          <label for="ctrl-lat">Latitude
-              <input type="number" id="ctrl-lat" placeholder="Latitude (e.g. 29.97)" step="any" required>
-          </label>
-          <label for="ctrl-lng">Longitude
-              <input type="number" id="ctrl-lng" placeholder="Longitude (e.g. 31.13)" step="any" required>
-          </label>
-        </fieldset>
-        <button id="ctrl-submit">Add Marker</button>
-      </form>`;
+
+  const onAddMarkerClick = function (e) {
+    const latVal = parseFloat(form.querySelector("#ctrl-lat").value);
+    const lngVal = parseFloat(form.querySelector("#ctrl-lng").value);
+
+    console.log(latVal);
+    console.log(lngVal);
+
+    // Validate coordinates
+    if (isNaN(latVal) || isNaN(lngVal)) {
+      alert("Please enter valid numeric latitude and longitude values.");
+      return;
+    }
+    if (latVal < -90 || latVal > 90 || lngVal < -180 || lngVal > 180) {
+      alert(
+        "Coordinates out of range. Latitude must be between -90 and 90. Longitude must be between -180 and 180.",
+      );
+      return;
+    }
+
+    const targetLatLng = [latVal, lngVal];
+
+    // Remove existing marker if it exists
+    if (currentMarker) {
+      map.removeLayer(currentMarker);
+    }
+
+    // Add new marker
+    currentMarker = L.marker(targetLatLng, { icon: inputIcon })
+      .addTo(map)
+      .bindPopup(`<b>Custom Coordinate</b><br>Lat: ${latVal}<br>Lon: ${lngVal}`)
+      .openPopup();
+
+    // Center the map on the new marker
+    map.setView(targetLatLng, 14);
+  };
+
+  const onAddFindCoordinatesControl = function (map) {
+    let form = L.DomUtil.create("div", "coordinate-control-container");
+    form.innerHTML += FIND_COORDS_CTL_HTML;
+
+    // Handle the button click inside the control
+    const addMarkerSubmitButton = form.querySelector("#ctrl-submit");
+    console.log("button", addMarkerSubmitButton);
+    L.DomEvent.on(addMarkerSubmitButton, "click", onAddMarkerClick);
+    L.DomEvent.disableClickPropagation(form);
+    L.DomEvent.disableScrollPropagation(form);
+    return form;
+  };
+
   L.Control.inputControl = L.Control.extend({
     position: "bottomright", // Set default position
-    onAdd: function (map) {
-      let form = L.DomUtil.create("div", "coordinate-control-container");
-      form.innerHTML += inputContent;
-
-      // Handle the button click inside the control
-      const button = form.querySelector("#ctrl-submit");
-      console.log("button", button);
-      L.DomEvent.on(button, "click", () => {
-        const latVal = parseFloat(form.querySelector("#ctrl-lat").value);
-        const lngVal = parseFloat(form.querySelector("#ctrl-lng").value);
-
-        console.log(latVal);
-        console.log(lngVal);
-
-        // Validate coordinates
-        if (isNaN(latVal) || isNaN(lngVal)) {
-          alert("Please enter valid numeric latitude and longitude values.");
-          return;
-        }
-        if (latVal < -90 || latVal > 90 || lngVal < -180 || lngVal > 180) {
-          alert(
-            "Coordinates out of range. Latitude must be between -90 and 90. Longitude must be between -180 and 180.",
-          );
-          return;
-        }
-
-        const targetLatLng = [latVal, lngVal];
-
-        // Remove existing marker if it exists
-        if (currentMarker) {
-          map.removeLayer(currentMarker);
-        }
-
-        // Add new marker
-        currentMarker = L.marker(targetLatLng, { icon: inputIcon })
-          .addTo(map)
-          .bindPopup(
-            `<b>Custom Coordinate</b><br>Lat: ${latVal}<br>Lon: ${lngVal}`,
-          )
-          .openPopup();
-
-        // Center the map on the new marker
-        map.setView(targetLatLng, 14);
-      });
-      L.DomEvent.disableClickPropagation(form);
-      L.DomEvent.disableScrollPropagation(form);
-      return form;
-    },
+    onAdd: onAddFindCoordinatesControl,
   });
 
   const inputControl = new L.Control.inputControl();
