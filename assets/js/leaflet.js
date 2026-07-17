@@ -226,6 +226,7 @@ function addBdrFeature(bdr, boxStyle, L, feature, layer) {
 function initializeFindCoordinatesControl(map, L) {
   // Keep track of the user input marker so we can move or replace it
   let currentMarker = null;
+
   // Define the custom colored icon
   const inputIcon = L.divIcon({
     className: "custom-pin-container", // Wrapper class
@@ -253,20 +254,20 @@ function initializeFindCoordinatesControl(map, L) {
       return;
     }
 
+    // Passed validation; time to create marker
+    //  (if marker exists, remove it first)
+
     const targetLatLng = [latVal, lngVal];
 
-    // Remove existing marker if it exists
     if (currentMarker) {
       map.removeLayer(currentMarker);
     }
 
-    // Add new marker
+    // Add new marker & center the map on it
     currentMarker = L.marker(targetLatLng, { icon: inputIcon })
       .addTo(map)
       .bindPopup(`<b>Custom Coordinate</b><br>Lat: ${latVal}<br>Lon: ${lngVal}`)
       .openPopup();
-
-    // Center the map on the new marker
     map.setView(targetLatLng, 14);
 
     return true;
@@ -330,7 +331,7 @@ async function initializeMap() {
   });
 
   // establish the overlays
-  let overlayMaps = {
+  const overlayMaps = {
     Flights: flightLayer,
     Images: bdr,
     Sites: kioskLayer,
@@ -342,7 +343,8 @@ async function initializeMap() {
     .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
     .addTo(map);
 
-  let canisterLegend = new L.control({ position: "topright" });
+  // Add a legend for the canister colors
+  const canisterLegend = new L.control({ position: "topright" });
   canisterLegend.onAdd = function (map) {
     let div = L.DomUtil.create("div", "info legend");
     div.innerHTML += CANISTER_KEY_HTML;
@@ -351,18 +353,17 @@ async function initializeMap() {
   canisterLegend.addTo(map);
 
   // Set up viewer for mouse onclick coordinates
-  let coordControl = new L.Control.Coordinates({ position: "bottomright" });
+  const coordControl = new L.Control.Coordinates({ position: "bottomright" });
   coordControl.addTo(map);
+
+  // Set up the Find Coordinates control
+  initializeFindCoordinatesControl(map, L);
 
   // Get BDR json
   const json = await getBdrData();
 
   // Add click handler for map (shows popup with BDR links if click is in a box)
   map.on("click", (a) => mapClickHandler(a, coordControl, json, map, L));
-
-  // BEGIN FIND COORDINATES CONTROL
-  initializeFindCoordinatesControl(map, L);
-  // END FIND COORDINATES CONTROL
 }
 
 initializeMap();
