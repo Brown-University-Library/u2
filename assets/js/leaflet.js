@@ -74,32 +74,37 @@ function initializeFlightPaths(L) {
   return flightLayer;
 }
 
-// init kiosk layer
 function initKiosk(L) {
   let kioskLayer = L.featureGroup();
   let kioskPoints = new L.GeoJSON.AJAX(KIOSK_DATA, {
     onEachFeature: function (feature, layer) {
-      // Extract UIDs from the nested structure
+      const siteId = feature.properties.site_id;
       const uids = feature.properties.u2ers_site_files || [];
 
-      // Flatten and format the URLs
+      // Generate individual links for EACH image using img.uid
       const images = uids
         .flatMap((file) =>
           file.images.map(
-            (img) => `<img src="/kiosk/${img.uid}.webp" width="100" />`,
-          ),
+            (img) => `
+              <a href="/kiosk/${siteId}/?uid=${img.uid}">
+                <img src="/kiosk/${img.uid}.webp" width="100" alt="" />
+              </a>
+            `
+          )
         )
         .join("");
 
       layer.bindPopup(`
-            <p><a href="/kiosk/${feature.properties.site_id}">${feature.properties.site_name}</a></p>
-            <div class="thumbs">
-                ${images || "No images available"}
-            </div>
-        `);
+        <p><a href="/kiosk/${siteId}">${feature.properties.site_name}</a></p>
+        <div class="thumbs">
+          ${images || "No images available"}
+        </div>
+      `);
+
       layer.addTo(kioskLayer);
     },
   });
+
   return kioskLayer;
 }
 
