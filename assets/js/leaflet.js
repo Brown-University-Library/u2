@@ -7,7 +7,6 @@ const BDR_URL_STEM = "https://repository.library.brown.edu",
   KIOSK_DATA = "/kiosk.geojson";
 
 // HTML for the Find Coordinates control
-
 const FIND_COORDS_CTL_HTML = `
   <form>
     <fieldset>
@@ -20,6 +19,8 @@ const FIND_COORDS_CTL_HTML = `
       </label>
     </fieldset>
     <button id="ctrl-submit" type="button">Add Marker</button>
+    &nbsp;
+    <button id="ctrl-remove" type="button" disabled>Remove Marker</button>
   </form>`;
 
 // a key for the canister colors
@@ -64,9 +65,7 @@ function initializeFlightPaths(L) {
   let flightPaths = new L.GeoJSON.AJAX(FLIGHTPATH_DATA_URL, {
     onEachFeature: function (feature, layer) {
       const mission = feature.properties.MISSION;
-      //const randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
       layer.bindPopup("Mission #" + mission);
-      //layer.setStyle({"color": randomColor})
       layer.setStyle({ color: "white" });
       layer.addTo(flightLayer);
     },
@@ -89,8 +88,8 @@ function initKiosk(L) {
               <a href="/kiosk/${siteId}/?uid=${img.uid}">
                 <img src="/kiosk/${img.uid}.webp" width="100" alt="" />
               </a>
-            `
-          )
+            `,
+          ),
         )
         .join("");
 
@@ -117,7 +116,7 @@ async function getBdrData() {
     if (!response.ok) {
       throw new Error(`Response status: ${response.status}`);
     }
-    json = await response.json();
+    const json = await response.json();
     return json;
   } catch (error) {
     console.error(error.message);
@@ -147,19 +146,18 @@ function createPopup(photoMeta, clickCoords, map, L) {
 }
 
 // Map click handler
-// If user clicks on a BDR box, show a popup with links to
-//  the BDR items that fall under that box
 
 function mapClickHandler(a, coordControl, json, map, L) {
-  // get the coordinates of the click
-
-  coordControl.setCoordinates(a);
+  if (coordControl && typeof coordControl.setCoordinates === "function") {
+    coordControl.setCoordinates(a);
+  }
+  
   const lat = a.latlng.lat,
     lng = a.latlng.lng,
-    turfClickCoords = turf.point([lng, lat]); // gotta reverse lat-lng to lng-lat
+    turfClickCoords = turf.point([lng, lat]);
 
-  // Filter BDR items for those that fall under the click;
-  // extract PIDs
+  if (!json || !json.features) return;
+
   const photoMeta = json.features
     .filter((feature) => {
       const featureBox = feature.geometry.coordinates,
@@ -173,7 +171,7 @@ function mapClickHandler(a, coordControl, json, map, L) {
         canister: feature.properties.Canister,
       };
     });
-  // only show the popup if the click is in a box
+
   if (photoMeta.length) {
     createPopup(photoMeta, [lat, lng], map, L);
   }
@@ -182,13 +180,9 @@ function mapClickHandler(a, coordControl, json, map, L) {
 // Add a BDR image and its bounds to the map layer
 
 function addBdrFeature(bdr, boxStyle, L, feature, layer) {
-  // get BDR pid for each set of coordinates so we can grab
-  // the image from there; we don't need hi-res images here
-
   let pid = feature.properties.pid;
   let bdrThumb = `${BDR_URL_THUMB_STEM}/${pid}`;
 
-  // grab the canister number so we can color-code
   if (
     feature.properties.Canister >= 5796 &&
     feature.properties.Canister <= 5804
@@ -201,23 +195,13 @@ function addBdrFeature(bdr, boxStyle, L, feature, layer) {
     layer.setStyle({ color: "#94cfe1" });
   } else layer.setStyle({ color: "#fff" });
 
-  // link to BDR item
-
   let bdrViewer = `${BDR_URL_ITEM_STEM}/${pid}`;
   let geoArray = feature.geometry.coordinates;
 
-  // we have to take the arrays of coordinates from the geojson and
-  // flip them to be lon/lat for the rotated image overlay.
-  // why? no one knows. why is it 1-3-2? again: no one knows.
-  // the imageOverlayRotated plugin calls the required coordinates
-  // topLeft, topRight, bottomLeft, but this may or may not correspond to
-  // the actual points on the map, so I've used more-generic words
+  const first = geoArray[0][0][0].slice().reverse(),
+    second = geoArray[0][0][1].slice().reverse(),
+    third = geoArray[0][0][3].slice().reverse();
 
-  const first = geoArray[0][0][0].reverse(),
-    second = geoArray[0][0][1].reverse(),
-    third = geoArray[0][0][3].reverse();
-
-  // put the BDR image on the map and skew it using points from the geojson, not the layer bounds
   const image = L.imageOverlay.rotated(bdrThumb, first, second, third, {
     opacity: 0.5,
     interactive: true,
@@ -229,15 +213,13 @@ function addBdrFeature(bdr, boxStyle, L, feature, layer) {
 // Set up the control for finding coordinates
 
 function initializeFindCoordinatesControl(map, L) {
-  // Keep track of the user input marker so we can move or replace it
   let currentMarker = null;
 
-  // Define the custom colored icon
   const inputIcon = L.divIcon({
-    className: "custom-pin-container", // Wrapper class
-    iconAnchor: [0, 24], // Point of the icon which will correspond to marker's location
-    popupAnchor: [0, -30], // Point from which the popup should open relative to the iconAnchor
-    html: '<div class="custom-pin"></div>', // The actual HTML structure
+    className: "custom-pin-container",
+    iconAnchor: [0, 24],
+    popupAnchor: [0, -30],
+    html: '<div class="custom-pin"></div>',
   });
 
   const onAddMarkerClick = function (form, e) {
@@ -250,7 +232,6 @@ function initializeFindCoordinatesControl(map, L) {
     latInput.setCustomValidity("");
     lngInput.setCustomValidity("");
 
-    // Validate coordinates; if invalid, show error messages & exit
     if (isNaN(latVal)) {
       latInput.setCustomValidity("Please enter a valid numeric latitude.");
     } else if (isNaN(lngVal)) {
@@ -265,21 +246,23 @@ function initializeFindCoordinatesControl(map, L) {
       return;
     }
 
-    // Passed validation; time to create marker
-    //  (if marker exists, remove it first)
-
     const targetLatLng = [latVal, lngVal];
 
     if (currentMarker) {
       map.removeLayer(currentMarker);
     }
 
-    // Add new marker & center the map on it
     currentMarker = L.marker(targetLatLng, { icon: inputIcon })
       .addTo(map)
       .bindPopup(`<b>Custom Coordinate</b><br>Lat: ${latVal}<br>Lon: ${lngVal}`)
       .openPopup();
     map.setView(targetLatLng, 14);
+
+    // enable remove button
+    const removeMarker = form.querySelector("#ctrl-remove");
+    if (removeMarker) {
+      removeMarker.disabled = false;
+    }
 
     return true;
   };
@@ -288,19 +271,31 @@ function initializeFindCoordinatesControl(map, L) {
     let form = L.DomUtil.create("div", "coordinate-control-container");
     form.innerHTML += FIND_COORDS_CTL_HTML;
 
-    // Handle the button click inside the control
     const addMarkerSubmitButton = form.querySelector("#ctrl-submit");
+    const removeMarkerBtn = form.querySelector("#ctrl-remove");
+
     L.DomEvent.on(
       addMarkerSubmitButton,
       "click",
       onAddMarkerClick.bind(null, form),
     );
+
+    // Bind remove click listener during initialization
+    L.DomEvent.on(removeMarkerBtn, "click", () => {
+      if (currentMarker) {
+        map.removeLayer(currentMarker);
+        currentMarker = null;
+        removeMarkerBtn.disabled = true;
+      }
+    });
+
     L.DomEvent.disableClickPropagation(form);
+    L.DomEvent.disableScrollPropagation(form);
     return form;
   };
 
   L.Control.inputControl = L.Control.extend({
-    position: "bottomright", // Set default position
+    position: "bottomright",
     onAdd: onAddFindCoordinatesControl,
   });
 
@@ -311,26 +306,18 @@ function initializeFindCoordinatesControl(map, L) {
 // Main map setup function
 
 async function initializeMap() {
-  // Initialize map object
-
   let map = L.map("map", {
     minZoom: 5,
     maxZoom: 20,
     zoomControl: true,
   }).setView([30.407, 30.368], 8);
 
-  // Set up basemaps
   const basemaps = initializeBasemaps(L);
   basemaps.Satellite.addTo(map);
 
-  // Add flightpaths
-
   const flightLayer = initializeFlightPaths(L);
-
-  // Add Kiosk points
   const kioskLayer = initKiosk(L);
 
-  // Style photo boxes
   let boxStyle = {
     weight: 2,
     fillOpacity: 0,
@@ -341,7 +328,6 @@ async function initializeMap() {
     onEachFeature: addBdrFeature.bind(null, bdr, boxStyle, L),
   });
 
-  // establish the overlays
   const overlayMaps = {
     Flights: flightLayer,
     Images: bdr,
@@ -349,12 +335,10 @@ async function initializeMap() {
   };
   bdr.addTo(map);
 
-  // Allow user to choose what overlays to display
-  const layerControl = L.control
+  L.control
     .layers(basemaps, overlayMaps, { collapsed: false, position: "topright" })
     .addTo(map);
 
-  // Add a legend for the canister colors
   const canisterLegend = new L.control({ position: "topright" });
   canisterLegend.onAdd = function (map) {
     let div = L.DomUtil.create("div", "info legend");
@@ -363,17 +347,13 @@ async function initializeMap() {
   };
   canisterLegend.addTo(map);
 
-  // Set up viewer for mouse onclick coordinates
   const coordControl = new L.Control.Coordinates({ position: "bottomright" });
   coordControl.addTo(map);
 
-  // Set up the Find Coordinates control
   initializeFindCoordinatesControl(map, L);
 
-  // Get BDR json
   const json = await getBdrData();
 
-  // Add click handler for map (shows popup with BDR links if click is in a box)
   map.on("click", (a) => mapClickHandler(a, coordControl, json, map, L));
 }
 
