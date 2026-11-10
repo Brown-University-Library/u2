@@ -158,6 +158,9 @@ footer {
         list-style: none;
         padding-left: 0;
     }
+    input {
+        width: 42px;
+    }
 }
 
 /* input control */
